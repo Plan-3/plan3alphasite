@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Blockchain Technology A-Z",
+    "info": "Leverage different blockchain technology to create enterprise solutions that align with your mission.",
+    "image": "./Images/Chain.svg"
+  },
+  {
+    "title": "Our Tech Ecosystems Approved by Current SEC & Government Regulation ",
+    "info": "Full compliance across all projects is a point of emphasis as more and more regulatory enforcement enters the industry.",
+    "image": "./Images/Chain.svg"
+  },
+  {
+    "title": "Cap Table Management of Securities & Equities ",
+    "info": "Issuing equity as a form of incentive may be tricky, not with our help.",
+    "image": "./Images/CapShield.svg"
+  },
+  {
+    "title": "Tokenomics Architecture",
+    "info": "Persuade investors and or users to adopt it and help the ecosystem built around the currency to grow. ",
+    "image": "./Images/Tokens.svg"
+  },
+  {
+    "title": "Smart Contract Development and Institutional Deployment ",
+    "info": "Whether you are in need of a smart contract or have deployed one already our security experts will make sure a BDL security standard is achieved.",
+    "image": "./Images/Contract.svg"
+  },
+  {
+    "title": "App Development and Wallet Integration",
+    "info": "So your business can be used to interact with any decentralized application.",
+    "image": "./Images/Web.svg"
+  },
+  {
+    "title": "Asset Tokenization ",
+    "info": "Enables the purchase, sale and exchange of digital assets on the distributed ledger. ",
+    "image": "./Images/Asset.svg"
+  },
+  {
+    "title": "Algorithmic Trading Bots",
+    "info": "Carefully calibrated, safe and reliable trading bots.",
+    "image": "./Images/Bot.svg"
+  },
+  {
+    "title": "Cyber Security ",
+    "info": "Bugs on open source code are bound to happen, protect yourself before being exposed. ",
+    "image": "./Images/CyberSecurity.svg"
+  },
+  {
+    "title": "On-Chain Analytics ",
+    "info": "On-chain metrics turn blockchain-based transaction data into actionable crypto market insights. ",
+    "image": "./Images/Analysis.svg"
+  }
+]

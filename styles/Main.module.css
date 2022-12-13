@@ -1,0 +1,290 @@
+.board{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.board button{
+  background-color: transparent;
+  border: none;
+  color: black;
+}
+
+
+.defi{
+  background: url('../assets/Images/crypto1.svg');
+  aspect-ratio: 960/540;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.defiStat li{
+  /* background:linear-gradient(120deg, rgba(255,255,255,.2) 22%, rgba(231,0,255,.7) 100%); */
+  color: white;
+  background-color: rgba(16, 60, 76, .7);
+  list-style: none;
+  padding: 1rem;
+  margin:3.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divisionsContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eachBoard{
+  background-color: black;
+  margin: 1rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 2em;
+}
+
+.eachBoard button{
+  background-color: transparent;
+  margin: 0 1rem;
+}
+
+.hero{
+  width: 100%;
+  background: url('../assets/Images/heroMain.svg');
+  aspect-ratio: 2100/300;
+  background-size: cover;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-bottom: 2px solid #4d4d4d;
+}
+
+.iconContainer{
+  background: linear-gradient(120deg, rgba(255,255,255,1) 22%, rgba(231,0,255,1) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: .5rem 1rem;
+  padding: 1rem;
+  border: 2px solid white ;
+  border-radius: 1rem;
+  /* clip text to the background and then make text transparent 
+  so background comes through the text only */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.iconContainer svg{
+  font-size: 4rem;
+}
+
+.main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainFooter{
+  background: url('../assets/Images/limitless.svg');
+  aspect-ratio: 960/540;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: chartreuse;
+}
+
+.mainFooter svg{
+  background-color: black;
+  border-radius: 50%;
+  margin-top: .5rem;
+  font-size: 1.2rem;
+}
+
+.mainFooter ul{
+  list-style: none;
+  padding: 0;
+  font-size: 1.3rem;
+}
+
+.minis{
+  width: 60%;
+  background-color: #4d4d4da0;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6rem;
+  font-size: 1.1em;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin: 0 2rem;
+}
+
+.minis button{
+  padding: 1em;
+  border: none;
+  border-radius: .5em;
+  background-color: black;
+}
+
+.numberRound{
+  background-color: #E7137C ;
+  color: rgb(12, 60, 76);
+  padding: .75rem 1rem;
+  border-radius: 50%;
+  border: 1px solid rgb(12, 60, 76);
+}
+.powerP3{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  background: url('../assets/Images/the4.svg');
+  background-size: cover;
+  aspect-ratio: 960/540;
+  width: 100%;
+}
+
+.powerBlurContainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.powerBlur{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(220, 200, 220, .3);
+  margin: .5rem .5rem;
+  width: 45%;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: .5rem;
+  text-align: center;
+  backdrop-filter: 100%;
+  backdrop-filter: blur(10px);
+}
+
+.solutions button{
+  padding: 4em;
+  border: none;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.solutions button:hover{
+  background-color: rgba(255, 100, 180, .9);
+  border: none;
+  border-radius: 1rem;
+}
+
+.solutions button:after{
+  background-color: rgba(255, 100, 180, .9);
+  border: none;
+  border-radius: 1rem;
+}
+
+.versusHero{
+  background: linear-gradient(180deg, rgba(244,244,244,1) 5%, rgba(00,00,255,1) 100%);
+  background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 50;
+}
+
+.versusWeb {
+  display: flex;
+  flex-direction: column;
+}
+
+.web3{
+  background: url('../assets/Images/cyber1.svg');
+  background-size: cover;
+  aspect-ratio: 960/300;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.web3 button{
+  padding: 1rem;
+  background-image: linear-gradient(353deg, rgba(255,255,255,1) 10%, rgba(231,0,255,1) 100%);
+  color:rgba(75, 10, 200, .9);
+  border: none;
+  border-radius: 1rem;
+}
+
+.webDivisions{
+  border: 5px solid black;
+  margin: 1rem;
+  text-align: center;
+}
+
+.webDivisions svg{
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  padding: .25rem;
+  border-radius: 50%;
+}
+
+.winning{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: url('../assets/Images/winner.svg');
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+}
+
+@media screen and (max-width: 600px) {
+  .powerP3, .hero, .web3, .defi{
+    aspect-ratio: 540/300;
+  }
+  .minis{
+    width: 100%;
+  }
+  
+  .solutions button{
+    padding: .3rem;
+    margin: .3rem;
+    border: 1px solid white;
+  }
+  .versusWeb{
+    flex-direction: column;
+    align-items: center;
+  }
+  .iconContainer{
+    background: rgba(74, 74, 74, .7);
+    -webkit-text-fill-color: #7cf;
+  }
+
+  .divisionsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .arrows{
+    transform: rotate(90deg)
+  }
+}
