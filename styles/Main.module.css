@@ -13,26 +13,43 @@
 
 
 .defi{
-  background: url('../assets/Images/crypto1.svg');
+  /* background: url('../assets/Images/crypto1.svg'); */
   aspect-ratio: 960/540;
   background-size: cover;
   height: 60vh;
   width: 100%;
+  display: flex;
   align-items: center;
-  text-align: center;
-  justify-content: center;
+  text-align: left;
+  justify-content: space-evenly;
+  margin: 4rem 0;
 }
 
-.defiStat li{
+.defiContent{
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(200,200,255,.8) 0%,
+   rgba(133,144,171,.8) 1%, rgba(85,100,138,.8) 16%, 
+   rgba(59,77,121,.8) 42%, rgba(38,58,107,.8) 56%, 
+   rgba(31,52,103,.8) 74%, rgba(0,23,81,.6) 85%,
+   rgba(0,4,37,.3) 100%);
+   box-shadow: 0 0 25px rgb(0, 23, 81);
+   padding: 1rem;
+   margin-left: 2rem;
+}
+
+.defiStat{
   /* background:linear-gradient(120deg, rgba(255,255,255,.2) 22%, rgba(231,0,255,.7) 100%); */
-  color: white;
-  background-color: rgba(16, 60, 76, .7);
-  list-style: none;
-  padding: 1rem;
-  margin:3.5rem 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  padding: 4px 0px;
+  background-color: #000;
+  border-radius: 15px;
+  border: 2px solid #2a568e;
+  font-family: "Gilroy", sans-serif;
+  margin: 20px 18px;
+  margin-left: 18px;
+  margin-left: 0;
 }
 
 .divisionsContainer{
@@ -56,7 +73,7 @@
 
 .hero{
   width: 100%;
-  background: url('../assets/Images/heroMain.svg');
+  /* background: url('../assets/Images/heroMain.svg'); */
   aspect-ratio: 2100/300;
   background-size: cover;
   text-align: center;
@@ -66,20 +83,17 @@
 }
 
 .iconContainer{
-  background: linear-gradient(120deg, rgba(255,255,255,1) 22%, rgba(231,0,255,1) 100%);
+  background: linear-gradient(0deg, rgba(0,4,37,1) 0%, rgba(0,35,110,1) 100%);
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   margin: .5rem 1rem;
   padding: 1rem;
-  border: 2px solid white ;
+  border: 2px solid #5869C7 ;
   border-radius: 1rem;
   /* clip text to the background and then make text transparent 
   so background comes through the text only */
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .iconContainer svg{
@@ -90,10 +104,11 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 0 4rem;
 }
 
 .mainFooter{
-  background: url('../assets/Images/limitless.svg');
+  /* background: url('../assets/Images/limitless.svg'); */
   aspect-ratio: 960/540;
   background-size: cover;
   width: 100%;
@@ -102,7 +117,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: chartreuse;
+  color: white;
 }
 
 .mainFooter svg{
@@ -138,21 +153,27 @@
 }
 
 .numberRound{
-  background-color: #E7137C ;
-  color: rgb(12, 60, 76);
-  padding: .75rem 1rem;
+  background-color: #005EFF ;
+  color: white;
+  padding: .25rem .5rem;
   border-radius: 50%;
-  border: 1px solid rgb(12, 60, 76);
+  box-shadow: 0 0 25px #005eff;
+  font-weight: 100;
 }
 .powerP3{
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  background: url('../assets/Images/the4.svg');
+  /* background: url('../assets/Images/the4.svg'); */
   background-size: cover;
   aspect-ratio: 960/540;
   width: 100%;
+}
+
+.powerP3 p{
+  font-size: smaller;
+  font-weight: 50;
 }
 
 .powerBlurContainer{
@@ -176,17 +197,32 @@
   backdrop-filter: blur(10px);
 }
 
+.rainbowText{
+  background: rgb(97,175,252);
+  background: radial-gradient(circle, rgba(97,175,252,1) 0%, rgba(114,200,250,1) 50%, rgba(138,235,249,1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+.solutions{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .solutions button{
-  padding: 4em;
+  background-color: transparent;
+  color: white;
   border: none;
   margin: 1rem;
   border-radius: 1rem;
 }
 
 .solutions button:hover{
-  background-color: rgba(255, 100, 180, .9);
+  background-color: #FFB800;
   border: none;
   border-radius: 1rem;
+  box-shadow: 0 0 15px #FFB800;
 }
 
 .solutions button:after{
@@ -195,9 +231,24 @@
   border-radius: 1rem;
 }
 
+.toolsStart{
+  width: 100%;
+}
+
+.tools{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 35%;
+  padding: 10px;
+  text-align: left;
+}
+
 .versusHero{
-  background: linear-gradient(180deg, rgba(244,244,244,1) 5%, rgba(00,00,255,1) 100%);
+  background: linear-gradient(180deg, #8BD7FE 5%, #1C58B6 70%, blue 100%);
   background-clip: text;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: transparent;
   font-size: 3rem;
   text-align: center;
@@ -210,9 +261,6 @@
 }
 
 .web3{
-  background: url('../assets/Images/cyber1.svg');
-  background-size: cover;
-  aspect-ratio: 960/300;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -224,67 +272,108 @@
 
 .web3 button{
   padding: 1rem;
-  background-image: linear-gradient(353deg, rgba(255,255,255,1) 10%, rgba(231,0,255,1) 100%);
+  /* background-image: linear-gradient(353deg, rgba(255,255,255,1) 10%, rgba(231,0,255,1) 100%); */
   color:rgba(75, 10, 200, .9);
   border: none;
   border-radius: 1rem;
 }
 
 .webDivisions{
-  border: 5px solid black;
-  margin: 1rem;
+  border: 1px solid #4DA1FE;
+  padding: 3rem 1.5rem;
+  margin: .5rem;
   text-align: center;
+  border-radius: .5rem;
 }
 
 .webDivisions svg{
   width: 40px;
   height: 40px;
   border: 1px solid white;
-  padding: .25rem;
+  padding: .5rem;
   border-radius: 50%;
+  box-shadow: 
+  10px 10px 5px #2c5abf,
+  -10px -10px 5px #2c5abf,
+  -10px 10px 5px #2c5abf,
+  10px -10px 5px #2c5abf,
+  10px 0px 5px #2c5abf,
+  0px -10px 5px #2c5abf,
+  0px 10px 5px #2c5abf,
+  -10px 0px 5px #2c5abf
+  ;
 }
 
 .winning{
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  background: url('../assets/Images/winner.svg');
+  /* background: url('../assets/Images/winner.svg'); */
   background-size: cover;
   width: 100%;
   height: 80vh;
 }
+.winning p{
+  text-align: right;
+  width:40%;
+}
+
+.winningContent{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  font-size: 1rem;
+}
 
 @media screen and (max-width: 600px) {
-  .powerP3, .hero, .web3, .defi{
-    aspect-ratio: 540/300;
+  .arrows{
+    transform: rotate(90deg)
   }
-  .minis{
-    width: 100%;
-  }
-  
-  .solutions button{
-    padding: .3rem;
-    margin: .3rem;
-    border: 1px solid white;
-  }
-  .versusWeb{
+  .defi{
     flex-direction: column;
-    align-items: center;
+    text-align: center;
   }
-  .iconContainer{
-    background: rgba(74, 74, 74, .7);
-    -webkit-text-fill-color: #7cf;
-  }
-
   .divisionsContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
-  .arrows{
-    transform: rotate(90deg)
+  .iconContainer{
+    -webkit-text-fill-color: #7cf;
   }
+  .powerP3, .hero, .web3, .defi{
+    aspect-ratio: 540/300;
+  }
+  .main{
+    margin: 0;
+    width: 100%;
+  }
+  .mainFooter ul{
+    font-size: .8rem;
+  }
+  .minis{
+    width: 100%;
+  }
+  .solutions button{
+    padding: .3rem;
+    margin: .3rem;
+    border: 1px solid white;
+  }
+  .winning{
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .winning p{
+    text-align: center;
+  }
+  .winningContent{
+    justify-content: center;
+    align-items: center;
+  }
+  .versusWeb{
+    flex-direction: column;
+    align-items: center;
+  }
+
 }

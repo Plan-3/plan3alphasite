@@ -1,22 +1,11 @@
-.container{
-  /* background: url('../assets/Images/plan3bkg.svg');
-  background-size: cover;
-  aspect-ratio: 960/540;
-  width: 100vw;
-  height: 100vh; */
-  background: linear-gradient(
-  150deg, rgba(0,0,0,1) 0%, 
-  rgba(107,4,4,1) 43%, 
-  rgba(148,25,30,1) 77%, 
-  rgba(74,2,2,1) 100%
-  );
-}
 .dropdown button{
   display: flex;
   border: none;
-  text-decoration: underline black;
   font-size: 1rem;
   background-color: transparent;
+  color: white;
+  font-weight: 400;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .dropdownContent{
   display: none;
@@ -24,9 +13,9 @@
 .dropdown:hover .dropdownContent{
   display: flex;
   flex-direction: column;
-  background-color: transparent;
+  background-color: rgba(50, 44, 115, 1);
+  color: white;
   text-decoration: underline black;
-  line-height: 2rem;
 }
 .dropdownContent a:hover{
   background-color: #4d4d4d;
@@ -68,18 +57,32 @@ if needed add back to index main div
 
 .nav{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   position: sticky;
   top: 0;
   z-index: 2;
+  background-color: rgba(50, 44, 115, 0.9);
+  height: 50px;
 }
 
 .nav ul{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
   list-style: none;
-  background-color: rgba(74, 74, 74, .9);
+}
+
+.nav ul li{
   padding: 1rem;
+}
+
+.navBtn button{
+  background-color: blue;
+  color: white;
+  padding: .5rem;
+  border: none;
 }
 
 .p3f{
@@ -135,6 +138,27 @@ if needed add back to index main div
   transform: scale(1.1rem);
 }
 
+.upbtn{
+  position: sticky;
+  width: 25px;
+  height: 25px;
+  bottom: 5%;
+  left: 90%;
+  z-index: 3;
+  animation: 3s ease-in 1s 2 buttonPop;
+}
+
+@keyframes buttonPop {
+  0%{
+    bottom: -15%;
+  }
+  50%{
+    bottom: 15%;
+  }
+  100%{
+    bottom: 5%;
+  }
+}
 
 @media screen and (max-width: 600px) {
   .grid {
@@ -151,14 +175,24 @@ if needed add back to index main div
     display: none;
   }
   .miniNav{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     position: sticky;
     top: 0;
-    background-color: #4d4d4d;
   }
-  .miniNav ul li{
+  .miniNav button{
+    width: 25%;
+  }
+  .miniNav ul{
     list-style: none;
     margin-bottom: 5px;
+    background-color: #4d4d4d;
+  }
+  .powerBlurContainer{
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .socials{
     flex-direction: column;
@@ -168,6 +202,9 @@ if needed add back to index main div
   }
   .socialsChildren ul{
     padding: 0;
+  }
+  .upbtn{
+    display: none;
   }
 }
 

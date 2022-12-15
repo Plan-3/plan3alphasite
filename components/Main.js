@@ -13,6 +13,7 @@ import WebIcon from '@mui/icons-material/Web'
 import SecurityIcon from '@mui/icons-material/Security'
 import CheckIcon from '@mui/icons-material/Check';
 import WebAssetIcon from '@mui/icons-material/WebAsset';
+import { textAlign } from '@mui/system'
 
 
 function Home() {
@@ -32,10 +33,26 @@ function Home() {
         <button>Book a Demo</button>
       </div>
       <div className={styles.solutions}>
-        <button id='bksbtn' onClick={() => setDivider({ bks: !divider.bks })}>Black Swan</button>
-        <button id='oribtn' onClick={() => setDivider({ ori: !divider.ori })}>Origins</button>
-        <button id='lsmbtn' onClick={() => setDivider({ lsm: !divider.lsm })}>Lionshare Media</button>
-        <button id='ecobtn' onClick={() => setDivider({ eco: !divider.eco })}>Eco Citizen</button>
+        <button id='bksbtn' onClick={() => setDivider({ bks: !divider.bks })}>
+          <Image width={175} height={25}></Image>
+          <p>Blockchain:</p>
+          <p>Development & Architecture</p>
+        </button>
+        <button id='oribtn' onClick={() => setDivider({ ori: !divider.ori })}>
+          <Image width={175} height={25}></Image>
+          <p>Web3 Marketing:</p>
+          <p>Campaign Architecture</p>
+        </button>
+        <button id='lsmbtn' onClick={() => setDivider({ lsm: !divider.lsm })}>
+          <Image width={175} height={25}></Image>
+          <p>Media:</p>
+          <p>Anaylytics & Ad Platform</p>
+        </button>
+        <button id='ecobtn' onClick={() => setDivider({ eco: !divider.eco })}>
+          <Image width={175} height={25}></Image>
+          <p>Carbon Offset:</p>
+          <p>ESG Initiatives</p>
+        </button>
       </div>
       {(divider.bks) ?
         <Bks />
@@ -53,14 +70,23 @@ function Home() {
       }
       <div className={styles.web3}>
         <div className={styles.iconContainer}>
-          <DiamondIcon />
-          <p>Take advantage of a new and rapidly developing market</p>
-          <SecurityIcon />
-          <p>Create more trust and transparency within your customer base</p>
-          <WebIcon />
-          <p>Leverage blockchain technology to reach new heights</p>
+          <div>
+            <DiamondIcon />
+            <p>Take advantage of a new and rapidly developing market</p>
+          </div>
+          <div>
+            <SecurityIcon />
+            <p>Create more trust and transparency within your customer base</p>
+          </div>
+          <div>
+            <WebIcon />
+            <p>Leverage blockchain technology to reach new heights</p>
+          </div>
         </div>
-        <div>
+      </div>
+      <div className={styles.toolsStart}>
+
+        <div className={styles.tools}>
           <h3>
             We have the right set of tools
             and technologies to build
@@ -76,16 +102,29 @@ function Home() {
         </div>
       </div>
       <div className={styles.defi}>
-        {/* defi image? <Image height={600} width={650} src={crypto}></Image> */}
-        <div className={styles.defiStat}>
-          <h3>Give your Web3 project an unfair advantage</h3>
-          <p>We build quality products, hire quality people, and have a quality process to guarantee you win.</p>
-          <button>Get Started</button>
-          <ul style={{padding: 0}}>
-            <li><span className={styles.numberRound}>1</span>Using systematic processes to design brands, products and interfaces</li>
-            <li><span className={styles.numberRound}>2</span>Picking the most suitable blockchain, tech stack, tools, and methodology</li>
-            <li><span className={styles.numberRound}>3</span>Working with a committed team that gets shit done</li>
-          </ul>
+        <div>
+          <Image height={300} width={200} src={crypto}></Image>
+        </div>
+        <div className={styles.defiContent}>
+          <div>
+            <h3>Give your Web3 project an unfair advantage</h3>
+            <p>We build quality products, hire quality people, and have a quality process to guarantee you win.</p>
+            <button>Get Started</button>
+          </div>
+          <div>
+            <div className={styles.defiStat}>
+              <p className={styles.numberRound}>1</p>
+              <p>Using systematic processes to design brands, products and interfaces</p>
+            </div>
+            <div className={styles.defiStat}>
+              <p className={styles.numberRound}>2</p>
+              <p>Picking the most suitable blockchain, tech stack, tools, and methodology</p>
+            </div>
+            <div className={styles.defiStat}>
+              <p className={styles.numberRound}>3</p>
+              <p>Working with a committed team that gets shit done</p>
+            </div>
+          </div>
         </div>
       </div>
       <div className={styles.versusWeb}>
@@ -113,9 +152,14 @@ function Home() {
         </div>
       </div>
       <div className={styles.winning}>
-        <h5>Four companies, an array of experience</h5>
-        <p>These disciplines combine to build strategies for and operationalize high impact growth initiatives focused on maximizing your companies profit.</p>
-        <button>View All</button>
+        <div>
+          <Image height={450} width={200}></Image>
+        </div>
+        <div className={styles.winningContent}>
+          <h5 className={styles.rainbowText}>Four companies, an array of experience</h5>
+          <p>These disciplines combine to build strategies for and operationalize high impact growth initiatives focused on maximizing your companies profit.</p>
+          <button>View All</button>
+        </div>
       </div>
       <div className={styles.powerP3}>
         <h2>Powered by Plan3</h2>
@@ -159,7 +203,8 @@ function Home() {
         {/* <Board /> */}
       </div>
       <div className={styles.mainFooter}>
-        <h1>The New Standard in Limitless</h1>
+        <h1>The New Standard in</h1>
+        <h1 className={styles.rainbowText}> Limitless</h1>
         <p>A Profit Driven Think-Tank & Execution Team:</p>
         <p>Web3 'bridge' business integration</p>
         <ul>

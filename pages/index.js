@@ -38,11 +38,11 @@ export default function Home() {
           <div>
             <ul>
               <li><a href="">Home</a></li>
-              <li style={{display: 'flex'}}>
-                    <a style={{marginRight: '.7em'}} href="">Blackswan</a>
-                    <a style={{marginRight: '.7em'}} href="">Lionshare Media</a>
-                    <a style={{marginRight: '.7em'}} href="">Origins</a>
-                    <a href="">EcoCitizen</a>
+              <li style={{ display: 'flex' }}>
+                <a style={{ marginRight: '.7em' }} href="">Blackswan</a>
+                <a style={{ marginRight: '.7em' }} href="">Lionshare Media</a>
+                <a style={{ marginRight: '.7em' }} href="">Origins</a>
+                <a href="">EcoCitizen</a>
                 {/* <select name="dropdownNav" id="dropdownNav">
                 <option value="BlackSwan" default={true}>Blackswan</option>
                 <option value="Lionshare">Lionshare Media</option>
@@ -57,43 +57,51 @@ export default function Home() {
           :
           ''
         }
-      {(scrolled > 200) ? <button onClick={() => scrollUp()}><ArrowCircleUpIcon /></button> : ''}
+        {(scrolled > 200) ? <button onClick={() => scrollUp()}><ArrowCircleUpIcon /></button> : ''}
       </div>
       <nav className={styles.nav}>
-        <div>
+          <div>
+
+          </div>
           {/* {(scrolled > 100) ? '' : <Image href={plan3footer} height={100} width={250}></Image>} */}
-          <ul>
-            <li><a href="">Home</a></li>
-            <li>
-              <div className={styles.dropdown}>
-                <button >Solutions</button>
-                <div className={styles.dropdownContent}>
-                  <a href="">Blackswan</a>
-                  <a href="">Lionshare Media</a>
-                  <a href="">Origins</a>
-                  <a href="">EcoCitizen</a>
+          <div>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li>
+                <div className={styles.dropdown}>
+                  <button >Solutions</button>
+                  <div className={styles.dropdownContent}>
+                    <a href="">Blackswan</a>
+                    <a href="">Lionshare Media</a>
+                    <a href="">Origins</a>
+                    <a href="">EcoCitizen</a>
+                  </div>
                 </div>
-              </div>
-              {/* <select name="dropdownNav" id="dropdownNav">
+                {/* <select name="dropdownNav" id="dropdownNav">
                 <option value="BlackSwan" default={true}>Blackswan</option>
                 <option value="Lionshare">Lionshare Media</option>
                 <option value="Eco">EcoCitizen</option>
                 <option value="Origins">Origins</option>
               </select> */}
-            </li>
-            <li><a href="">EcoSystem</a></li>
-            <li><a href="">Team</a></li>
-          <li><a href="">Get Started</a></li>
-          </ul>
-          {(scrolled > 200) ? <button onClick={() => scrollUp()}><ArrowCircleUpIcon /></button> : ''}
-        </div>
-        <div>
-        </div>
+              </li>
+              <li><a href="">EcoSystem</a></li>
+              <li><a href="">Team</a></li>
+            </ul>
+          </div>
+          <div className={styles.navBtn}>
+            <button>Get Started</button>
+          </div>
       </nav>
+      <div className={styles.upbtn}>
+      </div>
       <main>
         <Main />
       </main>
 
+
+      <div className={styles.upbtn}>
+        {(scrolled > 200) ? <button onClick={() => scrollUp()}><ArrowCircleUpIcon /></button> : ''}
+      </div>
       <footer className={styles.footer}>
         <div className={styles.p3f}>
           <p>Plan_3</p>
