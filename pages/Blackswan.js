@@ -48,4 +48,4 @@ function Blackswan() {
   )
 }
 
-export default BlackSwan
+export default Blackswan
