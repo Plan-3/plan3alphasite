@@ -7,14 +7,14 @@ import Ori from './subcomponents/Ori'
 import Eco from './subcomponents/Eco'
 import Board from './subcomponents/Board'
 import arrows from '../assets/Images/arrows.svg'
-import crypto from '../assets/Images/defi.png'
+import web1 from '../assets/Images/M1.svg'
+import web2 from '../assets/Images/M2.svg'
+import web3 from '../assets/Images/M3.svg'
 import DiamondIcon from '@mui/icons-material/Diamond'
 import WebIcon from '@mui/icons-material/Web'
 import SecurityIcon from '@mui/icons-material/Security'
 import CheckIcon from '@mui/icons-material/Check';
 import WebAssetIcon from '@mui/icons-material/WebAsset';
-import { textAlign } from '@mui/system'
-
 
 function Home() {
   const [divider, setDivider] = useState({ bks: false, ori: false, lsm: false, eco: false })
@@ -100,10 +100,11 @@ function Home() {
           </p>
           <button>Get Started</button>
         </div>
+        <div className={styles.toolsImg}></div>
       </div>
       <div className={styles.defi}>
         <div>
-          <Image height={300} width={200} src={crypto}></Image>
+          <Image height={300} width={200} ></Image>
         </div>
         <div className={styles.defiContent}>
           <div>
@@ -133,19 +134,19 @@ function Home() {
         </div>
         <div className={styles.divisionsContainer}>
           <div className={styles.webDivisions}>
-            <WebAssetIcon />
+            <Image src={web1} height={100} width={100}></Image>
             <h3>Web1</h3>
             <p>Static info publications, subscription, and linking via url</p>
           </div>
           <Image className={styles.arrows} src={arrows} width={130} height={130}></Image>
           <div className={styles.webDivisions}>
-            <WebAssetIcon />
+            <Image src={web2} height={100} width={100}></Image>
             <h3>Web2</h3>
             <p>Social exhanges among users on social media platform</p>
           </div>
           <Image className={styles.arrows} src={arrows} width={130} height={130}></Image>
           <div className={styles.webDivisions}>
-            <WebIcon />
+            <Image src={web3} height={100} width={100}></Image>
             <h3>Web3</h3>
             <p>Decentralized data transactions between digital wallets on blockchain</p>
           </div>
@@ -162,12 +163,14 @@ function Home() {
         </div>
       </div>
       <div className={styles.powerP3}>
-        <h2>Powered by Plan3</h2>
-        <p>
-          We have consultants on every continent, from a diversity of backgrounds, with decades of experience in management,
-          technology, finance, marketing and governance. We have one thing in common:
-          we’ve dedicated ourselves to working in, understanding and building the future of the web3 space.
-        </p>
+        <div>
+          <h1>Powered by Plan3</h1>
+          <p>
+            We have consultants on every continent, from a diversity of backgrounds, with decades of experience in management,
+            technology, finance, marketing and governance. We have one thing in common:
+            we’ve dedicated ourselves to working in, understanding and building the future of the web3 space.
+          </p>
+        </div>
         <div className={styles.powerBlurContainer}>
           <div className={styles.powerBlur}>
             <h3>Black Swan</h3>
@@ -212,7 +215,7 @@ function Home() {
           <li><CheckIcon />$4.5M Sales to Date</li>
           <li><CheckIcon />30+ Strategic Partners</li>
         </ul>
-        <div>
+        <div className={styles.mainFooterImmerse}>
           <h1>Immerse and Dominate Web3 with Plan3</h1>
           <p>Industry leaders with robust technologies to set you</p>
           <p>apart and ahead in a noisy Web3 world.</p>

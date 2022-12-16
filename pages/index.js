@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Main from '../components/Main.js'
-import plan3footer from '../assets/Images/plan3logo.png'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import BksData from '../assets/BlackSwan.json'
 
 
+
 function Blackswan() {
   return (
     <div className='Blackswan main'>

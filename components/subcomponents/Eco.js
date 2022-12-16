@@ -1,29 +1,42 @@
 import React from 'react'
 import styles from '../../styles/Main.module.css'
+import Image from 'next/image'
+import collect from '../../assets/Images/collect.svg'
+import monetize from '../../assets/Images/monetize.svg'
 
 
 function Eco() {
   return (
     <div className={styles.minis}>
       <div className={styles.minisRight}>
-        <ul>
-          <li>Protocol Architecture</li>
-          <li>Fractionalization</li>
-          <li>Project Screening</li>
-          <li>Carbon Credit Tokenization</li>
-          <li>Transparent DEX 'Burn'</li>
-          <li>Blockchain Integration</li>
-        </ul>
-        <button>Explore ➢</button>
+        <div>
+          <ul>
+            <li>Protocol Architecture</li>
+            <li>Fractionalization</li>
+            <li>Project Screening</li>
+            <li>Carbon Credit Tokenization</li>
+            <li>Transparent DEX 'Burn'</li>
+            <li>Blockchain Integration</li>
+          </ul>
+          <button>Explore ➢</button>
+        </div>
+        <div>
+          <Image height={250} width={250} src={collect}></Image>
+        </div>
       </div>
       <div className={styles.minisLeft}>
-        <ul>
-          <li>Protocol Tax Initiatives</li>
-          <li>SEC Regulatory</li>
-          <li>Supply / Demand</li>
-          <li>Modeling</li>
-        </ul>
-        <button>Explore ➢</button>
+        <div>
+          <Image height={250} width={250} src={monetize}></Image>
+        </div>
+        <div>
+          <ul>
+            <li>Protocol Tax Initiatives</li>
+            <li>SEC Regulatory</li>
+            <li>Supply / Demand</li>
+            <li>Modeling</li>
+          </ul>
+          <button>Explore ➢</button>
+        </div>
       </div>
       <div>
         <h1>The 3C Eco Citizen <span>Vision</span></h1>
