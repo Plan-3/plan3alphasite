@@ -83,7 +83,7 @@
   background: linear-gradient(0deg, rgba(0,4,37,1) 0%, rgba(0,35,110,1) 100%);
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: .5rem 1rem;
   padding: 2rem;

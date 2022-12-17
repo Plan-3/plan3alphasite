@@ -3,24 +3,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Main from '../components/Main.js'
-import MenuIcon from '@mui/icons-material/Menu'
-import CloseIcon from '@mui/icons-material/Close'
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 
 export default function Home() {
-  const [menu, setMenu] = useState({ nav: false, menu: false })
-  const [scrolled, setScrolled] = useState(0)
-  useEffect(() => {
-    document.addEventListener('scroll', () => {
-      setScrolled(document.documentElement.scrollTop)
-    })
-
-  }, [scrolled])
-
-  const scrollUp = () => {
-    document.body.scrollTop = 0
-    document.documentElement.scrollTop = 0
-  }
   return (
     <div className={styles.container}>
       <Head>
@@ -31,115 +18,12 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
       </Head>
-      <div className={styles.miniNav}>
-        {menu.menu ? <button onClick={() => setMenu({ nav: !menu.nav, menu: !menu.menu })}><CloseIcon /></button> : <button onClick={() => setMenu({ nav: !menu.nav, menu: !menu.menu })}><MenuIcon /></button>}
-        {menu.nav ?
-          <div>
-            <ul>
-              <li><a href="">Home</a></li>
-              <li style={{ display: 'flex' }}>
-                <a style={{ marginRight: '.7em' }} href="">Blackswan</a>
-                <a style={{ marginRight: '.7em' }} href="">Lionshare Media</a>
-                <a style={{ marginRight: '.7em' }} href="">Origins</a>
-                <a href="">EcoCitizen</a>
-                {/* <select name="dropdownNav" id="dropdownNav">
-                <option value="BlackSwan" default={true}>Blackswan</option>
-                <option value="Lionshare">Lionshare Media</option>
-                <option value="Eco">EcoCitizen</option>
-                <option value="Origins">Origins</option>
-              </select> */}
-              </li>
-              <li><a href="">EcoSystem</a></li>
-              <li><a href="">Team</a></li>
-            </ul>
-          </div>
-          :
-          ''
-        }
-        {(scrolled > 200) ? <button onClick={() => scrollUp()}><ArrowCircleUpIcon /></button> : ''}
-      </div>
-      <nav className={styles.nav}>
-          <div>
 
-          </div>
-          {/* {(scrolled > 100) ? '' : <Image href={plan3footer} height={100} width={250}></Image>} */}
-          <div>
-            <ul>
-              <li><a href="">Home</a></li>
-              <li>
-                <div className={styles.dropdown}>
-                  <button >Solutions</button>
-                  <div className={styles.dropdownContent}>
-                    <a href="">Blackswan</a>
-                    <a href="">Lionshare Media</a>
-                    <a href="">Origins</a>
-                    <a href="">EcoCitizen</a>
-                  </div>
-                </div>
-                {/* <select name="dropdownNav" id="dropdownNav">
-                <option value="BlackSwan" default={true}>Blackswan</option>
-                <option value="Lionshare">Lionshare Media</option>
-                <option value="Eco">EcoCitizen</option>
-                <option value="Origins">Origins</option>
-              </select> */}
-              </li>
-              <li><a href="">EcoSystem</a></li>
-              <li><a href="">Team</a></li>
-            </ul>
-          </div>
-          <div className={styles.navBtn}>
-            <button>Get Started</button>
-          </div>
-      </nav>
-      <div className={styles.upbtn}>
-      </div>
+      <Nav />
       <main>
         <Main />
       </main>
-
-
-      <div className={styles.upbtn}>
-        {(scrolled > 200) ? <button onClick={() => scrollUp()}><ArrowCircleUpIcon /></button> : ''}
-      </div>
-      <footer className={styles.footer}>
-        <div className={styles.p3f}>
-          <p>Plan_3</p>
-          <p>End to end Web3 solutions to build <br /> unmatched digital experiences</p>
-        </div>
-        <div className={styles.socials}>
-          <div className={styles.socialsChildren}>
-            <ul>
-              <li><h1>Products</h1></li>
-              <li><a href="">Black Swan</a></li>
-              <li><a href="">Origins</a></li>
-              <li><a href="">Lionshare Media</a></li>
-              <li><a href="">ECO Citizen</a></li>
-            </ul>
-          </div>
-          <div className={styles.socialsChildren}>
-            <ul>
-              <li><h1>Social</h1></li>
-              <li> <a href="">LinkedIn</a></li>
-              <li> <a href="">Facebook</a></li>
-              <li><a href="">Telegram</a></li>
-            </ul>
-          </div>
-          <div className={styles.socialsChildren}>
-            <ul>
-              <li><h1>Legal</h1></li>
-              <li> <a href="">Terms of Use</a></li>
-              <li><a href="">Privacy Policy</a></li>
-              <li><a href="">Legal Notice</a></li>
-            </ul>
-          </div>
-        </div>
-        <div className={styles.subscribeEmail}>
-          <h1>Subscribe:</h1>
-          <label htmlFor="subscribe">E-mail*</label>
-          <input type="email" name="subscribe" id="subscribe" />
-          <button>Subscribe</button>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

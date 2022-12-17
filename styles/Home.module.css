@@ -145,7 +145,7 @@ if needed add back to index main div
   bottom: 5%;
   left: 90%;
   z-index: 3;
-  animation: 3s ease-in 1s 2 buttonPop;
+  animation: 3s ease-in 1s 1 buttonPop;
 }
 
 @keyframes buttonPop {
@@ -153,7 +153,7 @@ if needed add back to index main div
     bottom: -15%;
   }
   50%{
-    bottom: 15%;
+    bottom: 10%;
   }
   100%{
     bottom: 5%;
