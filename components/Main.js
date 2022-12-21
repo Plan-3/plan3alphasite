@@ -23,7 +23,7 @@ function Home() {
     <div className={styles.main}>
       <div className={styles.hero}>
         <h1>
-          HELPING <span className={styles.heroSpan}> WEB3 COMPANIES </span>  SCALE BY BRINGING DATA</h1>
+          SCALE YOUR <span className={styles.heroSpan}> COMPANY </span> WITH DATA</h1>
         <h1>  DRIVEN DECISIONS AND CREATIVITY TOGETHER FOR </h1>
         <h1>  <span className={styles.heroSpan}>UNMATCHED DESIGN AND DIGITAL EXPERIENCES </span> 
         </h1>
@@ -35,18 +35,18 @@ function Home() {
       <div className={styles.solutions}>
         <button id='bksbtn' onClick={() => setDivider({ bks: !divider.bks })}>
           <Image width={175} height={25}></Image>
-          <p>Blockchain:</p>
-          <p>Development & Architecture</p>
+          <p>Deep Tech:</p>
+          <p>Research, Development & Architecture</p>
         </button>
         <button id='oribtn' onClick={() => setDivider({ ori: !divider.ori })}>
           <Image width={175} height={25}></Image>
           <p>Web3 Marketing:</p>
-          <p>Campaign Architecture</p>
+          <p>Campaign Architecture & Management</p>
         </button>
         <button id='lsmbtn' onClick={() => setDivider({ lsm: !divider.lsm })}>
           <Image width={175} height={25}></Image>
-          <p>Media:</p>
-          <p>Anaylytics & Ad Platform</p>
+          <p>Lionshare Media:</p>
+          <p>Anaylytics: Media, Data, & Ad Platform</p>
         </button>
         <button id='ecobtn' onClick={() => setDivider({ eco: !divider.eco })}>
           <Image width={175} height={25}></Image>
@@ -173,32 +173,32 @@ function Home() {
         </div>
         <div className={styles.powerBlurContainer}>
           <div className={styles.powerBlur}>
-            <h3>Black Swan</h3>
-            <p>Blockchain Development and Research</p>
+            <h3>Black Swan Research</h3>
+            <p>Deep Tech: Research, Development, & Architecture</p>
             {/* svg */}
-            <p><strong>30+</strong></p>
-            <p><strong>End to end projects created (A-Z solutions)</strong></p>
+            <p><strong>5+</strong></p>
+            <p><strong>Living Whitepapers Developed</strong></p>
           </div>
           <div className={styles.powerBlur}>
             <h3>Origins</h3>
-            <p>Web3 Campaign Architecture | Transitioning Businesses to Web3</p>
+            <p>web3 Marketing: Campaign Architecture & Management</p>
             {/* svg */}
-            <p><strong>79 Businesses</strong></p>
-            <p><strong>Migrated From Web2 to Web3</strong></p>
+            <p><strong>3M+</strong></p>
+            <p><strong>Sales to date</strong></p>
           </div>
           <div className={styles.powerBlur}>
             <h3>Lionshare Media</h3>
-            <p>Analytics | Algorithms | Tracking</p>
+            <p>Analytics: Media, Data, & Ad Platform</p>
             {/* svg */}
             <p><strong>$2 Million</strong></p>
             <p><strong>Saved Through Data Driven Strategies</strong></p>
           </div>
           <div className={styles.powerBlur}>
             <h3>Eco Citizen</h3>
-            <p>Web3 ESG</p>
+            <p>Carbon Offset: ESG Initiatives</p>
             {/* svg */}
-            <p><strong>79%</strong></p>
-            <p><strong>CO2 project reductions</strong></p>
+            <p><strong>10%</strong></p>
+            <p><strong> Estimated Valuation increase for Carbon Negative Businesses</strong></p>
           </div>
         </div>
       </div>
@@ -211,14 +211,13 @@ function Home() {
         <p>A Profit Driven Think-Tank & Execution Team:</p>
         <p>Web3 'bridge' business integration</p>
         <ul>
-          <li><CheckIcon /> 10+ Years of WEB3 Experience</li>
-          <li><CheckIcon />$4.5M Sales to Date</li>
+          <li><CheckIcon /> 2+ proprietary token standards</li>
+          <li><CheckIcon />$500k+ total trading volume</li>
           <li><CheckIcon />30+ Strategic Partners</li>
         </ul>
         <div className={styles.mainFooterImmerse}>
-          <h1>Immerse and Dominate Web3 with Plan3</h1>
-          <p>Industry leaders with robust technologies to set you</p>
-          <p>apart and ahead in a noisy Web3 world.</p>
+          <h1>Wrap your Business in Web3 and Dominate with Plan3</h1>
+          <p>Leaders with robust technologies to set you apart in a noisy Web3 world.</p>
           <button>Contact Us</button>
         </div>
       </div>

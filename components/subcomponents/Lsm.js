@@ -11,28 +11,34 @@ function Lsm() {
       <div className={styles.minisRight}>
         <div>
           <ul>
-            <li>AI | Machine Learning | Data Science</li>
-            <li>Web3 Tracking</li>
-            <li>Alorithmic Bot Development</li>
-            <li>Behavior Prediction</li>
-            <li>Lead Scoring</li>
+            <li>Lead Scoring </li>
+            <li>Data Streaming</li>
+            <li>Media Buy</li>
+            <li>Algorithm Development</li>
+            <li>Oracle Development</li>
+            <li>API Development</li>
+            <li>Behavior Analysis & Prediction</li>
           </ul>
           <button>Explore ➢</button>
         </div>
         <div>
-          <Image height={250} width={250} src={monetize}></Image>
+          <Image height={200} width={200} src={monetize}></Image>
         </div>
       </div>
       <div className={styles.minisLeft}>
         <div>
-          <Image height={250} width={250} src={collect}></Image>
+          <Image height={200} width={200} src={collect}></Image>
         </div>
         <div>
           <ul>
-            <li>Targeted Customer Selection</li>
-            <li>Airdrops</li>
+            <li>Wallet Tracking</li>
+            <li>On-Chain Analytics</li>
             <li>Data Analytics</li>
-            <li>AdPlatform</li>
+            <li>Behavioral Analytics</li>
+            <li>Ad Platform</li>
+            <li>Airdrops</li>
+            <li>Product Analytics</li>
+            <li>Performance Analysis</li>
           </ul>
           <button>Explore ➢</button>
         </div>
@@ -40,7 +46,7 @@ function Lsm() {
       </div>
       <div>
         <h1>Lionshare Media <span>Vision</span></h1>
-        <p> Lionshare brings product analytics to web3. With wide net of capabilities, we use behavioral analytics to build unmatched digital experiences that enable you to measure, iterate, and scale your projects with a data-driven approach. </p>
+        <p> Lionshare brings product analytics to web3. With a wide net of capabilities, we use behavioral analytics to build unmatched digital experiences that enable you to measure, iterate, and scale your project with a data-driven approach. </p>
       </div>
     </div>
   )

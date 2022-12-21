@@ -76,13 +76,13 @@ function Blackswan() {
       <div className={bkstyles.hero}>
         <Image className={bkstyles.image} height={125} width={800}></Image>
         <p>
-          We make it simple for clients to abandon the outdated model of
+          Make it simple. We deliver high quality research and intelligence by leveraging the utility of deep and emerging technologies
         </p>
         <p>
-          centralised consensus in favor of the distributed blockchain model,
+          Our applied research connects discoveries to a practical and highly-strategic end;
         </p>
         <p>
-          which powers an impressive array of applications.
+          commercialization is focused on delivering value and end results.Ï
         </p>
         <div className={bkstyles.herobtn}>
           <button>Speak To An Expert</button>
@@ -93,17 +93,17 @@ function Blackswan() {
         <div className={bkstyles.solutionsChild}>
           icon
           <p className={bkstyles.solutionsRainbow}>Project Discovery</p>
-          <p>What blockchain strategy do you employ? We will assess your firm to determine which blockchain use cases are most appropriate for it.</p>
+          <p>What is most critical to your business objectives? We will assess your firm to determine which blockchain use cases are most appropriate for it.</p>
+        </div>
+        <div className={bkstyles.solutionsChild}>
+          icon
+          <p className={bkstyles.solutionsRainbow}>Strategy and Consulting</p>
+          <p>Different firms require different intelligence. We help strategize to your unique needs and deliver targeted business intelligence</p>
         </div>
         <div className={bkstyles.solutionsChild}>
           icon
           <p className={bkstyles.solutionsRainbow}>Blockchain Technology Integration</p>
-          <p>Different businesses require different blockchain technology. Our experts will develop the technology necessary for front and back end development.</p>
-        </div>
-        <div className={bkstyles.solutionsChild}>
-          icon
-          <p className={bkstyles.solutionsRainbow}>Smart Contract Deployment and Auditing</p>
-          <p>Whether you are in need of a smart contract or have deployed one already our security experts will make sure a BDL security standard is achieved.</p>
+          <p>Capitalize on the tools and resources that can accelerate your business. Our experts will integrate and develop the systems to help achieve your goals</p>
         </div>
       </div>
       <div className={bkstyles.mainFocus}>
@@ -126,7 +126,7 @@ function Blackswan() {
         <div className={bkstyles.containerWeb3}>
           <div>
             <h1>Custom Web3 Solutions</h1>
-            <p>Explore tailor-cut products and services for your business</p>
+            <p>Explore custom designed products and services for your business.</p>
           </div>
           <div>
             <Image className={bkstyles.image} height={200} width={450}></Image>
@@ -137,8 +137,8 @@ function Blackswan() {
             <Image className={bkstyles.image} height={200} width={450}></Image>
           </div>
           <div>
-            <h1>Untapped Possibilities</h1>
-            <p>Our Web3 experts will dive into the blockchain architecture and investigate its potential</p>
+            <h1>Untapped Possibilities?</h1>
+            <p>Dive into Web3 and investigate new possibilities with our Web3 experts.</p>
           </div>
         </div>
       </div>
@@ -146,11 +146,12 @@ function Blackswan() {
         <div className={bkstyles.quote}>
           <FormatQuoteIcon style={{ fontSize: '6rem' }} />
           <p>{quoteData[i].quote}</p>
+          <p>{quoteData[i].person}</p>
         </div>
         <div className={bkstyles.quoteNav}>
           <button onClick={() => prevRank()}><ArrowBackIos /></button>
           <button onClick={() => nextRank()}><ArrowForwardIos /></button>
-          <button>Meet the Board</button>
+          <button><a href="/Team">Meet the Team</a> </button>
         </div>
       </div>
       <div className={bkstyles.safety}>
@@ -166,22 +167,22 @@ function Blackswan() {
         </div>
         <div className={bkstyles.safetyWhy}>
           <div>
-            <h1>Why Liquidian and Prism</h1>
-            <h2 onClick={() => setToolTip({ raise: !toolTip.raise })}>RAISE WEB3</h2>
+            <h1>Why Black Swan?</h1>
+            <h2 onClick={() => setToolTip({ raise: !toolTip.raise })}>Plug into an ecosystem, not an agency</h2>
             {toolTip.raise ?
               <div className={bkstyles.safetyTooltip}>
                 <p>Asset owners of all types can raise decentralized funding, allowing the opportunity to generate passive revenue and access to liquidity.</p>
                 <button>Book a Demo</button>
               </div> : ''
             }
-            <h2 onClick={() => setToolTip({ invest: !toolTip.invest })}>Invest</h2>
+            <h2 onClick={() => setToolTip({ invest: !toolTip.invest })}>Utilize the tools that make sense for your business</h2>
             {toolTip.invest ?
               <div className={bkstyles.safetyTooltip}>
                 <p>Opportunities for investors of all types - previously only reserved for accredited investors, in the form of equity, funds, debt, and real estate.</p>
                 <button>Book a Demo</button>
               </div> : ''
             }
-            <h2 onClick={() => setToolTip({ ats: !toolTip.ats })}>ATS</h2>
+            <h2 onClick={() => setToolTip({ ats: !toolTip.ats })}>Strategize and Develop top tier solutions</h2>
             {toolTip.ats ?
               <div className={bkstyles.safetyTooltip}>
                 <p>Secondary trading for private markets. LIQUIDIAN's ATS delivers liquidity for private assets. Add your security to the premier marketplace for trading digital securities.</p>
@@ -194,12 +195,12 @@ function Blackswan() {
           </div>
         </div>
         <div className={bkstyles.safetyKeep}>
-            <p style={{fontSize: '5rem', fontWeight: '700', marginBottom: '0'}}>Let's keep in touch</p>
-            <p>We've dedicated ourselves to understanding and building the future in the Web3 space.</p>
-            <p>We will keeep you in the loop with all the newest stuff!</p>
-        <div className={bkstyles.safetyEmail}>
-          <input type="email" placeholder='Enter your email' /><button>Subscribe</button>
-        </div>
+          <p style={{ fontSize: '5rem', fontWeight: '700', marginBottom: '0' }}>Let's keep in touch</p>
+          <p>We've dedicated ourselves to understanding and building the future in the Web3 space.</p>
+          <p>We will keeep you in the loop with all the newest stuff!</p>
+          <div className={bkstyles.safetyEmail}>
+            <input type="email" placeholder='Enter your email' /><button>Subscribe</button>
+          </div>
         </div>
       </div>
       <Footer />

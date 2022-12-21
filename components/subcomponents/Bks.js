@@ -11,28 +11,32 @@ function Bks() {
       <div className={styles.minisRight}>
         <div>
           <ul>
-            <li>Blockchain Technology A-Z</li>
-            <li>Our Tech Ecosystems Approved by Current SEC & Government Regulation</li>
-            <li>Cap Table Management of Securitie & Equities</li>
-            <li>Tokenomics Architecture</li>
-            <li>Smart COntract Development and Instituitional Deployment</li>
-            <li>dApp Development and Wallet Integration</li>
+            <li>Market Research & Analysis</li>
+            <li>Financial/Economic Modelling</li>
+            <li>Protocol & Tokenomics Architecture</li>
+            <li>Whitepaper Development</li>
+            <li>Smart Contract Development</li>
+            <li>dApp Development</li>
+            <li>Algorithmic Trading</li>
           </ul>
           <button>Explore ➢</button>
         </div>
         <div>
-          <Image height={250} width={250} src={collect}></Image>
+          <Image height={200} width={200} src={collect}></Image>
         </div>
       </div>
       <div className={styles.minisLeft}>
         <div>
-          <Image height={250} width={250} src={monetize}></Image>
+          <Image height={200} width={200} src={monetize}></Image>
         </div>
         <div>
           <ul>
+            <li>Bridging Real Assets On-Chain</li>
             <li>Asset Tokenization</li>
-            <li>Algorithmic Trading Bots</li>
-            <li>Cyber Security</li>
+            <li>Cap Table Management</li>
+            <li>Software Legal Compliance</li>
+            <li>DAO Governance</li>
+            <li>Cybersecurity</li>
             <li>On-Chain Analytics</li>
           </ul>
           <button>Explore ➢</button>
@@ -40,7 +44,7 @@ function Bks() {
       </div>
       <div>
         <h1>Black Swan <span>Vision</span></h1>
-        <p> Black Swan brings product analytics to web3. With wide net of capabilities, we use behavioral analytics to build unmatched digital experiences that enable you to measure, iterate, and scale your projects with a data-driven approach. </p>
+        <p> Black Swan Research delivers best-in-class research and intelligence to leverage the utility of deep and emerging technologies. We facilitate informed development of the digital economy </p>
       </div>
     </div>
   )

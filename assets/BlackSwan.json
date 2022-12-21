@@ -1,53 +1,61 @@
 [
   {
-    "title": "Blockchain Technology A-Z",
-    "info": "Leverage different blockchain technology to create enterprise solutions that align with your mission.",
+    "title": "Protocol & Tokenomics Architecture",
+    "info": "Incentivize users to adopt and utilize your project and help your project and its ecosystem grow.",
     "image": "https://drive.google.com/file/d/1bvicGmRYeMcVCB1O2YS13E6RNWzVp5b7/view?usp=share_link"
   },
   {
-    "title": "Our Tech Ecosystems Approved by Current SEC & Government Regulation ",
-    "info": "Full compliance across all projects is a point of emphasis as more and more regulatory enforcement enters the industry.",
+    "title": "Whitepaper Development",
+    "info": "Gain credibility with your audience with professional academic writing, precise language, and thorough whitepaper reviews and audits from the initial draft to a published document.",
     "image": "../assets/Images/S1.svg"
   },
   {
-    "title": "Cap Table Management of Securities & Equities ",
-    "info": "Issuing equity as a form of incentive may be tricky, not with our help.",
+    "title": "Smart Contract Development ",
+    "info": "Whether you are in need of a smart contract or have deployed one already, our team will optimize for security, gas cost, functionality, and scalability.",
     "image": "../assets/Images/S1.svg"
   },
   {
-    "title": "Tokenomics Architecture",
-    "info": "Persuade investors and or users to adopt it and help the ecosystem built around the currency to grow. ",
+    "title": "dApp Development",
+    "info": "So your users can interact with your business’ decentralized application. ",
     "image": "../assets/Images/S1.svg"
   },
   {
-    "title": "Smart Contract Development and Institutional Deployment ",
-    "info": "Whether you are in need of a smart contract or have deployed one already our security experts will make sure a BDL security standard is achieved.",
+    "title": "Market and Economic Consulting and Research",
+    "info": "Direct access to the BSR team with targeted, relevant business intelligence from our specialists. Get the critical insights and information that your business needs.",
     "image": "../assets/Images/S1.svg"
   },
   {
-    "title": "App Development and Wallet Integration",
-    "info": "So your business can be used to interact with any decentralized application.",
+    "title": "Real World Asset Tokenization and On-Chain Bridge",
+    "info": "Our technologies transform the private and public equity market and eliminate inherent market inefficiencies. Bring transparency, liquidity, and security to your asset.",
     "image": "../assets/Images/S1.svg"
   },
   {
-    "title": "Asset Tokenization ",
-    "info": "Enables the purchase, sale and exchange of digital assets on the distributed ledger. ",
+    "title": "iOS/Android App Development",
+    "info": "Build a smartphone application with blockchain technology directly integrated",
     "image": "../assets/Images/S1.svg"
   },
   {
-    "title": "Algorithmic Trading Bots",
-    "info": "Carefully calibrated, safe and reliable trading bots.",
+    "title": "Project Management",
+    "info": "Connect with the right partners and ecosystems. Ensure that your project delivers the highest quality experience.",
     "image": "../assets/Images/S1.svg"
   },
   {
-    "title": "Cyber Security ",
-    "info": "Bugs on open source code are bound to happen, protect yourself before being exposed. ",
+    "title": "Quantitative Algorithmic Trading Strategies",
+    "info": "Capitalize on market inefficiencies, illiquidity, and business intelligence with automated real time trading, market making, and quantitative strategies.",
     "image": "../assets/Images/S1.svg"
   },
   {
-    "title": "On-Chain Analytics ",
-    "info": "On-chain metrics turn blockchain-based transaction data into actionable crypto market insights. ",
+    "title": "Real World Asset Tokenization and On-Chain Bridge",
+    "info": "Bridge real-world assets onto the blockchain utilizing our complete stack technology and services platform that is fully SEC-compliant. Integrates blockchain and Web3 technology, allowing any assets or securities to join the crypto revolution.",
     "image": "../assets/Images/S1.svg"
+  },
+  {
+    "title": "Citizen Protocol",
+    "info": "A novel iteration of a decentralized autonomous organization and protocol, offering users a venue to generate highly-efficient stablecoin liquidity against a basket of digital and real-world assets."
+  },
+  {
+    "title": "Governance and Corporate Management",
+    "info": "Securely manage critical business decisions in private, custom environments with our unique governance solution. Automate and optimize the stratification of power between managing members and decision-making personnel."
   },
   {
     "title": "",

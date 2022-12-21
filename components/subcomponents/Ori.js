@@ -8,25 +8,44 @@ function Ori() {
   return (
     <div className={styles.minis}>
       <div className={styles.minisRight}>
-      <div>
-        <ul>
-          <li>Architect | Orchestrate | Develop (GP -`{'>'}` LPs)</li>
-          <li>Web3 Campaign 'Architecture'</li>
-          <li>Web3 'Ownership Economy' Branding (Cap Table)</li>
-          <li>Rewards | Airdrops | Incentive Structures</li>
-          <li>Forecasting | Modeling | Customer Behavior</li>
-          <li>CLTV Optimization</li>
-          <li>Funnels | A/B Testing | Upsells</li>
-        </ul>
-        <button>Explore ➢</button>
+        <div>
+          <ul>
+            <li>Campaign Design</li>
+            <li>Web3 Campaign Architecture</li>
+            <li>Monetization Strategy</li>
+            <li>Branding</li>
+            <li>Social Media Management</li>
+            <li>Community Management</li>
+            <li>Influencer Outreach and Management</li>
+            <li>Content Creation</li>
+            <li>Digital Memberships and Collectibles</li>
+          </ul>
+          <button>Explore ➢</button>
+        </div>
       </div>
-      <div>
-          <Image height={250} width={250} src={monetize}></Image>
+      <div className={styles.minisLeft}>
+        <div>
+          <Image height={200} width={200} src={monetize}></Image>
+        </div>
+        <div>
+          <ul>
+            <li>Airdrops</li>
+            <li>Email Marketing</li>
+            <li>Search Engine Optimization (SEO)</li>
+            <li>Website Design and Development</li>
+            <li>Landing Page Design and Development</li>
+            <li>Customer Behavior Analysis</li>
+            <li>Financial Modelling & Forecasting</li>
+            <li>CLTV Optimization</li>
+            <li>Incentive Structures</li>
+            <li>A/B Testing</li>
+          </ul>
+          <button>Explore ➢</button>
         </div>
       </div>
       <div>
         <h1>Origins <span>Vision</span></h1>
-        <p> Origins brings product analytics to web3. With wide net of capabilities, we use behavioral analytics to build unmatched digital experiences that enable you to measure, iterate, and scale your projects with a data-driven approach. </p>
+        <p> Origins architects and executes strategy for growth marketing campaigns. Leveraging our extensive matrix of internal and key strategic partners, we implement marketing strategies and carry out highly scalable, precise projects with strategic workflows through a targeted network of influencers, creators, and investors.</p>
       </div>
     </div>
   )
