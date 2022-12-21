@@ -22,11 +22,11 @@ function Home() {
   return (
     <div className={styles.main}>
       <div className={styles.hero}>
-        <p>
-          HELPING WEB3 COMPANIES SCALE BY BRINGING DATA
-          DRIVEN DECISIONS AND CREATIVITY TOGETHER FOR
-          UNMATCHED DESIGN AND DIGITAL EXPERIENCES
-        </p>
+        <h1>
+          HELPING <span className={styles.heroSpan}> WEB3 COMPANIES </span>  SCALE BY BRINGING DATA</h1>
+        <h1>  DRIVEN DECISIONS AND CREATIVITY TOGETHER FOR </h1>
+        <h1>  <span className={styles.heroSpan}>UNMATCHED DESIGN AND DIGITAL EXPERIENCES </span> 
+        </h1>
         <p>
           Brand Intelligence & Solutions For the Web3 Economy
         </p>
@@ -157,7 +157,7 @@ function Home() {
           <Image height={450} width={200}></Image>
         </div>
         <div className={styles.winningContent}>
-          <h5 className={styles.rainbowText}>Four companies, an array of experience</h5>
+          <h2 className={styles.rainbowText}>Four companies, an array of experience</h2>
           <p>These disciplines combine to build strategies for and operationalize high impact growth initiatives focused on maximizing your companies profit.</p>
           <button>View All</button>
         </div>

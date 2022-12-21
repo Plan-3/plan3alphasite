@@ -77,6 +77,24 @@
   margin-bottom: 1rem;
   padding: 1rem;
   border-bottom: 2px solid #4d4d4d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1{
+  margin: 0;
+  padding: .25rem;
+}
+
+.heroSpan{
+  background: rgb(7,42,108);
+  background: linear-gradient(90deg, rgba(32,93,208,1) 0%, rgba(95,173,251,1) 100%); 
+  padding: .25rem .5rem;
+  border-radius: .5rem;
+  text-shadow: 0 0 5px black;
+  box-shadow: 0 0 25px #005EFF;
 }
 
 .iconContainer{
@@ -324,7 +342,6 @@
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
-  font-size: 1rem;
 }
 
 @media screen and (max-width: 600px) {

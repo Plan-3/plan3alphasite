@@ -15,6 +15,7 @@ import icon7 from '../assets/Images/7.svg'
 import icon8 from '../assets/Images/8.svg'
 import icon9 from '../assets/Images/9.svg'
 import icon10 from '../assets/Images/10.svg'
+import robo from '../assets/Images/robothand.svg'
 import quoteData from '../assets/Quotes.json'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import ArrowBackIos from '@mui/icons-material/ArrowBackIos'
@@ -24,6 +25,7 @@ import ArrowForwardIos from '@mui/icons-material/ArrowForwardIos'
 
 function Blackswan() {
   const [i, setI] = useState(0)
+  const [toolTip, setToolTip] = useState({ raise: true, invest: false, ats: false })
   let icon = [
     icon1,
     icon2,
@@ -37,7 +39,12 @@ function Blackswan() {
     icon10
   ]
   // useEffect(() => {
-  //   let time = setInterval()
+  //   let time = setInterval(() => {
+  //     setI((i) => {
+  //     let newIndex = i + 1
+  //     return checkNumber(newIndex)
+  //   })
+  //   }, 8000)
   // }, [])
   const checkNumber = (number) => {
     if (number >= quoteData.length) {
@@ -67,7 +74,7 @@ function Blackswan() {
     <div className={bkstyles.bkmain}>
       <Nav />
       <div className={bkstyles.hero}>
-        <Image height={125} width={800}></Image>
+        <Image className={bkstyles.image} height={125} width={800}></Image>
         <p>
           We make it simple for clients to abandon the outdated model of
         </p>
@@ -122,12 +129,12 @@ function Blackswan() {
             <p>Explore tailor-cut products and services for your business</p>
           </div>
           <div>
-            <Image height={200} width={450}></Image>
+            <Image className={bkstyles.image} height={200} width={450}></Image>
           </div>
         </div>
         <div className={bkstyles.containerWeb3}>
           <div>
-            <Image height={200} width={450}></Image>
+            <Image className={bkstyles.image} height={200} width={450}></Image>
           </div>
           <div>
             <h1>Untapped Possibilities</h1>
@@ -144,6 +151,55 @@ function Blackswan() {
           <button onClick={() => prevRank()}><ArrowBackIos /></button>
           <button onClick={() => nextRank()}><ArrowForwardIos /></button>
           <button>Meet the Board</button>
+        </div>
+      </div>
+      <div className={bkstyles.safety}>
+        <div className={bkstyles.safetyApproach}>
+          <div>
+            <button disabled={true}>Don't put your users at risk.</button>
+            <h1>A safety first approach</h1>
+            <p>Security flaws, inefficiencies, and bugs are very expensive when you deploy a Smart Contract. Monetary and emotional damage not only to you, but your users as well.</p>
+          </div>
+          <div>
+            <Image src={robo} className={bkstyles.image} height={300} width={400}></Image>
+          </div>
+        </div>
+        <div className={bkstyles.safetyWhy}>
+          <div>
+            <h1>Why Liquidian and Prism</h1>
+            <h2 onClick={() => setToolTip({ raise: !toolTip.raise })}>RAISE WEB3</h2>
+            {toolTip.raise ?
+              <div className={bkstyles.safetyTooltip}>
+                <p>Asset owners of all types can raise decentralized funding, allowing the opportunity to generate passive revenue and access to liquidity.</p>
+                <button>Book a Demo</button>
+              </div> : ''
+            }
+            <h2 onClick={() => setToolTip({ invest: !toolTip.invest })}>Invest</h2>
+            {toolTip.invest ?
+              <div className={bkstyles.safetyTooltip}>
+                <p>Opportunities for investors of all types - previously only reserved for accredited investors, in the form of equity, funds, debt, and real estate.</p>
+                <button>Book a Demo</button>
+              </div> : ''
+            }
+            <h2 onClick={() => setToolTip({ ats: !toolTip.ats })}>ATS</h2>
+            {toolTip.ats ?
+              <div className={bkstyles.safetyTooltip}>
+                <p>Secondary trading for private markets. LIQUIDIAN's ATS delivers liquidity for private assets. Add your security to the premier marketplace for trading digital securities.</p>
+                <button>Book a Demo</button>
+              </div> : ''
+            }
+          </div>
+          <div>
+            <Image className={bkstyles.image} height={400} width={300}></Image>
+          </div>
+        </div>
+        <div className={bkstyles.safetyKeep}>
+            <p style={{fontSize: '5rem', fontWeight: '700', marginBottom: '0'}}>Let's keep in touch</p>
+            <p>We've dedicated ourselves to understanding and building the future in the Web3 space.</p>
+            <p>We will keeep you in the loop with all the newest stuff!</p>
+        <div className={bkstyles.safetyEmail}>
+          <input type="email" placeholder='Enter your email' /><button>Subscribe</button>
+        </div>
         </div>
       </div>
       <Footer />

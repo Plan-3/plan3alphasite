@@ -30,9 +30,9 @@ function Nav() {
               <li><a href="/">Home</a></li>
               <li style={{ display: 'flex' }}>
                 <a style={{ marginRight: '.7em' }} href="/Blackswan">Blackswan</a>
-                <a style={{ marginRight: '.7em' }} href="">Lionshare Media</a>
-                <a style={{ marginRight: '.7em' }} href="">Origins</a>
-                <a href="">EcoCitizen</a>
+                <a style={{ marginRight: '.7em' }} href="/Lionshare">Lionshare Media</a>
+                <a style={{ marginRight: '.7em' }} href="/Origins">Origins</a>
+                <a href="/Eco">EcoCitizen</a>
                 {/* <select name="dropdownNav" id="dropdownNav">
             <option value="BlackSwan" default={true}>Blackswan</option>
             <option value="Lionshare">Lionshare Media</option>
@@ -40,8 +40,8 @@ function Nav() {
             <option value="Origins">Origins</option>
           </select> */}
               </li>
-              <li><a href="">EcoSystem</a></li>
-              <li><a href="">Team</a></li>
+              <li><a href="/Ecosystem">EcoSystem</a></li>
+              <li><a href="/Team">Team</a></li>
             </ul>
           </div>
           :
@@ -62,9 +62,9 @@ function Nav() {
                 <button >Solutions</button>
                 <div className={styles.dropdownContent}>
                   <a href="/Blackswan">Blackswan</a>
-                  <a href="">Lionshare Media</a>
-                  <a href="">Origins</a>
-                  <a href="">EcoCitizen</a>
+                  <a href="/Lionshare">Lionshare Media</a>
+                  <a href="/Origins">Origins</a>
+                  <a href="/Eco">EcoCitizen</a>
                 </div>
               </div>
               {/* <select name="dropdownNav" id="dropdownNav">
@@ -74,8 +74,8 @@ function Nav() {
             <option value="Origins">Origins</option>
           </select> */}
             </li>
-            <li><a href="">EcoSystem</a></li>
-            <li><a href="">Team</a></li>
+            <li><a href="/Ecosystem">EcoSystem</a></li>
+            <li><a href="/Team">Team</a></li>
           </ul>
         </div>
         <div className={styles.navBtn}>

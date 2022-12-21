@@ -3,23 +3,8 @@ import styles from '../styles/Home.module.css'
 import ArrowCircleUp from '@mui/icons-material/ArrowCircleUp'
 
 function Footer() {
-  const [scrolled, setScrolled] = useState(0)
-  useEffect(() => {
-    document.addEventListener('scroll', () => {
-      setScrolled(document.documentElement.scrollTop)
-    })
-
-  }, [scrolled])
-
-  const scrollUp = () => {
-    document.body.scrollTop = 0
-    document.documentElement.scrollTop = 0
-  }
   return (
     <div>
-      <div className={styles.upbtn}>
-        {(scrolled > 200) ? <button onClick={() => scrollUp()}><ArrowCircleUp /></button> : ''}
-      </div>
       <footer className={styles.footer}>
         <div className={styles.p3f}>
           <p>Plan_3</p>

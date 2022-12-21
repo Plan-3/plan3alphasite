@@ -159,17 +159,19 @@ if needed add back to index main div
     bottom: 5%;
   }
 }
-
-@media screen and (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+@media screen and (max-width: 810px) {
   .footer{
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
   }
   .nav{
     display: none;

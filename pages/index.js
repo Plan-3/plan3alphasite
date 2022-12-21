@@ -3,11 +3,25 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Main from '../components/Main.js'
-import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
-import Nav from '../components/Nav'
+import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp'
+import CloseIcon from '@mui/icons-material/Close'
+import MenuIcon from '@mui/icons-material/Menu'
 import Footer from '../components/Footer'
 
 export default function Home() {
+  const [menu, setMenu] = useState({ nav: false, menu: false })
+  const [scrolled, setScrolled] = useState(0)
+  useEffect(() => {
+    document.addEventListener('scroll', () => {
+      setScrolled(document.documentElement.scrollTop)
+    })
+
+  }, [scrolled])
+
+  const scrollUp = () => {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -23,6 +37,9 @@ export default function Home() {
       <main>
         <Main />
       </main>
+      <div className={styles.upbtn}>
+        {(scrolled > 200) ? <button onClick={() => scrollUp()}><ArrowCircleUpIcon /></button> : ''}
+      </div>
       <Footer />
     </div>
   )

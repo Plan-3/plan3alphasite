@@ -1,10 +1,14 @@
 .bkmain{
   background-color: black;
+  /* background: rgb(207,1,45);
+  background: linear-gradient(155deg, rgba(207,1,45,1) 0%, rgba(0,0,0,1) 31%, rgba(69,0,15,1) 79%, rgba(207,1,45,1) 100%);  */
 }
+
 .customWeb3{
   width: 100%;
-  background: linear-gradient(339deg, rgba(168,241,254,1) 0%, rgba(149,225,254,1) 3%, rgba(39,130,252,1) 18%, rgba(25,84,163,1) 29%, rgba(13,45,87,1) 50%, rgba(0,0,0,1) 100%); 
+  background: linear-gradient(90deg, #660000 0%, #300C0C 100%); 
 }
+
 .containerWeb3{
   display: flex;
   justify-content: space-evenly;
@@ -28,9 +32,11 @@
 .focusHeader{
   font-size: 1rem;
   font-weight: 800;
+  color: #CF012D;
 }
 .focusText{
-  font-weight: 300;
+  font-weight: 100;
+  font-size: .9rem;
 }
 .hero{
   display: flex;
@@ -53,11 +59,16 @@
   margin: 1rem;
 }
 .mainFocus{
-  margin: 2rem 0;
+  margin:0;
   background-color: black;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+.mainFocusTitle{
+  background-color: black;
+  color: #CF012D;
+  padding: 2rem;
 }
 .quotes{
   position: relative;
@@ -65,13 +76,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #CF302D;
   z-index: 1;
 }
 .quote{
-  color: black;
+  color: white;
   font-size: 3rem;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid white;
   width: 50%;
   animation-name: slide;
   animation-duration: 24s;
@@ -81,15 +92,17 @@
   margin: 0;
 }
 .quoteNav{
+  width: 80%;
   display: flex;
-  color: black;
   justify-content: space-between;
   align-items: center;
   margin: 2rem;
 }
-.quoteNav button, .quoteNav svg{
-  font-size: 1.4rem;
+.quoteNav button{
+  margin: 1rem;
+  font-size: 1.2rem;
   font-weight: 300;
+  color: #CF012D;
 }
 .quoteNav button:hover{
   background-color: transparent;
@@ -106,14 +119,21 @@
   display: flex;
   justify-content: space-between;
   margin: 2rem;
-  border: 3px solid white;
+  border: 3px solid #CF012D;
   border-radius: 2rem;
   padding: 1rem;
   width: 50%;
+  font-weight: 150;
+}
+.safetyApproach h1{
+  color: #CF012D;
 }
 .safetyApproach button{
-  background-color: #4d4d4d;
+  background-color: #CF012D;
   color: white;
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 4rem;
 }
 .safetyEmail{
   display: flex;
@@ -121,27 +141,60 @@
   margin: 4rem .7rem;
 }
 .safetyEmail input{
+  color: #CF012D;
+  background-color: white;
   padding: 1rem;
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
   width: 80%;
 }
 .safetyEmail button{
+  background-color: #CF012D;
+  color: white;
   width: 20%;
   padding: 1rem;
 }
 .safetyKeep{
   background: rgb(170,170,170);
-  background: linear-gradient(90deg, rgb(106, 106, 106) 0%, rgb(56, 56, 56) 100%); 
+  background: linear-gradient(90deg, #660000 0%, #300C0C 100%); 
   text-align: center;
   width: 75%;
   border: 3px solid white;
   border-radius: 2rem;
 }
+.safetyMarket{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+.safetyMarket h1{
+  color: #cf012d;
+}
+.safetyMarketRow{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.safetyMarketContent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  margin: 0 .4rem 1rem .4rem;
+  background-color: #2D2D2D;
+  width: 40%;
+}
+
 .safetyWhy{
   display: flex;
   justify-content: space-between;
   width: 50%;
+}
+.safetyWhy h2{
+  font-weight: 200;
+
 }
 .safetyWhy h2:hover{
   cursor: pointer;
@@ -166,7 +219,7 @@
   -3rem 3rem 5px #1d1d1d;
   justify-content: space-between;
   align-items: center;
-  border:2px solid #7f7f7f;
+  border:2px solid #CF012D;
   margin: 2rem;
 }
 .solutionsChild{
