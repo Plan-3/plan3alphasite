@@ -6,6 +6,7 @@ import Main from '../components/Main.js'
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp'
 import CloseIcon from '@mui/icons-material/Close'
 import MenuIcon from '@mui/icons-material/Menu'
+import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
 export default function Home() {
