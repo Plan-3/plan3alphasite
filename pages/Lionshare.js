@@ -74,7 +74,7 @@ function Lionshare() {
     <div className={lmstyles.bkmain}>
       <Nav />
       <div className={lmstyles.hero}>
-        <Image className={lmstyles.image} height={125} width={800}></Image>
+        <div className={lmstyles.heroLogo}></div>
         <p>
           Explore the deep treasure of data efficiency with the right expertise
         </p>
@@ -151,7 +151,7 @@ function Lionshare() {
             <button onClick={() => nextRank()}><ArrowForwardIos /></button>
           </div>
           <div>
-            <button>Meet the Board</button>
+            <button>Meet the Team</button>
           </div>
         </div>
       </div>

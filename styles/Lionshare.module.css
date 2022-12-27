@@ -52,6 +52,14 @@
   padding: 1rem 2rem;
   margin: 1rem;
 }
+.heroLogo{
+  background: url('../assets/Images/LionshareLogo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 150/25;
+  background-color: #845F01;
+}
 .mainFocus{
   margin:0;
   background-color: black;
@@ -99,7 +107,6 @@
   color: #C89D2E;
 }
 .quoteNav button:hover{
-  background-color: transparent;
   transform: scale(1.1);
 }
 .safety{

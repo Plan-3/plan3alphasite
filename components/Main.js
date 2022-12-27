@@ -203,7 +203,7 @@ function Home() {
         </div>
       </div>
       <div>
-        {/* <Board /> */}
+        <Board />
       </div>
       <div className={styles.mainFooter}>
         <h1>The New Standard in</h1>

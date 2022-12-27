@@ -16,6 +16,7 @@ import icon8 from '../assets/Images/8.svg'
 import icon9 from '../assets/Images/9.svg'
 import icon10 from '../assets/Images/10.svg'
 import robo from '../assets/Images/robothand.svg'
+import bkslogo from '../assets/Images/blackswan.svg'
 import quoteData from '../assets/Quotes.json'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import ArrowBackIos from '@mui/icons-material/ArrowBackIos'
@@ -74,7 +75,7 @@ function Blackswan() {
     <div className={bkstyles.bkmain}>
       <Nav />
       <div className={bkstyles.hero}>
-        <Image className={bkstyles.image} height={125} width={800}></Image>
+        <div className={bkstyles.heroLogo}></div>
         <p>
           Make it simple. We deliver high quality research and intelligence by leveraging the utility of deep and emerging technologies
         </p>
@@ -82,7 +83,7 @@ function Blackswan() {
           Our applied research connects discoveries to a practical and highly-strategic end;
         </p>
         <p>
-          commercialization is focused on delivering value and end results.Ï
+          commercialization is focused on delivering value and end results.
         </p>
         <div className={bkstyles.herobtn}>
           <button>Speak To An Expert</button>

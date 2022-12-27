@@ -8,7 +8,7 @@
 .board button {
   background-color: transparent;
   border: none;
-  color: black;
+  color: white;
 }
 
 
@@ -61,6 +61,7 @@
   text-align: center;
   padding: 1rem;
   border-radius: 2em;
+  width: 30%;
 }
 
 .eachBoard button {
