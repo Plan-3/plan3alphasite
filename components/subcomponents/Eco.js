@@ -20,7 +20,7 @@ function Eco() {
             <li>Transparent Credit Burn On-Chain</li>
             <li>Blockchain Integration</li>
           </ul>
-          <button>Explore ➢</button>
+          <button><a href="/Eco">Explore ➢</a> </button>
         </div>
         <div>
           <Image height={200} width={200} src={collect}></Image>
@@ -39,7 +39,7 @@ function Eco() {
             <li>Supply / Demand Thesis</li>
             <li>Modeling</li>
           </ul>
-          <button>Explore ➢</button>
+          <button><a href="/Eco">Explore ➢</a> </button>
         </div>
       </div>
       <div>

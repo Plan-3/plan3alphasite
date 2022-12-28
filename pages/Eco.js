@@ -16,6 +16,7 @@ import icon8 from '../assets/Images/8.svg'
 import icon9 from '../assets/Images/9.svg'
 import icon10 from '../assets/Images/10.svg'
 import robo from '../assets/Images/robothand.svg'
+import ecologo from '../assets/Images/4.png'
 import quoteData from '../assets/Quotes.json'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import ArrowBackIos from '@mui/icons-material/ArrowBackIos'
@@ -74,7 +75,7 @@ function Eco() {
     <div className={ecostyles.bkmain}>
       <Nav />
       <div className={ecostyles.hero}>
-        <Image className={ecostyles.image} height={125} width={800}></Image>
+        <Image className={ecostyles.image} height={125} width={800} src={ecologo}></Image>
         <p>
           We have a heavy emphasis on ways to leverage blockchain technology to create 
         </p>
@@ -91,17 +92,17 @@ function Eco() {
       </div>
       <div className={ecostyles.solutions}>
         <div className={ecostyles.solutionsChild}>
-          icon
+          <Image src={icon10} height={100} width={150}></Image>
           <p className={ecostyles.solutionsRainbow}>Avoid ESG blind spots</p>
           <p>With regulations happening frequently, staying on top of changes becomes difficult.</p>
         </div>
         <div className={ecostyles.solutionsChild}>
-          icon
+          <Image src={icon2} height={100} width={150}></Image>
           <p className={ecostyles.solutionsRainbow}>Access New Investors </p>
           <p>ETF investors looking to manage their ESG risks. </p>
         </div>
         <div className={ecostyles.solutionsChild}>
-          icon
+          <Image src={icon1} height={100} width={150}></Image>
           <p className={ecostyles.solutionsRainbow}>A Better Climate </p>
           <p>Global warming is no jokes, reducing crypto emissions is one step closer to a greener world.</p>
         </div>

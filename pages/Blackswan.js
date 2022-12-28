@@ -15,8 +15,10 @@ import icon7 from '../assets/Images/7.svg'
 import icon8 from '../assets/Images/8.svg'
 import icon9 from '../assets/Images/9.svg'
 import icon10 from '../assets/Images/10.svg'
+import icon11 from '../assets/Images/11.svg'
+import icon12 from '../assets/Images/12.svg'
 import robo from '../assets/Images/robothand.svg'
-import bkslogo from '../assets/Images/blackswan.svg'
+import bkslogo from '../assets/Images/swan.png'
 import quoteData from '../assets/Quotes.json'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import ArrowBackIos from '@mui/icons-material/ArrowBackIos'
@@ -37,7 +39,9 @@ function Blackswan() {
     icon7,
     icon8,
     icon9,
-    icon10
+    icon10,
+    icon11,
+    icon12
   ]
   // useEffect(() => {
   //   let time = setInterval(() => {
@@ -75,7 +79,7 @@ function Blackswan() {
     <div className={bkstyles.bkmain}>
       <Nav />
       <div className={bkstyles.hero}>
-        <div className={bkstyles.heroLogo}></div>
+        <div className={bkstyles.heroLogo}><Image src={bkslogo}></Image></div>
         <p>
           Make it simple. We deliver high quality research and intelligence by leveraging the utility of deep and emerging technologies
         </p>
@@ -92,27 +96,29 @@ function Blackswan() {
       </div>
       <div className={bkstyles.solutions}>
         <div className={bkstyles.solutionsChild}>
-          icon
+          <Image src={icon10} height={100} width={150}></Image>
           <p className={bkstyles.solutionsRainbow}>Project Discovery</p>
           <p>What is most critical to your business objectives? We will assess your firm to determine which blockchain use cases are most appropriate for it.</p>
         </div>
         <div className={bkstyles.solutionsChild}>
-          icon
+          <Image src={icon2} height={100} width={150}></Image>
           <p className={bkstyles.solutionsRainbow}>Strategy and Consulting</p>
           <p>Different firms require different intelligence. We help strategize to your unique needs and deliver targeted business intelligence</p>
         </div>
         <div className={bkstyles.solutionsChild}>
-          icon
+          <Image src={icon1} height={100} width={150}></Image>
           <p className={bkstyles.solutionsRainbow}>Blockchain Technology Integration</p>
           <p>Capitalize on the tools and resources that can accelerate your business. Our experts will integrate and develop the systems to help achieve your goals</p>
         </div>
       </div>
+      <h1>Blackswan</h1>
+      <h1>Main Areas of Focus</h1>
       <div className={bkstyles.mainFocus}>
         {BksData.map((data, index) => {
           return (
             <div className={bkstyles.focusItem} key={index}>
               <div className={bkstyles.focusHeader}>
-                {data.image ? <Image height={50} width={50} src={icon[index]} /> : ''}
+                {data.image ? <Image height={75} width={75} src={icon[index]} /> : ''}
                 <p>{data.title}</p>
               </div>
               <div className={bkstyles.focusText}>

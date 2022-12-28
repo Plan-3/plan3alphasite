@@ -19,7 +19,7 @@ function Lsm() {
             <li>API Development</li>
             <li>Behavior Analysis & Prediction</li>
           </ul>
-          <button>Explore ➢</button>
+          <button><a href="/Lionshare">Explore ➢</a> </button>
         </div>
         <div>
           <Image height={200} width={200} src={monetize}></Image>
@@ -40,7 +40,7 @@ function Lsm() {
             <li>Product Analytics</li>
             <li>Performance Analysis</li>
           </ul>
-          <button>Explore ➢</button>
+          <button><a href="/Lionshare">Explore ➢</a> </button>
         </div>
 
       </div>

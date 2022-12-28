@@ -1,20 +1,28 @@
 import React, { Component, useEffect, useState } from 'react'
 import Image from 'next/image'
 import styles from '../styles/Main.module.css'
+//start importing subcomponent imports
 import Bks from './subcomponents/Bks'
 import Lsm from './subcomponents/Lsm'
 import Ori from './subcomponents/Ori'
 import Eco from './subcomponents/Eco'
 import Board from './subcomponents/Board'
-import arrows from '../assets/Images/arrows.svg'
-import web1 from '../assets/Images/M1.svg'
-import web2 from '../assets/Images/M2.svg'
-import web3 from '../assets/Images/M3.svg'
+//importing mui assets
 import DiamondIcon from '@mui/icons-material/Diamond'
 import WebIcon from '@mui/icons-material/Web'
 import SecurityIcon from '@mui/icons-material/Security'
 import CheckIcon from '@mui/icons-material/Check';
-import WebAssetIcon from '@mui/icons-material/WebAsset';
+//importing created images
+import bkslogo from '../assets/Images/swan.png'
+import lsmlogo from '../assets/Images/lsmlogo.png'
+import orilogo from '../assets/Images/3.png'
+import ecologo from '../assets/Images/4.png'
+import defi from '../assets/Images/defi.png'
+import arrows from '../assets/Images/arrows.svg'
+import web1 from '../assets/Images/M1.svg'
+import web2 from '../assets/Images/M2.svg'
+import web3 from '../assets/Images/M3.svg'
+import sometext from '../assets/Images/sometext.png'
 
 function Home() {
   const [divider, setDivider] = useState({ bks: false, ori: false, lsm: false, eco: false })
@@ -34,22 +42,22 @@ function Home() {
       </div>
       <div className={styles.solutions}>
         <button id='bksbtn' onClick={() => setDivider({ bks: !divider.bks })}>
-          <Image width={175} height={25}></Image>
+          <Image width={250} height={100} src={bkslogo}></Image>
           <p>Deep Tech:</p>
           <p>Research, Development & Architecture</p>
         </button>
         <button id='oribtn' onClick={() => setDivider({ ori: !divider.ori })}>
-          <Image width={175} height={25}></Image>
+          <Image width={250} height={100} src={orilogo}></Image>
           <p>Web3 Marketing:</p>
           <p>Campaign Architecture & Management</p>
         </button>
         <button id='lsmbtn' onClick={() => setDivider({ lsm: !divider.lsm })}>
-          <Image width={175} height={25}></Image>
+          <Image width={250} height={100} src={lsmlogo}></Image>
           <p>Lionshare Media:</p>
           <p>Anaylytics: Media, Data, & Ad Platform</p>
         </button>
         <button id='ecobtn' onClick={() => setDivider({ eco: !divider.eco })}>
-          <Image width={175} height={25}></Image>
+          <Image width={250} height={100} src={ecologo}></Image>
           <p>Carbon Offset:</p>
           <p>ESG Initiatives</p>
         </button>
@@ -104,7 +112,7 @@ function Home() {
       </div>
       <div className={styles.defi}>
         <div>
-          <Image height={300} width={200} ></Image>
+          <Image height={700} width={600} src={defi}></Image>
         </div>
         <div className={styles.defiContent}>
           <div>
@@ -154,7 +162,7 @@ function Home() {
       </div>
       <div className={styles.winning}>
         <div>
-          <Image height={450} width={200}></Image>
+          <Image height={500} width={500} src={sometext}></Image>
         </div>
         <div className={styles.winningContent}>
           <h2 className={styles.rainbowText}>Four companies, an array of experience</h2>

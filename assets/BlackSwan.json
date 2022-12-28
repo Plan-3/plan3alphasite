@@ -51,18 +51,12 @@
   },
   {
     "title": "Citizen Protocol",
-    "info": "A novel iteration of a decentralized autonomous organization and protocol, offering users a venue to generate highly-efficient stablecoin liquidity against a basket of digital and real-world assets."
+    "info": "A novel iteration of a decentralized autonomous organization and protocol, offering users a venue to generate highly-efficient stablecoin liquidity against a basket of digital and real-world assets.",
+    "image": "../assets/Images/S1.svg"
   },
   {
     "title": "Governance and Corporate Management",
-    "info": "Securely manage critical business decisions in private, custom environments with our unique governance solution. Automate and optimize the stratification of power between managing members and decision-making personnel."
-  },
-  {
-    "title": "",
-    "info": ""
-  },
-  {
-    "title": "",
-    "info": ""
+    "info": "Securely manage critical business decisions in private, custom environments with our unique governance solution. Automate and optimize the stratification of power between managing members and decision-making personnel.",
+    "image": "../assets/Images/S1.svg"
   }
 ]

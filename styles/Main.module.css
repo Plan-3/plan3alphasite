@@ -71,8 +71,8 @@
 
 .hero {
   width: 100%;
-  /* background: url('../assets/Images/heroMain.svg'); */
-  aspect-ratio: 2100/300;
+  background: url('../assets/Images/world2.svg');
+  aspect-ratio: 75/15;
   background-size: cover;
   text-align: center;
   margin-bottom: 1rem;
@@ -332,7 +332,6 @@
 
 .winning {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   /* background: url('../assets/Images/winner.svg'); */
   background-size: cover;
@@ -349,16 +348,24 @@
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
+  max-width: 50%;
 }
 
 @media screen and (max-width: 600px) {
   .arrows {
     transform: rotate(90deg)
   }
+  .board{
+    display: none;
+  }
 
   .defi {
     flex-direction: column;
     text-align: center;
+  }
+
+  .defi img{
+    display: none;
   }
 
   .defiContent {
@@ -434,9 +441,17 @@
     width: 100%;
   }
 
+  .rainbowText{
+    text-align: center;
+  }
+
   .winning {
     flex-direction: column;
     margin-bottom: 1rem;
+  }
+
+  .winning img{
+    display: none;
   }
 
   .winning p {
@@ -446,6 +461,7 @@
   .winningContent {
     justify-content: center;
     align-items: center;
+    max-width: 80%;
   }
 
   .versusWeb {

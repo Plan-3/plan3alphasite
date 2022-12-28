@@ -17,7 +17,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
   text-align: left;
   width: 22%;
   margin: .5rem;
@@ -25,11 +24,11 @@
 
 .focusItem h1,
 .focusItem p {
-  width: 60%;
+  width: 70%;
 }
 
 .focusItem img {
-  border-radius: 25%;
+  border: 1px solid black;
 }
 
 .focusHeader {
@@ -42,12 +41,16 @@
 }
 
 .hero {
+  background: url('../assets/Images/bkhero2.svg');
+  background-size: cover;
+  aspect-ratio: 960/540;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
 
 .herobtn {
   display: flex;
@@ -63,13 +66,6 @@
   margin: 1rem;
 }
 
-.heroLogo{
-  background: url('../assets/Images/blackswan.svg');
-  background-size: cover;
-  aspect-ratio: 960/360;
-  width: 100%;
-  background-color: red;
-}
 
 .mainFocus {
   margin: 2rem 0;
@@ -273,7 +269,8 @@
 
 @media screen and (max-width: 600px) {
   .containerWeb3 {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    text-align: center;
   }
 
   .focusHeader {

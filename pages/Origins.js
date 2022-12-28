@@ -16,6 +16,7 @@ import icon8 from '../assets/Images/8.svg'
 import icon9 from '../assets/Images/9.svg'
 import icon10 from '../assets/Images/10.svg'
 import robo from '../assets/Images/robothand.svg'
+import orilogo from '../assets/Images/3.png'
 import quoteData from '../assets/Quotes.json'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import ArrowBackIos from '@mui/icons-material/ArrowBackIos'
@@ -74,7 +75,7 @@ function Lionshare() {
     <div className={oristyles.bkmain}>
       <Nav />
       <div className={oristyles.hero}>
-        <Image className={oristyles.image} height={125} width={800}></Image>
+        <Image className={oristyles.image} height={125} width={800} src={orilogo}></Image>
         <p>
           We focus on identifying the right target audience and go-to-market strategy to boost your business and cultivate meaningful relationships with consumers.
         </p>
@@ -85,17 +86,17 @@ function Lionshare() {
       </div>
       <div className={oristyles.solutions}>
         <div className={oristyles.solutionsChild}>
-          icon
+          <Image src={icon10} height={100} width={150}></Image>
           <p className={oristyles.solutionsRainbow}>Market Penetration </p>
           <p>Supercharging growth through targeted community building and campaigns. </p>
         </div>
         <div className={oristyles.solutionsChild}>
-          icon
+          <Image src={icon2} height={100} width={150}></Image>
           <p className={oristyles.solutionsRainbow}>Community & Relevance</p>
           <p>Unlock hidden stories by tracing activity using proprietary analytics tools.</p>
         </div>
         <div className={oristyles.solutionsChild}>
-          icon
+          <Image src={icon1} height={100} width={150}></Image>
           <p className={oristyles.solutionsRainbow}>Developer Marketing</p>
           <p>Helping web3 orgs grow, engage and retain a devoted developer community.</p>
         </div>

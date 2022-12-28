@@ -20,7 +20,7 @@ function Ori() {
             <li>Content Creation</li>
             <li>Digital Memberships and Collectibles</li>
           </ul>
-          <button>Explore ➢</button>
+          <button><a href="/Origins"> Explore ➢</a></button>
         </div>
       </div>
       <div className={styles.minisLeft}>
@@ -40,7 +40,7 @@ function Ori() {
             <li>Incentive Structures</li>
             <li>A/B Testing</li>
           </ul>
-          <button>Explore ➢</button>
+          <button><a href="/Origins"> Explore ➢</a></button>
         </div>
       </div>
       <div>

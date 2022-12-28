@@ -19,7 +19,7 @@ function Bks() {
             <li>dApp Development</li>
             <li>Algorithmic Trading</li>
           </ul>
-          <button>Explore ➢</button>
+          <button><a href="/Blackswan">Explore ➢ </a> </button>
         </div>
         <div>
           <Image height={200} width={200} src={collect}></Image>
@@ -39,7 +39,7 @@ function Bks() {
             <li>Cybersecurity</li>
             <li>On-Chain Analytics</li>
           </ul>
-          <button>Explore ➢</button>
+          <button><a href="/Blackswan">Explore ➢ </a></button>
         </div>
       </div>
       <div>

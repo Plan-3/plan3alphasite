@@ -16,6 +16,7 @@ import icon8 from '../assets/Images/8.svg'
 import icon9 from '../assets/Images/9.svg'
 import icon10 from '../assets/Images/10.svg'
 import robo from '../assets/Images/robothand.svg'
+import lsmlogo from '../assets/Images/lsmlogo.png'
 import quoteData from '../assets/Quotes.json'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import ArrowBackIos from '@mui/icons-material/ArrowBackIos'
@@ -74,7 +75,7 @@ function Lionshare() {
     <div className={lmstyles.bkmain}>
       <Nav />
       <div className={lmstyles.hero}>
-        <div className={lmstyles.heroLogo}></div>
+        <div className={lmstyles.heroLogo}><Image src={lsmlogo}></Image></div>
         <p>
           Explore the deep treasure of data efficiency with the right expertise
         </p>
@@ -85,17 +86,17 @@ function Lionshare() {
       </div>
       <div className={lmstyles.solutions}>
         <div className={lmstyles.solutionsChild}>
-          icon
+          <Image src={icon10} height={100} width={150}></Image>
           <p className={lmstyles.solutionsRainbow}>Proprietary Tools</p>
           <p>A long range of assets that enable us to get the most out of every situation.</p>
         </div>
         <div className={lmstyles.solutionsChild}>
-          icon
+          <Image src={icon2} height={100} width={150}></Image>
           <p className={lmstyles.solutionsRainbow}>Revealing The Unknown</p>
           <p>Unlock hidden stories by tracing activity using proprietary analytics tools.</p>
         </div>
         <div className={lmstyles.solutionsChild}>
-          icon
+          <Image src={icon1} height={100} width={150}></Image>
           <p className={lmstyles.solutionsRainbow}>We have comprehensive expertise and experience with data </p>
           <p>Historic data and models give us an unbeatable edge.</p>
         </div>
