@@ -6,6 +6,7 @@ import MenuIcon from '@mui/icons-material/Menu'
 
 function Nav() {
   const [menu, setMenu] = useState({ nav: false, menu: false })
+  const [tooltip, setTooltip] = useState(false)
 
   const [scrolled, setScrolled] = useState(0)
   useEffect(() => {
@@ -57,8 +58,8 @@ function Nav() {
         <div>
           <ul>
             <li><a href="/">Home</a></li>
-            <li>
-              <div className={styles.dropdown}>
+            <li className={styles.hoverDropdown} onClick={() => setTooltip(!tooltip)}>
+              {/* <div className={styles.dropdown}>
                 <button >Solutions</button>
                 <div className={styles.dropdownContent}>
                   <a href="/Blackswan">Blackswan</a>
@@ -66,13 +67,25 @@ function Nav() {
                   <a href="/Origins">Origins</a>
                   <a href="/Eco">EcoCitizen</a>
                 </div>
-              </div>
+              </div> */}
               {/* <select name="dropdownNav" id="dropdownNav">
-            <option value="BlackSwan" default={true}>Blackswan</option>
+              <option value="solutions" default={true}>Solutions</option>
+            <option value="BlackSwan">Blackswan</option>
             <option value="Lionshare">Lionshare Media</option>
             <option value="Eco">EcoCitizen</option>
             <option value="Origins">Origins</option>
           </select> */}
+          Solutions
+            {tooltip ? 
+              <div className={styles.dropdownContent}>
+                  <a href="/Blackswan">Blackswan</a>
+                  <a href="/Lionshare">Lionshare Media</a>
+                  <a href="/Origins">Origins</a>
+                  <a href="/Eco">EcoCitizen</a>
+              </div>
+              :
+              ''
+            }
             </li>
             <li><a href="/Ecosystem">EcoSystem</a></li>
             <li><a href="/Team">Team</a></li>

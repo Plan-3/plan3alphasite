@@ -41,7 +41,7 @@
 }
 
 .hero {
-  background: url('../assets/Images/bkhero2.svg');
+  background: url('../assets/Images/Heroes/bkhero2.svg');
   background-size: cover;
   aspect-ratio: 960/540;
   display: flex;

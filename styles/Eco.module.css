@@ -38,6 +38,9 @@
   font-size: .9rem;
 }
 .hero{
+  background: url('../assets/Images/Heroes/ecohero.svg');
+  aspect-ratio: 1920/1080;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -286,6 +289,7 @@
 @media screen and (max-width: 600px) {
   .containerWeb3{
     flex-direction: column-reverse;
+    text-align: center;
   }
   .focusHeader{
     display: flex;
@@ -311,15 +315,33 @@
   }
   .mainFocus{
     background: rgb(0,0,0);
-    background: linear-gradient(140deg, rgba(0,0,0,1) 0%, rgba(0,53,154,1) 84%, rgba(0,241,249,1) 100%); 
   }
   .quote{
     font-size: 1.3rem;
   }
+
+  .quoteNav{
+    display: flex;
+  }
+
   .safetyApproach{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
+  }
+  .safetyCompliance{
+    flex-direction: column;
+    text-align: center;
+  }
+  .safetyCompliance img{
+    width: 100%;
+  }
+  .safetyMarketRow{
+    flex-direction: column;
+    width: 100%;
+  }
+  .safetyMarketContent{
     width: 100%;
   }
   .safetyWhy{
@@ -329,7 +351,10 @@
     width: 100%;
   }
   .safetyTooltip{
+    text-align: center;
     width: 100%;
+    border-bottom: 2px solid white;
+    padding-bottom: 1rem;
   }
   .safetyKeep{
     width: 100%;

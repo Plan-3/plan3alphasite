@@ -2,23 +2,40 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import BksData from '../assets/BlackSwan.json'
 import bkstyles from '../styles/Blackswan.module.css'
+
+/* 
+import components 
+*/
+
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
-import Grid2 from '@mui/material/Unstable_Grid2/Grid2'
-import icon1 from '../assets/Images/1.svg'
-import icon2 from '../assets/Images/2.svg'
-import icon3 from '../assets/Images/3.svg'
-import icon4 from '../assets/Images/4.svg'
-import icon5 from '../assets/Images/5.svg'
-import icon6 from '../assets/Images/6.svg'
-import icon7 from '../assets/Images/7.svg'
-import icon8 from '../assets/Images/8.svg'
-import icon9 from '../assets/Images/9.svg'
-import icon10 from '../assets/Images/10.svg'
-import icon11 from '../assets/Images/11.svg'
-import icon12 from '../assets/Images/12.svg'
+
+/*
+import custom images made in canva
+*/
+
+import icon1 from '../assets/Images/Icons/1.svg'
+import icon2 from '../assets/Images/Icons/2.svg'
+import icon3 from '../assets/Images/Icons/3.svg'
+import icon4 from '../assets/Images/Icons/4.svg'
+import icon5 from '../assets/Images/Icons/5.svg'
+import icon6 from '../assets/Images/Icons/6.svg'
+import icon7 from '../assets/Images/Icons/7.svg'
+import icon8 from '../assets/Images/Icons/8.svg'
+import icon9 from '../assets/Images/Icons/9.svg'
+import icon10 from '../assets/Images/Icons/10.svg'
+import icon11 from '../assets/Images/Icons/11.svg'
+import icon12 from '../assets/Images/Icons/12.svg'
 import robo from '../assets/Images/robothand.svg'
-import bkslogo from '../assets/Images/swan.png'
+import bkslogo from '../assets/Images/Logos/swan.png'
+import meeting from '../assets/Images/BKSImages/web3meeting.svg'
+import servers from '../assets/Images/BKSImages/securityserver.svg'
+import liquidprism from '../assets/Images/BKSImages/liquidprism.svg'
+
+/*
+import data and mui icons
+*/
+
 import quoteData from '../assets/Quotes.json'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import ArrowBackIos from '@mui/icons-material/ArrowBackIos'
@@ -43,14 +60,14 @@ function Blackswan() {
     icon11,
     icon12
   ]
-  // useEffect(() => {
-  //   let time = setInterval(() => {
-  //     setI((i) => {
-  //     let newIndex = i + 1
-  //     return checkNumber(newIndex)
-  //   })
-  //   }, 8000)
-  // }, [])
+  useEffect(() => {
+    let time = setInterval(() => {
+      setI((i) => {
+      let newIndex = i + 1
+      return checkNumber(newIndex)
+    })
+    }, 8000)
+  }, [])
   const checkNumber = (number) => {
     if (number >= quoteData.length) {
       return 0;
@@ -136,12 +153,12 @@ function Blackswan() {
             <p>Explore custom designed products and services for your business.</p>
           </div>
           <div>
-            <Image className={bkstyles.image} height={200} width={450}></Image>
+            <Image className={bkstyles.image} height={200} width={450} src={meeting}></Image>
           </div>
         </div>
         <div className={bkstyles.containerWeb3}>
           <div>
-            <Image className={bkstyles.image} height={200} width={450}></Image>
+            <Image className={bkstyles.image} height={200} width={450} src={servers}></Image>
           </div>
           <div>
             <h1>Untapped Possibilities?</h1>
@@ -198,7 +215,7 @@ function Blackswan() {
             }
           </div>
           <div>
-            <Image className={bkstyles.image} height={400} width={300}></Image>
+            <Image className={bkstyles.image} height={400} width={300} src={liquidprism}></Image>
           </div>
         </div>
         <div className={bkstyles.safetyKeep}>

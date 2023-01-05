@@ -13,15 +13,19 @@ import WebIcon from '@mui/icons-material/Web'
 import SecurityIcon from '@mui/icons-material/Security'
 import CheckIcon from '@mui/icons-material/Check';
 //importing created images
-import bkslogo from '../assets/Images/swan.png'
-import lsmlogo from '../assets/Images/lsmlogo.png'
-import orilogo from '../assets/Images/3.png'
-import ecologo from '../assets/Images/4.png'
+import bkslogo from '../assets/Images/Logos/swan.png'
+import lsmlogo from '../assets/Images/Logos/lsmlogo.png'
+import orilogo from '../assets/Images/Logos/3.png'
+import ecologo from '../assets/Images/Logos/4.png'
 import defi from '../assets/Images/defi.png'
-import arrows from '../assets/Images/arrows.svg'
-import web1 from '../assets/Images/M1.svg'
-import web2 from '../assets/Images/M2.svg'
-import web3 from '../assets/Images/M3.svg'
+import arrows from '../assets/Images/Icons/arrows.svg'
+import web1 from '../assets/Images/Icons/M1.svg'
+import web2 from '../assets/Images/Icons/M2.svg'
+import web3 from '../assets/Images/Icons/M3.svg'
+import lightbulb from '../assets/Images/Icons/lightbulb.png'
+import blockmessage from '../assets/Images/Icons/blockmessage.png'
+import percentdown from '../assets/Images/Icons/percentdown.png'
+import co2down from '../assets/Images/Icons/co2down.png'
 import sometext from '../assets/Images/sometext.png'
 
 function Home() {
@@ -171,7 +175,7 @@ function Home() {
         </div>
       </div>
       <div className={styles.powerP3}>
-        <div>
+        <div style={{display: 'flex', flexDirection: 'column', width: '50%'}}>
           <h1>Powered by Plan3</h1>
           <p>
             We have consultants on every continent, from a diversity of backgrounds, with decades of experience in management,
@@ -181,36 +185,34 @@ function Home() {
         </div>
         <div className={styles.powerBlurContainer}>
           <div className={styles.powerBlur}>
-            <h3>Black Swan Research</h3>
+            <Image height={75} width={250} src={bkslogo}></Image>
             <p>Deep Tech: Research, Development, & Architecture</p>
-            {/* svg */}
-            <p><strong>5+</strong></p>
-            <p><strong>Living Whitepapers Developed</strong></p>
+            <Image height={150} width={150} src={lightbulb}></Image>
+            <p><strong>5+ Living Whitepapers Developed</strong></p>
           </div>
           <div className={styles.powerBlur}>
-            <h3>Origins</h3>
+            <Image height={75} width={250} src={orilogo}></Image>
             <p>web3 Marketing: Campaign Architecture & Management</p>
-            {/* svg */}
-            <p><strong>3M+</strong></p>
-            <p><strong>Sales to date</strong></p>
+            <Image height={150} width={150} src={blockmessage}></Image>
+            <p><strong>3M+ Sales to date</strong></p>
           </div>
           <div className={styles.powerBlur}>
-            <h3>Lionshare Media</h3>
+            <Image height={75} width={250} src={lsmlogo}></Image>
             <p>Analytics: Media, Data, & Ad Platform</p>
-            {/* svg */}
-            <p><strong>$2 Million</strong></p>
-            <p><strong>Saved Through Data Driven Strategies</strong></p>
+            <Image height={150} width={150} src={percentdown}></Image>
+            <p><strong>$2 Million Saved Through Data Driven Strategies</strong></p>
           </div>
           <div className={styles.powerBlur}>
-            <h3>Eco Citizen</h3>
+            <Image height={75} width={250} src={ecologo}></Image>
             <p>Carbon Offset: ESG Initiatives</p>
-            {/* svg */}
-            <p><strong>10%</strong></p>
-            <p><strong> Estimated Valuation increase for Carbon Negative Businesses</strong></p>
+            <Image height={150} width={150} src={co2down}></Image>
+            <p><strong>10% Estimated Valuation increase for Carbon Negative Businesses</strong></p>
           </div>
         </div>
       </div>
-      <div>
+      <div className={styles.boardStart}>
+      <p className={styles.rainbowText} style={{fontSize: '3rem', fontWeight: '5', textAlign: 'center'}}>THE TEAM</p>
+      <p style={{fontSize: '3rem', fontWeight: '5', textAlign: 'center'}}>Board Members</p>
         <Board />
       </div>
       <div className={styles.mainFooter}>

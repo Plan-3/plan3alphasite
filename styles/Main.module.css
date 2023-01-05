@@ -11,7 +11,6 @@
   color: white;
 }
 
-
 .defi {
   /* background: url('../assets/Images/crypto1.svg'); */
   width: 100%;
@@ -203,11 +202,23 @@
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  background: url('../assets/Images/planetary.svg');
+  background: url('../assets/Images/Heroes/planetary.svg');
   background-size: cover;
   background-repeat: no-repeat;
-  aspect-ratio: 980/800;
+  aspect-ratio: 75/35;
   width: 100%;
+}
+
+/*
+div container holding these 2 elements has inline styling
+div underneath powerP3
+flex\column\width 50%
+*/
+
+.powerP3 h1, .powerP3 p{
+  justify-content: center;
+  align-items: center;
+
 }
 
 .powerBlurContainer {
@@ -215,6 +226,7 @@
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-evenly;
+  padding: 1rem 3rem;
 }
 
 .powerBlur {
@@ -222,7 +234,7 @@
   flex-direction: column;
   background-color: rgba(36, 48, 127, 0.73);
   margin: .5rem .5rem;
-  width: 45%;
+  width: 22%;
   align-items: center;
   justify-content: space-evenly;
   border-radius: .5rem;
@@ -409,6 +421,20 @@
 
   .minis {
     width: 100%;
+  }
+
+
+  .powerBlurContainer{
+    padding: 0;
+  }
+  
+  .powerBlur{
+    width: 44%;
+    padding: 0;
+  }
+
+  .powerBlur img{
+    width: 80%;
   }
 
   .toolsStart {

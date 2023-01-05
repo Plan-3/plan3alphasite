@@ -8,24 +8,28 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.dropdownContent {
-  display: none;
-}
-
-.dropdown:hover .dropdownContent {
+.dropdownContent{
+  position: absolute;
+  bottom: -140px;
+  font-size: 1.1rem;
+  padding: 1.5rem;
+  text-decoration: underline;
   display: flex;
   flex-direction: column;
-  background-color: rgba(50, 44, 115, 1);
-  color: white;
-  text-decoration: underline black;
+  justify-content: space-around;
+  background-color: rgba(254, 254, 254, 0.766);
+  color: black;
 }
 
-.dropdownContent a:hover {
-  background-color: #4d4d4d;
-  padding: .4rem;
-  border-radius: .4em;
+
+.dropdownContent a:hover{
+  transform: scale(1.2);
+  color: #005eff;
 }
 
+.hoverDropdown{
+  cursor: pointer;
+}
 .footer {
   background-color: black;
   display: flex;

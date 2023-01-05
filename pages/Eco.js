@@ -5,18 +5,24 @@ import ecostyles from '../styles/Eco.module.css'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import Grid2 from '@mui/material/Unstable_Grid2/Grid2'
-import icon1 from '../assets/Images/1.svg'
-import icon2 from '../assets/Images/2.svg'
-import icon3 from '../assets/Images/3.svg'
-import icon4 from '../assets/Images/4.svg'
-import icon5 from '../assets/Images/5.svg'
-import icon6 from '../assets/Images/6.svg'
-import icon7 from '../assets/Images/7.svg'
-import icon8 from '../assets/Images/8.svg'
-import icon9 from '../assets/Images/9.svg'
-import icon10 from '../assets/Images/10.svg'
+import icon1 from '../assets/Images/Icons/1.svg'
+import icon2 from '../assets/Images/Icons/2.svg'
+import icon3 from '../assets/Images/Icons/3.svg'
+import icon4 from '../assets/Images/Icons/4.svg'
+import icon5 from '../assets/Images/Icons/5.svg'
+import icon6 from '../assets/Images/Icons/6.svg'
+import icon7 from '../assets/Images/Icons/7.svg'
+import icon8 from '../assets/Images/Icons/8.svg'
+import icon9 from '../assets/Images/Icons/9.svg'
+import icon10 from '../assets/Images/Icons/10.svg'
 import robo from '../assets/Images/robothand.svg'
-import ecologo from '../assets/Images/4.png'
+import ecologo from '../assets/Images/Logos/4.png'
+import coffee from '../assets/Images/EcoImages/coffeeeco.png'
+import code from '../assets/Images/EcoImages/ecocode.png'
+import location from '../assets/Images/EcoImages/ecolocation.png'
+import piechart from '../assets/Images/EcoImages/ecopie.png'
+import p3 from '../assets/Images/EcoImages/plan3eco.png'
+import threecs from '../assets/Images/EcoImages/3cs.png'
 import quoteData from '../assets/Quotes.json'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import ArrowBackIos from '@mui/icons-material/ArrowBackIos'
@@ -116,7 +122,7 @@ function Eco() {
           return (
             <div className={ecostyles.focusItem} key={index}>
               <div className={ecostyles.focusHeader}>
-                {data.image ? <Image height={50} width={50} src={icon[index]} /> : ''}
+                {data.image ? <Image height={50} width={50} src={icon[index]}/> : ''}
                 <p>{data.title}</p>
               </div>
               <div className={ecostyles.focusText}>
@@ -130,19 +136,19 @@ function Eco() {
       <div className={ecostyles.customWeb3}>
         <div className={ecostyles.containerWeb3}>
           <div>
-            <h1>Time for change</h1>
+            <h1  style={{color: '#20880f'}}>Time for change</h1>
             <p>Crypto firms will need to consider the new ESG obligations that will apply to their investors and other business partners</p>
           </div>
           <div>
-            <Image className={ecostyles.image} height={200} width={450}></Image>
+            <Image className={ecostyles.image} height={250} width={250} src={coffee}></Image>
           </div>
         </div>
         <div className={ecostyles.containerWeb3}>
           <div>
-            <Image className={ecostyles.image} height={200} width={450}></Image>
+            <Image className={ecostyles.image} height={250} width={250} src={code}></Image>
           </div>
           <div>
-            <h1>Alternative solutions </h1>
+            <h1  style={{color: '#20880f'}}>Alternative solutions </h1>
             <p>It has been well publicized that some types of cryptocurrency, generally referred to as requiring “proof of work”, use a competitive validation method known as “mining” to achieve goals, such as issuing new crypto currency, and uses a huge amount of computer processing power. </p>
           </div>
         </div>
@@ -158,7 +164,7 @@ function Eco() {
             <button onClick={() => nextRank()}><ArrowForwardIos /></button>
           </div>
           <div>
-            <button>Meet the Board</button>
+            <button><a href="/Team">Meet the Team</a> </button>
           </div>
         </div>
       </div>
@@ -170,7 +176,7 @@ function Eco() {
           <button>Get Started</button>
         </div>
         <div>
-          <Image height={250} width={250}></Image>
+          <Image height={450} width={450} src={p3}></Image>
         </div>
         </div>
         <div className={ecostyles.safetyApproach}>
@@ -192,7 +198,7 @@ function Eco() {
                 <button>Get Started</button>
               </div>
               <div>
-                <Image height={150} width={150}></Image>
+                <Image height={150} width={150} src={piechart}></Image>
               </div>
             </div>
             <div className={ecostyles.safetyMarketContent}>
@@ -201,7 +207,7 @@ function Eco() {
                 <button>Get Started</button>
               </div>
               <div>
-                <Image height={150} width={150}></Image>
+                <Image height={150} width={150} src={location}></Image>
               </div>
             </div>
           </div>
@@ -232,7 +238,7 @@ function Eco() {
             }
           </div>
           <div>
-            <Image className={ecostyles.image} height={400} width={300}></Image>
+            <Image className={ecostyles.image} height={400} width={400} src={threecs}></Image>
           </div>
         </div>
         <div className={ecostyles.safetyKeep}>
