@@ -1,11 +1,19 @@
+.blur{
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+}
+
 .board {
   display: flex;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
 }
+.boardMobile{
+  display: none;
+}
 
-.board button {
+.board button, .boardMobile button {
   background-color: transparent;
   border: none;
   color: white;
@@ -68,6 +76,38 @@
   margin: 0 1rem;
 }
 
+.footerMain {
+  background: url('../assets/Images/Heroes/standardlimit.svg');
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.footerMain svg {
+  background-color: #005EFF;
+  border-radius: 50%;
+  margin-top: .5rem;
+  font-size: 1.2rem;
+}
+
+.footerMain ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.3rem;
+}
+
+.footerImmerse {
+  width: 100%;
+  padding: 1.5rem 0;
+  background-color: #0002F3;
+  font-weight: 300;
+}
+
 .hero {
   width: 100%;
   background: url('../assets/Images/world2.svg');
@@ -122,39 +162,6 @@
   align-items: center;
   flex-direction: column;
   margin: 0 .5rem;
-}
-
-.mainFooter {
-  /* background: url('../assets/Images/limitless.svg'); */
-  aspect-ratio: 960/540;
-  background-size: cover;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-}
-
-.mainFooter svg {
-  background-color: #005EFF;
-  border-radius: 50%;
-  margin-top: .5rem;
-  font-size: 1.2rem;
-}
-
-.mainFooter ul {
-  list-style: none;
-  padding: 0;
-  font-size: 1.3rem;
-}
-
-.mainFooterImmerse {
-  width: 100%;
-  padding: 1.5rem 0;
-  background-color: #0002F3;
-  font-weight: 300;
 }
 
 .minis {
@@ -345,8 +352,7 @@ flex\column\width 50%
 .winning {
   display: flex;
   align-items: center;
-  /* background: url('../assets/Images/winner.svg'); */
-  background-size: cover;
+  justify-content: space-evenly;
   width: 100%;
 }
 
@@ -369,6 +375,16 @@ flex\column\width 50%
   }
   .board{
     display: none;
+  }
+  .boardMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .eachBoard{
+    width: 100%;
   }
 
   .defi {
@@ -415,7 +431,7 @@ flex\column\width 50%
     width: 100%;
   }
 
-  .mainFooter ul {
+  .footerMain ul {
     font-size: .8rem;
   }
 
@@ -423,6 +439,9 @@ flex\column\width 50%
     width: 100%;
   }
 
+  .minisLeft, .minisRight{
+    flex-direction: column;
+  }
 
   .powerBlurContainer{
     padding: 0;

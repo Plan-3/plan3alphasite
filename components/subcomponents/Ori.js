@@ -22,6 +22,9 @@ function Ori() {
           </ul>
           <button><a href="/Origins"> Explore ➢</a></button>
         </div>
+        <div>
+          <Image height={200} width={200} src={collect}></Image>
+        </div>
       </div>
       <div className={styles.minisLeft}>
         <div>

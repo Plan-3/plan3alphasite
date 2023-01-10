@@ -27,6 +27,7 @@ import blockmessage from '../assets/Images/Icons/blockmessage.png'
 import percentdown from '../assets/Images/Icons/percentdown.png'
 import co2down from '../assets/Images/Icons/co2down.png'
 import sometext from '../assets/Images/sometext.png'
+import piechart from '../assets/Images/piechart.png'
 
 function Home() {
   const [divider, setDivider] = useState({ bks: false, ori: false, lsm: false, eco: false })
@@ -37,7 +38,7 @@ function Home() {
         <h1>
           SCALE YOUR <span className={styles.heroSpan}> COMPANY </span> WITH DATA</h1>
         <h1>  DRIVEN DECISIONS AND CREATIVITY TOGETHER FOR </h1>
-        <h1>  <span className={styles.heroSpan}>UNMATCHED DESIGN AND DIGITAL EXPERIENCES </span> 
+        <h1>  <span className={styles.heroSpan}>UNMATCHED DESIGN AND DIGITAL EXPERIENCES </span>
         </h1>
         <p>
           Brand Intelligence & Solutions For the Web3 Economy
@@ -175,7 +176,7 @@ function Home() {
         </div>
       </div>
       <div className={styles.powerP3}>
-        <div style={{display: 'flex', flexDirection: 'column', width: '50%'}}>
+        <div style={{ display: 'flex', flexDirection: 'column', width: '50%' }}>
           <h1>Powered by Plan3</h1>
           <p>
             We have consultants on every continent, from a diversity of backgrounds, with decades of experience in management,
@@ -211,21 +212,26 @@ function Home() {
         </div>
       </div>
       <div className={styles.boardStart}>
-      <p className={styles.rainbowText} style={{fontSize: '3rem', fontWeight: '5', textAlign: 'center'}}>THE TEAM</p>
-      <p style={{fontSize: '3rem', fontWeight: '5', textAlign: 'center'}}>Board Members</p>
+        <p className={styles.rainbowText} style={{ fontSize: '3rem', fontWeight: '5', textAlign: 'center' }}>THE TEAM</p>
+        <p style={{ fontSize: '3rem', fontWeight: '5', textAlign: 'center' }}>Board Members</p>
         <Board />
       </div>
-      <div className={styles.mainFooter}>
-        <h1>The New Standard in</h1>
-        <h1 className={styles.rainbowText}> Limitless</h1>
-        <p>A Profit Driven Think-Tank & Execution Team:</p>
-        <p>Web3 'bridge' business integration</p>
-        <ul>
-          <li><CheckIcon /> 2+ proprietary token standards</li>
-          <li><CheckIcon />$500k+ total trading volume</li>
-          <li><CheckIcon />30+ Strategic Partners</li>
-        </ul>
-        <div className={styles.mainFooterImmerse}>
+      <div className={styles.footerMain}>
+        <div className={styles.blur}>
+          <h1>The New Standard in</h1>
+          <h1 className={styles.rainbowText}> Limitless</h1>
+          <p>A Profit Driven Think-Tank & Execution Team:</p>
+          <p>Web3 'bridge' business integration</p>
+          <ul>
+            <li><CheckIcon /> 2+ proprietary token standards</li>
+            <li><CheckIcon />$500k+ total trading volume</li>
+            <li><CheckIcon />30+ Strategic Partners</li>
+          </ul>
+        </div>
+        <div className={styles.blur}>
+          <Image src={piechart} height={350} width={350}></Image>
+        </div>
+        <div className={styles.footerImmerse}>
           <h1>Wrap your Business in Web3 and Dominate with Plan3</h1>
           <p>Leaders with robust technologies to set you apart in a noisy Web3 world.</p>
           <button>Contact Us</button>
