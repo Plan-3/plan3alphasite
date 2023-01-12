@@ -220,7 +220,7 @@ function Team() {
       <div className={styles.team}>
         {team.map((person, index) => {
           return(
-            <div className={styles.teamCard}>
+            <div className={styles.teamCard} key={person.name}>
               <h3>{person.name}</h3>
               <h4>{person.job}</h4>
             </div>

@@ -174,10 +174,9 @@
 }
 
 .title {
+  text-align: center;
   max-width: 1440px;
   margin: auto;
-  background: rgb(255, 255, 255);
-  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(2, 9, 40, 1) 45%);
 }
 
 .title h1 {
@@ -187,7 +186,6 @@
 
 
 .title p {
-  max-width: 35%;
   font-weight: 75;
 }
 
@@ -274,6 +272,10 @@
     margin: 0;
     width: 100%;
     text-align: center;
+  }
+
+  .ourVisionFooter img{
+    width: 100%;
   }
 
   .ourVisionFooterLogo {

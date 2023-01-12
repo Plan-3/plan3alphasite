@@ -96,7 +96,7 @@ function Blackswan() {
     <div className={bkstyles.bkmain}>
       <Nav />
       <div className={bkstyles.hero}>
-        <div className={bkstyles.heroLogo}><Image src={bkslogo}></Image></div>
+        <div className={bkstyles.heroLogo}><Image src={bkslogo} height={200}></Image></div>
         <p>
           Make it simple. We deliver high quality research and intelligence by leveraging the utility of deep and emerging technologies
         </p>
@@ -107,8 +107,8 @@ function Blackswan() {
           commercialization is focused on delivering value and end results.
         </p>
         <div className={bkstyles.herobtn}>
-          <button>Speak To An Expert</button>
-          <button>About Us</button>
+          <button><a href="/Contact">Speak To An Expert</a> </button>
+          <button><a href="/Team">About Us</a> </button>
         </div>
       </div>
       <div className={bkstyles.solutions}>
@@ -196,21 +196,21 @@ function Blackswan() {
             {toolTip.raise ?
               <div className={bkstyles.safetyTooltip}>
                 <p>Asset owners of all types can raise decentralized funding, allowing the opportunity to generate passive revenue and access to liquidity.</p>
-                <button>Book a Demo</button>
+                <button><a href="/Contact"> Book a Demo</a></button>
               </div> : ''
             }
             <h2 onClick={() => setToolTip({ invest: !toolTip.invest })}>Utilize the tools that make sense for your business</h2>
             {toolTip.invest ?
               <div className={bkstyles.safetyTooltip}>
                 <p>Opportunities for investors of all types - previously only reserved for accredited investors, in the form of equity, funds, debt, and real estate.</p>
-                <button>Book a Demo</button>
+                <button><a href="/Contact"> Book a Demo</a></button>
               </div> : ''
             }
             <h2 onClick={() => setToolTip({ ats: !toolTip.ats })}>Strategize and Develop top tier solutions</h2>
             {toolTip.ats ?
               <div className={bkstyles.safetyTooltip}>
                 <p>Secondary trading for private markets. LIQUIDIAN's ATS delivers liquidity for private assets. Add your security to the premier marketplace for trading digital securities.</p>
-                <button>Book a Demo</button>
+                <button><a href="/Contact"> Book a Demo</a></button>
               </div> : ''
             }
           </div>

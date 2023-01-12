@@ -85,8 +85,8 @@ function Lionshare() {
           We focus on identifying the right target audience and go-to-market strategy to boost your business and cultivate meaningful relationships with consumers.
         </p>
         <div className={oristyles.herobtn}>
-          <button>Speak To An Expert</button>
-          <button>About Us</button>
+          <button><a href="/Contact">Speak To An Expert</a> </button>
+          <button><a href="/Team">About Us</a> </button>
         </div>
       </div>
       <div className={oristyles.solutions}>
@@ -204,7 +204,7 @@ function Lionshare() {
             <h2 onClick={() => setToolTip({ scale: !toolTip.scale })}>Build and launch your Web3 project</h2>
             <h2 onClick={() => setToolTip({ scale: !toolTip.scale })}>Test and iterate based off initial tests until we scale to the moon</h2>
             <div className={oristyles.safetyTooltip}>
-              <button>Book a Demo</button>
+            <button><a href="/Contact"> Book a Demo</a></button>
             </div>
           </div>
           <div>

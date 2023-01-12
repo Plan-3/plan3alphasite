@@ -78,13 +78,13 @@ function Lionshare() {
     <div className={lmstyles.bkmain}>
       <Nav />
       <div className={lmstyles.hero}>
-        <div className={lmstyles.heroLogo}><Image src={lsmlogo}></Image></div>
+        <div className={lmstyles.heroLogo}><Image src={lsmlogo} height={400}></Image></div>
         <p>
           Explore the deep treasure of data efficiency with the right expertise
         </p>
         <div className={lmstyles.herobtn}>
-          <button>Speak To An Expert</button>
-          <button>About Us</button>
+          <button><a href="/Contact">Speak To An Expert</a> </button>
+          <button><a href="/Team">About Us</a> </button>
         </div>
       </div>
       <div className={lmstyles.solutions}>
@@ -155,7 +155,7 @@ function Lionshare() {
             <button onClick={() => nextRank()}><ArrowForwardIos /></button>
           </div>
           <div>
-            <button>Meet the Team</button>
+            <button><a href="/Team">Meet the Team</a> </button>
           </div>
         </div>
       </div>
@@ -177,21 +177,21 @@ function Lionshare() {
             {toolTip.audience ?
               <div className={lmstyles.safetyTooltip}>
                 <p>With models by incorporating your brand's existing first party data and over our unique data signals..</p>
-                <button>Book a Demo</button>
+                <button><a href="/Contact"> Book a Demo</a></button>
               </div> : ''
             }
             <h2 onClick={() => setToolTip({ algos: !toolTip.algos })}>Customized and proprietary algorithms</h2>
             {toolTip.algos ?
               <div className={lmstyles.safetyTooltip}>
                 <p>Built exclusively for each brand and based on a brand's unique KPIs. </p>
-                <button>Book a Demo</button>
+                <button><a href="/Contact"> Book a Demo</a></button>
               </div> : ''
             }
             <h2 onClick={() => setToolTip({ scale: !toolTip.scale })}>Scale profitably</h2>
             {toolTip.scale ?
               <div className={lmstyles.safetyTooltip}>
                 <p>Secondary trading for private markets. LIQUIDIAN's ATS delivers liquidity for private assets. Add your security to the premier marketplace for trading digital securities.</p>
-                <button>Book a Demo</button>
+                <button><a href="/Contact"> Book a Demo</a></button>
               </div> : ''
             }
           </div>

@@ -93,7 +93,7 @@ function Nav() {
           </ul>
         </div>
         <div className={styles.navBtn}>
-          <button>Get Started</button>
+          <button><a href="/Contact">Get Started</a> </button>
         </div>
       </nav>
     </div>

@@ -64,18 +64,18 @@ function Board() {
     <div>
       <div className={styles.board}>
         <div>
-          <button onClick={() => handleSwitchBack()}><ArrowBackIosIcon /></button>
+          <button onClick={() => handleSwitchForward()}><ArrowBackIosIcon /></button>
         </div>
         <div className={styles.eachBoard} draggable={true}>
           <h1>{member[boardLeft].name}</h1>
           <p>{readLeft ?
             <div>
-              {member[boardLeft].info.slice(0, 180)}...
+              <p>{member[boardLeft].info.slice(0, 180)}...</p> 
               <button onClick={() => setReadLeft(!readLeft)}>Read more</button>
             </div>
             :
             <div>
-              {member[boardLeft].info}
+              <p>{member[boardLeft].info}</p>
               <button onClick={() => setReadLeft(!readLeft)}>Read less</button>
             </div>
           }</p>
@@ -84,12 +84,12 @@ function Board() {
           <h1>{member[boardMember].name}</h1>
           <p>{read ?
             <div>
-              {member[boardMember].info.slice(0, 180)}...
+              <p>{member[boardMember].info.slice(0, 180)}...</p>
               <button onClick={() => setRead(!read)}>Read more</button>
             </div>
             :
             <div>
-              {member[boardMember].info}
+              <p>{member[boardMember].info}</p>
               <button onClick={() => setRead(!read)}>Read less</button>
             </div>
           }</p>
@@ -98,41 +98,41 @@ function Board() {
           <h1>{member[boardRight].name}</h1>
           <p>{readRight ?
             <div>
-              {member[boardRight].info.slice(0, 180)}...
+              <p>{member[boardRight].info.slice(0, 180)}...</p>
               <button onClick={() => setReadRight(!readRight)}>Read more</button>
             </div>
             :
             <div>
-              {member[boardRight].info}
+              <p>{member[boardRight].info}</p>
               <button onClick={() => setReadRight(!readRight)}>Read less</button>
             </div>
           }</p>
         </div>
         <div>
-          <button onClick={() => handleSwitchForward()}><ArrowForwardIosIcon /></button>
+          <button onClick={() => handleSwitchBack()}><ArrowForwardIosIcon /></button>
         </div>
       </div>
       {/* Board section for mobile users hidden until 600px width */}
       <div className={styles.boardMobile}>
         <div>
-          <button onClick={() => handleSwitchBack()}><ArrowBackIosIcon /></button>
+          <button onClick={() => handleSwitchForward()}><ArrowBackIosIcon /></button>
         </div>
         <div className={styles.eachBoard} draggable={true}>
           <h1>{member[boardMember].name}</h1>
           <p>{read ?
             <div>
-              {member[boardMember].info.slice(0, 180)}...
+              <p>{member[boardMember].info.slice(0, 180)}...</p>
               <button onClick={() => setRead(!read)}>Read more</button>
             </div>
             :
             <div>
-              {member[boardMember].info}
+              <p>{member[boardMember].info}</p>
               <button onClick={() => setRead(!read)}>Read less</button>
             </div>
           }</p>
         </div>
         <div>
-          <button onClick={() => handleSwitchForward()}><ArrowForwardIosIcon /></button>
+          <button onClick={() => handleSwitchBack()}><ArrowForwardIosIcon /></button>
         </div>
       </div>
     </div>

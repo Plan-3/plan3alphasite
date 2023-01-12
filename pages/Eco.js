@@ -92,8 +92,8 @@ function Eco() {
           systems efficiently and inline with all regulatory practices.
         </p>
         <div className={ecostyles.herobtn}>
-          <button>Speak To An Expert</button>
-          <button>About Us</button>
+          <button><a href="/Contact">Speak To An Expert</a> </button>
+          <button><a href="/Team">About Us</a> </button>
         </div>
       </div>
       <div className={ecostyles.solutions}>
@@ -219,21 +219,21 @@ function Eco() {
             {toolTip.raise ?
               <div className={ecostyles.safetyTooltip}>
                 <p>Asset owners of all types can raise decentralized funding, allowing the opportunity to generate passive revenue and access to liquidity.</p>
-                <button>Book a Demo</button>
+                <button><a href="/Contact"> Book a Demo</a></button>
               </div> : ''
             }
             <h2 onClick={() => setToolTip({ invest: !toolTip.invest })}>Invest</h2>
             {toolTip.invest ?
               <div className={ecostyles.safetyTooltip}>
                 <p>Opportunities for investors of all types - previously only reserved for accredited investors, in the form of equity, funds, debt, and real estate.</p>
-                <button>Book a Demo</button>
+                <button><a href="/Contact"> Book a Demo</a></button>
               </div> : ''
             }
             <h2 onClick={() => setToolTip({ ats: !toolTip.ats })}>ATS</h2>
             {toolTip.ats ?
               <div className={ecostyles.safetyTooltip}>
                 <p>Secondary trading for private markets. LIQUIDIAN's ATS delivers liquidity for private assets. Add your security to the premier marketplace for trading digital securities.</p>
-                <button>Book a Demo</button>
+                <button><a href="/Contact"> Book a Demo</a></button>
               </div> : ''
             }
           </div>

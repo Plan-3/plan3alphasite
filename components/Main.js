@@ -229,7 +229,7 @@ function Home() {
           </ul>
         </div>
         <div className={styles.blur}>
-          <Image src={piechart} height={350} width={350}></Image>
+          <Image src={piechart} height={300} ></Image>
         </div>
       </div>
       <div className={styles.footerImg}>
