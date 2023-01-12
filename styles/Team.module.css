@@ -8,6 +8,8 @@
 }
 
 .hero {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(2, 9, 40, 1) 57%);
   max-width: 1440px;
   margin: auto;
   padding: 2rem;
@@ -174,6 +176,8 @@
 .title {
   max-width: 1440px;
   margin: auto;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(2, 9, 40, 1) 45%);
 }
 
 .title h1 {
@@ -207,54 +211,103 @@
   padding: 3rem;
   width: 22%;
 }
+
 @media screen and (max-width: 1024px) {
-  .soulIcons{
+  .soulIcons {
     flex-wrap: wrap;
   }
 }
+
 @media screen and (max-width: 600px) {
+  .gradientTitle{
+    font-size: 2rem;
+  }
+
   .hero {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: none;
   }
+
   .heroLeft,
   .heroCenter,
-  .heroRight{
+  .heroRight {
     width: 100%;
   }
-  .items{
+
+  .items {
     flex-direction: column;
     align-items: center;
   }
-  .itemBordered{
+
+  .item{
+    width: 100%;
+  }
+
+  .itemBordered {
     border: none;
     border-bottom: 1px solid white;
     border-top: 1px solid white;
+    width: 100%;
   }
-  .ourVisionBoxes{
+
+  .missionTitle h1{
+    font-size: 3rem;
+  }
+
+  .ourVisionBoxes {
     flex-direction: column;
   }
-  .ourVisionFooter{
+
+  .ourVisionBox{
+    text-align: center;
+  }
+
+  .ourVisionHeader p{
+    max-width: 100%;
+  }
+
+  .ourVisionFooter {
     flex-direction: column;
     border: none;
     margin: 0;
     width: 100%;
+    text-align: center;
   }
-  .ourVisionFooterLogo{
+
+  .ourVisionFooterLogo {
     flex-direction: column;
     width: 100%;
   }
-  .ourVisionFooterLogo img{
+
+  .ourVisionFooterLogo img {
     display: none;
   }
-  .soulIcons{
+
+  .soulIcons {
     flex-direction: column;
   }
-  .team{
+
+  .team {
     flex-direction: column;
   }
-  .teamCard{
+
+  .teamCard {
     width: 90%;
+  }
+
+  .title{
+    background: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .title p{
+    max-width: 100%;
+  }
+
+  .soul p{
+    text-align: center;
   }
 }

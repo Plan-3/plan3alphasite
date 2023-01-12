@@ -3,6 +3,20 @@ import Image from 'next/image'
 import styles from '../styles/Team.module.css'
 import team from '../assets/Team.json'
 import Nav from '../components/Nav'
+
+import eco from '../assets/Images/Logos/ecologo.png'
+import bks from '../assets/Images/Logos/swanlogo.png'
+import ori from '../assets/Images/Logos/orilogo.png'
+import lsm from '../assets/Images/Logos/lsmlogo.png'
+import brainiac from '../assets/Images/teamimgs/brainiac.png'
+import gearworld from '../assets/Images/teamimgs/gearworld.png'
+import speaker from '../assets/Images/teamimgs/speaker.png'
+import web from '../assets/Images/teamimgs/web.png'
+import phonein from '../assets/Images/teamimgs/phonein.png'
+import testimony from '../assets/Images/teamimgs/testimonial.jpg'
+import independently from '../assets/Images/teamimgs/independently.png'
+import solution from '../assets/Images/teamimgs/solution.png'
+import takes from '../assets/Images/teamimgs/takes.png'
 import m1 from '../assets/Images/Icons/M1.svg'
 import m2 from '../assets/Images/Icons/M2.svg'
 import m3 from '../assets/Images/Icons/M3.svg'
@@ -38,10 +52,12 @@ function Team() {
           </div>
           <div className={styles.mediumBox}>
             <div>
-              <Image height={100} width={25}></Image>
-              <Image height={100} width={25}></Image>
-              <Image height={25} width={25}></Image>
-              <Image height={25} width={25}></Image>
+              <Image height={40} src={gearworld}></Image>
+              <Image height={40} src={brainiac}></Image>
+              </div>
+              <div>
+              <Image height={40} src={speaker}></Image>
+              <Image height={40} src={web}></Image>
             </div>
             <h3>One goal:</h3>
             <h3>Domination</h3>
@@ -52,12 +68,12 @@ function Team() {
             <h1>The New Standard in <span className={styles.gradientTitle}>Limitless</span></h1>
             <p>A Profit Driven Think-Tank & Execution Team: Web3 'Bridge' Business Integration</p>
             <div>
-              <Image height={50} width={100}></Image>
-              <Image height={50} width={100}></Image>
-              <Image height={50} width={100}></Image>
-              <Image height={50} width={100}></Image>
+              <Image height={100} src={bks}></Image>
+              <Image height={100} src={ori}></Image>
+              <Image height={100} src={lsm}></Image>
+              <Image height={100} src={eco}></Image>
             </div>
-            <button>Get In Touch</button>
+            <button><a href="/Contact">Get in Touch</a></button>
           </div>
           <div className={styles.largeBox}>
             <h1>Your Web3 Patners!</h1>
@@ -66,7 +82,7 @@ function Team() {
         <div className={styles.heroRight}>
           <div className={styles.mediumBox}>
             <div>
-              <Image height={100} width={25}></Image>
+              <Image height={200} src={phonein}></Image>
             </div>
             <h3>One goal:</h3>
             <h3>Domination</h3>
@@ -168,32 +184,35 @@ function Team() {
         <div className={styles.ourVisionHeader}>
           <h1 className={styles.gradientTitle}>Our Vision</h1>
           <p>Embrace, change, and accelerate innovation; foster the evolution of web3 and embrace the key value-add components for: Blockchain tech ecosystems, media and analytics, ESG, campaign architecture. </p>
-          <button>Get Started</button>
+          <button><a href="/Contact">Get Started</a></button>
         </div>
         <div className={styles.ourVisionBoxes}>
           <div className={styles.ourVisionBox}>
             <h1>INDEPENDENTLY, AS ONE</h1>
             <p>The only way for the team to grow, is for each person to grow personally. We believe we must continue to hone in on our skills and self.</p>
+            <Image src={independently}></Image>
           </div>
           <div className={styles.ourVisionBox}>
             <h1>WHATEVER IT TAKES</h1>
             <p>The only way for the team to grow, is for each person to grow personally. We believe we must continue to hone in on our skills and self.</p>
+            <Image src={takes}></Image>
           </div>
           <div className={styles.ourVisionBox}>
             <h1>SOLUTION FOCUSED</h1>
             <p>The only way for the team to grow, is for each person to grow personally. We believe we must continue to hone in on our skills and self.</p>
+            <Image src={solution}></Image>
           </div>
         </div>
         <div className={styles.ourVisionFooter}>
           <div>
-            <Image height={250} width={250}></Image>
+            <Image height={300} src={testimony}></Image>
           </div>
-          <div style={{width: '70%'}}>
-            <h3>"They built and launch my entire Web3 project in 30 days, it has been an amazing experience."</h3>
-            <p>The best part about Web3 is they have dedicated teams for any task! </p>
+          <div style={{marginRight: '5%', marginLeft: '5%'}}>
+            <h3>"They built and launched my entire Web3 project in 30 days, it has been an amazing experience."</h3>
+            <p>The best part about Plan3 is they have dedicated teams for any task! </p>
             <div className={styles.ourVisionFooterLogo}>
-              <Image height={100} width={400}></Image>
-              <button>Get Started</button>
+              <Image height={100} ></Image>
+              <button><a href="/Contact">Get Started</a></button>
             </div>
           </div>
         </div>

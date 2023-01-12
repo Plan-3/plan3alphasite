@@ -300,6 +300,10 @@
     line-height: 1rem;
   }
 
+  .hero img {
+    width: 100%;
+  }
+
   .mainFocus {
     background: rgb(0, 0, 0);
     background: linear-gradient(140deg, rgba(0, 0, 0, 1) 0%, rgba(0, 53, 154, 1) 84%, rgba(0, 241, 249, 1) 100%);
@@ -325,6 +329,7 @@
 
   .safetyTooltip {
     width: 100%;
+    text-align: center;
   }
 
   .safetyKeep {

@@ -79,13 +79,16 @@
 .footerMain {
   background: url('../assets/Images/Heroes/standardlimit.svg');
   background-size: cover;
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   text-align: center;
   color: white;
+  border: 2px solid white;
+  box-shadow: 0 0 25px #005EFF;
+  border-radius: 1rem;
 }
 
 .footerMain svg {
@@ -101,12 +104,24 @@
   font-size: 1.3rem;
 }
 
-.footerImmerse {
+.footerImg{
+  background: url('../assets/Images/maub.svg');
+  background-size: cover;
   width: 100%;
-  padding: 1.5rem 0;
-  background-color: #0002F3;
+  margin-top: 2rem;
+}
+
+.footerImmerse {
+  backdrop-filter: blur(10px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   font-weight: 300;
 }
+
 
 .hero {
   width: 100%;
@@ -369,6 +384,15 @@ flex\column\width 50%
   max-width: 50%;
 }
 
+@media screen and (max-width: 1400px) {
+  .powerBlurContainer{
+    flex-direction: column;
+  }
+  .powerBlur{
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .arrows {
     transform: rotate(90deg)
@@ -444,6 +468,7 @@ flex\column\width 50%
   }
 
   .powerBlurContainer{
+    flex-direction: row;
     padding: 0;
   }
   

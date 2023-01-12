@@ -4,7 +4,12 @@ import BksData from '../assets/Origins.json'
 import oristyles from '../styles/Origins.module.css'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
-import Grid2 from '@mui/material/Unstable_Grid2/Grid2'
+
+import arrow3 from '../assets/Images/orifiller/arrow3.png'
+import mancode from '../assets/Images/orifiller/mancode.png'
+import womancode from '../assets/Images/orifiller/womancode.png'
+import piechart from '../assets/Images/EcoImages/ecopie.png'
+import location from '../assets/Images/EcoImages/ecolocation.png'
 import icon1 from '../assets/Images/Icons/1.svg'
 import icon2 from '../assets/Images/Icons/2.svg'
 import icon3 from '../assets/Images/Icons/3.svg'
@@ -16,7 +21,7 @@ import icon8 from '../assets/Images/Icons/8.svg'
 import icon9 from '../assets/Images/Icons/9.svg'
 import icon10 from '../assets/Images/Icons/10.svg'
 import robo from '../assets/Images/robothand.svg'
-import orilogo from '../assets/Images/Logos/3.png'
+import orilogo from '../assets/Images/Logos/orilogo.png'
 import quoteData from '../assets/Quotes.json'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import ArrowBackIos from '@mui/icons-material/ArrowBackIos'
@@ -39,14 +44,14 @@ function Lionshare() {
     icon9,
     icon10
   ]
-  // useEffect(() => {
-  //   let time = setInterval(() => {
-  //     setI((i) => {
-  //     let newIndex = i + 1
-  //     return checkNumber(newIndex)
-  //   })
-  //   }, 8000)
-  // }, [])
+  useEffect(() => {
+    let time = setInterval(() => {
+      setI((i) => {
+      let newIndex = i + 1
+      return checkNumber(newIndex)
+    })
+    }, 8000)
+  }, [])
   const checkNumber = (number) => {
     if (number >= quoteData.length) {
       return 0;
@@ -128,12 +133,12 @@ function Lionshare() {
             <p>We believe the blockchain space has a massive potential to disrupt every facet of our economy. It’s a matter of when and how not if.</p>
           </div>
           <div>
-            <Image className={oristyles.image} height={200} width={450}></Image>
+            <Image className={oristyles.image} height={400} src={mancode}></Image>
           </div>
         </div>
         <div className={oristyles.containerWeb3}>
           <div>
-            <Image className={oristyles.image} height={200} width={450}></Image>
+            <Image className={oristyles.image} height={400} src={womancode}></Image>
           </div>
           <div>
             <h1>Everything you need</h1>
@@ -142,9 +147,10 @@ function Lionshare() {
         </div>
       </div>
       <div className={oristyles.quotes}>
-        <div className={oristyles.quote}>
+        <div className={oristyles.quote} key={quoteData[i]}>
           <FormatQuoteIcon style={{ fontSize: '6rem' }} />
           <p>{quoteData[i].quote}</p>
+          <p>{quoteData[i].person}</p>
         </div>
         <div className={oristyles.quoteNav}>
           <div>
@@ -152,7 +158,7 @@ function Lionshare() {
             <button onClick={() => nextRank()}><ArrowForwardIos /></button>
           </div>
           <div>
-            <button>Meet the Board</button>
+            <button><a href="/Team">Meet the Team</a></button>
           </div>
         </div>
       </div>
@@ -173,19 +179,19 @@ function Lionshare() {
             <div className={oristyles.safetyMarketContent}>
               <div>
                 <p><span style={{ color: '#CF012D' }}>$297.5B+</span> Ad spend in 2021</p>
-                <button>Get Started</button>
+                <button><a href="/Contact">Get Started</a></button>
               </div>
               <div>
-                <Image height={150} width={150}></Image>
+                <Image height={150} src={location}></Image>
               </div>
             </div>
             <div className={oristyles.safetyMarketContent}>
               <div>
                 <p><span style={{ color: '#CF012D' }}>$297.5B+</span> Ad spend in 2021</p>
-                <button>Get Started</button>
+                <button><a href="/Contact">Get Started</a></button>
               </div>
               <div>
-                <Image height={150} width={150}></Image>
+                <Image height={150} src={piechart}></Image>
               </div>
             </div>
           </div>
@@ -194,7 +200,7 @@ function Lionshare() {
           <div>
             <h1>Web2 to Web3</h1>
             <h2 onClick={() => setToolTip({ audience: !toolTip.audience })}>Understand which Web3 technologies would best suit your business</h2>
-            <h2 onClick={() => setToolTip({ algos: !toolTip.algos })}>understand your main objectives</h2>
+            <h2 onClick={() => setToolTip({ algos: !toolTip.algos })}>Understand your main objectives</h2>
             <h2 onClick={() => setToolTip({ scale: !toolTip.scale })}>Build and launch your Web3 project</h2>
             <h2 onClick={() => setToolTip({ scale: !toolTip.scale })}>Test and iterate based off initial tests until we scale to the moon</h2>
             <div className={oristyles.safetyTooltip}>
@@ -202,7 +208,7 @@ function Lionshare() {
             </div>
           </div>
           <div>
-            <Image className={oristyles.image} height={400} width={300}></Image>
+            <Image className={oristyles.image} height={400} src={arrow3}></Image>
           </div>
         </div>
         <div className={oristyles.safetyKeep}>

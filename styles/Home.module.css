@@ -1,3 +1,39 @@
+.contact {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10rem;
+}
+
+.contactInfo img {
+  width: 100%;
+}
+
+.contactMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #003898;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.contactMessage input {
+  width: 40rem;
+  background-color: white;
+  color: black;
+  padding: .5rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.contactMessage button {
+  color: white;
+  font-size: 2rem;
+  background-color: #005eff;
+
+  justify-self: flex-end;
+}
+
 .dropdown button {
   display: flex;
   border: none;
@@ -8,9 +44,9 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.dropdownContent{
+.dropdownContent {
   position: absolute;
-  bottom: -140px;
+  bottom: -160px;
   font-size: 1.1rem;
   padding: 1.5rem;
   text-decoration: underline;
@@ -19,17 +55,18 @@
   justify-content: space-around;
   background-color: rgba(254, 254, 254, 0.766);
   color: black;
+  border-radius: .2em;
 }
 
 
-.dropdownContent a:hover{
+.dropdownContent a:hover {
   transform: scale(1.2);
-  color: #005eff;
 }
 
-.hoverDropdown{
+.hoverDropdown {
   cursor: pointer;
 }
+
 .footer {
   background-color: black;
   display: flex;
@@ -59,6 +96,23 @@ if needed add back to index main div
   align-items: center;
 }
 */
+
+.linkBks:hover {
+  color: #4d4d4d;
+}
+
+.linkLsm:hover {
+  color: #C89D2E;
+}
+
+.linkOri:hover {
+  color: #CF012D;
+}
+
+.linkEco:hover {
+  color: #208805;
+}
+
 .miniNav {
   display: none;
 }
@@ -171,6 +225,10 @@ if needed add back to index main div
 }
 
 @media screen and (max-width: 810px) {
+  .contactMessage input {
+    width: 100%;
+  }
+
   .footer {
     display: flex;
     flex-direction: column;
@@ -180,6 +238,10 @@ if needed add back to index main div
 }
 
 @media screen and (max-width: 600px) {
+  .contact {
+    flex-direction: column;
+  }
+
   .grid {
     width: 100%;
     flex-direction: column;
@@ -199,14 +261,15 @@ if needed add back to index main div
   }
 
   .miniNav button {
-    width: 25%;
+    padding: 0;
+    width: 10%;
   }
 
   .miniNav ul {
     list-style: none;
     padding: 0;
     margin-bottom: 5px;
-    background-color: #4d4d4d;
+    line-height: 1.9rem;
   }
 
   .powerBlurContainer {

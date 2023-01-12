@@ -4,6 +4,10 @@ import BksData from '../assets/LionshareMedia.json'
 import lmstyles from '../styles/Lionshare.module.css'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
+
+import developer from '../assets/Images/lsmfiller/develop.png'
+import dots from '../assets/Images/lsmfiller/dots.png'
+import tech from '../assets/Images/lsmfiller/tech.png'
 import icon1 from '../assets/Images/Icons/1.svg'
 import icon2 from '../assets/Images/Icons/2.svg'
 import icon3 from '../assets/Images/Icons/3.svg'
@@ -127,12 +131,12 @@ function Lionshare() {
             <p>Cut your research time and get right to the most promising.</p>
           </div>
           <div>
-            <Image className={lmstyles.image} height={200} width={450}></Image>
+            <Image className={lmstyles.image} src={tech} height={300}></Image>
           </div>
         </div>
         <div className={lmstyles.containerWeb3}>
           <div>
-            <Image className={lmstyles.image} height={200} width={450}></Image>
+            <Image className={lmstyles.image} height={300} src={developer}></Image>
           </div>
           <div>
             <h1>Skip the guesswork</h1>
@@ -192,7 +196,7 @@ function Lionshare() {
             }
           </div>
           <div>
-            <Image className={lmstyles.image} height={400} width={300}></Image>
+            <Image className={lmstyles.image} height={400} src={dots}></Image>
           </div>
         </div>
         <div className={lmstyles.safetyKeep}>

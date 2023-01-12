@@ -1,21 +1,47 @@
-.bigPicture{
+.bigPicture {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.ecosystemMain{
+
+.ecosystemMain {
   max-width: 1440px;
   margin: auto;
 }
-.hero{
+
+.finalWeb2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.finalWeb3 {
+  background-color: #14162F;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem;
+}
+
+.finalWeb3 p {
+  font-weight: 50;
+  margin: 0 10%;
+  line-height: 1.9rem;
+  padding: 1rem;
+}
+
+.hero {
   max-width: 1440px;
   margin: auto;
 }
-.fourPillars{
+
+.fourPillars {
   display: flex;
   justify-content: space-evenly;
 }
-.pillar{
+
+.pillar {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,91 +50,186 @@
   padding: 2rem;
   border-radius: .5rem;
   margin: 0 1rem;
+  height: 700px;
+  width: 250px
 }
 
-.pillar svg{
+.pillar:hover {
+  cursor: pointer;
+}
+
+.pillar svg {
   font-size: 5rem;
 }
-.pillar button{
+
+.pillar img {
+  transform: rotate(90deg);
+}
+
+.pillar button {
   font-size: 5rem;
   background-color: aqua;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   border: none;
 }
-.pillarContent{
+
+.pillar button:hover {
+  cursor: pointer;
+}
+
+.pillarContent {
   background-color: #002358;
   padding: 2rem;
   border-radius: .5rem;
 }
-.pillarContentMain{
+
+.pillarContentMain {
   display: flex;
   flex-direction: column;
   font-weight: 800;
-  margin: 3rem 1rem;
-}
-.pillarUlRow{
-  display: flex;
-}
-.pillarUlRow li{
-  margin: 2rem 1rem;
 }
 
-.web3Needs{
+.pillarUlRow {
   display: flex;
-  justify-content: space-between;
 }
-.web3NeedsLeft{
+
+.pillarUlRow li {
+  margin: .5rem;
+}
+
+.pillarBottom {
   display: flex;
+  justify-content: flex-end;
+}
+
+.pillarBottom img {
+  margin: .5rem;
+}
+
+.rainbow {
+  margin: 2% 10%;
+  padding: 1rem;
+  background: rgb(255, 255, 252);
+  background: linear-gradient(180deg, rgb(212, 233, 255) 0%, rgba(0, 94, 255, 1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 2px solid #005eff;
+}
+
+.web3Needs {
+  background: url('../assets/Images/blobs.svg');
+  background-size: cover;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem;
+}
+
+.web3NeedsLeft {
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 4rem;
 }
-.web3NeedsRight{
+
+.web3NeedsRight {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  padding: 4rem;
+  padding: 2rem 5rem;
+  margin: 5rem 0;
+  background-color: #5d5d5d;
+  border-radius: .5rem;
+}
+
+.web3Needs button {
+  font-size: 1.2rem;
 }
 
 
 
 
-.underlineGradient{
-  background: rgb(168,241,254);
-  background: linear-gradient(155deg, rgba(168,241,254,1) 0%, rgba(3,96,255,1) 100%); 
+.underlineGradient {
+  background: rgb(168, 241, 254);
+  background: linear-gradient(155deg, rgba(168, 241, 254, 1) 0%, rgba(3, 96, 255, 1) 100%);
   height: 5px;
   max-width: 75%;
   margin: 1rem;
 }
 
 @media screen and (max-width: 1024px) {
-  .fourPillars{
+  .fourPillars {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
-  .pillar{
+
+  .pillar {
     margin: 2rem 0;
+    flex-direction: row;
+    height: auto;
+    width: auto;
   }
-  .bigPicture{
+
+  .pillar img {
+    transform: rotate(0deg);
+  }
+
+  .bigPicture {
     text-align: center;
   }
-  .web3Needs{
-    flex-direction: column;
+
+  .bigPicture img,
+  .finalWeb2 img {
+    width: 60%;
+    height: auto;
   }
-  .web3NeedsLeft{
+
+  .web3Needs {
+    padding: 0;
+  }
+
+  .web3NeedsLeft {
     align-items: center;
     text-align: center;
   }
+
   .pillarContent {
-    max-width: 350px;
+    max-width: 100%;
   }
-  .pillarContent ul{
+
+  .pillarContent ul {
     margin: 0;
     padding: 0;
   }
 
+}
+
+@media screen and (max-width: 600px) {
+  .pillar {
+    padding: 0;
+  }
+
+  .pillarBottom {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .pillar img {
+    width: 100%;
+  }
+
+  .web3Needs {
+    background: none;
+    flex-direction: column;
+  }
+
+  .web3NeedsLeft {
+    width: 100%;
+  }
 }

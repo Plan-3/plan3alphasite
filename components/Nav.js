@@ -78,10 +78,11 @@ function Nav() {
           Solutions
             {tooltip ? 
               <div className={styles.dropdownContent}>
-                  <a href="/Blackswan">Blackswan</a>
-                  <a href="/Lionshare">Lionshare Media</a>
-                  <a href="/Origins">Origins</a>
-                  <a href="/Eco">EcoCitizen</a>
+                  <a className={styles.linkBks} href="/Blackswan">Blackswan</a>
+                  <a className={styles.linkLsm} href="/Lionshare">Lionshare Media</a>
+                  <a className={styles.linkOri} href="/Origins">Origins</a>
+                  <a className={styles.linkEco} href="/Eco">EcoCitizen</a>
+                  <ArrowCircleUpIcon/>
               </div>
               :
               ''

@@ -16,7 +16,7 @@ import icon8 from '../assets/Images/Icons/8.svg'
 import icon9 from '../assets/Images/Icons/9.svg'
 import icon10 from '../assets/Images/Icons/10.svg'
 import robo from '../assets/Images/robothand.svg'
-import ecologo from '../assets/Images/Logos/4.png'
+import ecologo from '../assets/Images/Logos/ecologo.png'
 import coffee from '../assets/Images/EcoImages/coffeeeco.png'
 import code from '../assets/Images/EcoImages/ecocode.png'
 import location from '../assets/Images/EcoImages/ecolocation.png'
@@ -173,7 +173,7 @@ function Eco() {
         <div>
           <h1>Compliance First</h1>
           <p>ESG disclosure requirements will become more prominent, the regulatory landscape in this area is dynamic and continually shifting. Stay ready.</p>
-          <button>Get Started</button>
+          <button><a href="/Contact">Get Started</a></button>
         </div>
         <div>
           <Image height={450} width={450} src={p3}></Image>
@@ -195,7 +195,7 @@ function Eco() {
             <div className={ecostyles.safetyMarketContent}>
               <div>
                 <p><span style={{ color: '#20880F' }}>56%</span> don't invest in crypto because of environmental concerns.</p>
-                <button>Get Started</button>
+                <button><a href="/Contact">Get Started</a></button>
               </div>
               <div>
                 <Image height={150} width={150} src={piechart}></Image>
@@ -204,7 +204,7 @@ function Eco() {
             <div className={ecostyles.safetyMarketContent}>
               <div>
                 <p><span style={{ color: '#20880F' }}>Carbon</span>  emissions from crypto mining is the primary concern . </p>
-                <button>Get Started</button>
+                <button><a href="/Contact">Get Started</a></button>
               </div>
               <div>
                 <Image height={150} width={150} src={location}></Image>

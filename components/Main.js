@@ -13,10 +13,10 @@ import WebIcon from '@mui/icons-material/Web'
 import SecurityIcon from '@mui/icons-material/Security'
 import CheckIcon from '@mui/icons-material/Check';
 //importing created images
-import bkslogo from '../assets/Images/Logos/swan.png'
+import bkslogo from '../assets/Images/Logos/swanlogo.png'
 import lsmlogo from '../assets/Images/Logos/lsmlogo.png'
-import orilogo from '../assets/Images/Logos/3.png'
-import ecologo from '../assets/Images/Logos/4.png'
+import orilogo from '../assets/Images/Logos/orilogo.png'
+import ecologo from '../assets/Images/Logos/ecologo.png'
 import defi from '../assets/Images/defi.png'
 import arrows from '../assets/Images/Icons/arrows.svg'
 import web1 from '../assets/Images/Icons/M1.svg'
@@ -43,7 +43,7 @@ function Home() {
         <p>
           Brand Intelligence & Solutions For the Web3 Economy
         </p>
-        <button>Book a Demo</button>
+        <button><a href="/Contact">Book a Demo</a></button>
       </div>
       <div className={styles.solutions}>
         <button id='bksbtn' onClick={() => setDivider({ bks: !divider.bks })}>
@@ -111,7 +111,7 @@ function Home() {
             world, we have masters that craft state of art
             solution with modern technology
           </p>
-          <button>Get Started</button>
+          <button><a href="/Contact">Get Started</a></button>
         </div>
         <div className={styles.toolsImg}></div>
       </div>
@@ -123,7 +123,7 @@ function Home() {
           <div>
             <h3>Give your Web3 project an unfair advantage</h3>
             <p>We build quality products, hire quality people, and have a quality process to guarantee you win.</p>
-            <button>Get Started</button>
+            <button><a href="/Contact">Get Started</a></button>
           </div>
           <div>
             <div className={styles.defiStat}>
@@ -231,11 +231,13 @@ function Home() {
         <div className={styles.blur}>
           <Image src={piechart} height={350} width={350}></Image>
         </div>
-        <div className={styles.footerImmerse}>
-          <h1>Wrap your Business in Web3 and Dominate with Plan3</h1>
-          <p>Leaders with robust technologies to set you apart in a noisy Web3 world.</p>
-          <button>Contact Us</button>
-        </div>
+      </div>
+      <div className={styles.footerImg}>
+      <div className={styles.footerImmerse}>
+        <h1>Wrap your Business in Web3 and Dominate with Plan3</h1>
+        <p>Leaders with robust technologies to set you apart in a noisy Web3 world.</p>
+        <button><a href="/Contact">Contact Us</a> </button>
+      </div>
       </div>
     </div>
   )
