@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import BksData from '../assets/Origins.json'
-import oristyles from '../styles/Origins.module.css'
+import styles from '../styles/PageStyles.module.css'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
@@ -77,48 +77,48 @@ function Lionshare() {
   };
   //console.log(quoteData.length) = 16
   return (
-    <div className={oristyles.bkmain}>
+    <div className={styles.bkmain}>
       <Nav />
-      <div className={oristyles.hero}>
-        <Image className={oristyles.image} height={125} width={800} src={orilogo}></Image>
+      <div className={styles.heroOri}>
+        <Image className={styles.heroLogo} height={125} width={800} src={orilogo}></Image>
         <p>
           We focus on identifying the right target audience and go-to-market strategy to boost your business and cultivate meaningful relationships with consumers.
         </p>
-        <div className={oristyles.herobtn}>
+        <div className={styles.herobtn}>
           <button><a href="/Contact">Speak To An Expert</a> </button>
           <button><a href="/Team">About Us</a> </button>
         </div>
       </div>
-      <div className={oristyles.solutions}>
-        <div className={oristyles.solutionsChild}>
+      <div style={{color: '#cf012d'}} className={styles.solutions}>
+        <div className={styles.solutionsChild}>
           <Image src={icon10} height={100} width={150}></Image>
-          <p className={oristyles.solutionsRainbow}>Market Penetration </p>
+          <p className={styles.solutionsRainbow}>Market Penetration </p>
           <p>Supercharging growth through targeted community building and campaigns. </p>
         </div>
-        <div className={oristyles.solutionsChild}>
+        <div className={styles.solutionsChild}>
           <Image src={icon2} height={100} width={150}></Image>
-          <p className={oristyles.solutionsRainbow}>Community & Relevance</p>
+          <p className={styles.solutionsRainbow}>Community & Relevance</p>
           <p>Unlock hidden stories by tracing activity using proprietary analytics tools.</p>
         </div>
-        <div className={oristyles.solutionsChild}>
+        <div className={styles.solutionsChild}>
           <Image src={icon1} height={100} width={150}></Image>
-          <p className={oristyles.solutionsRainbow}>Developer Marketing</p>
+          <p className={styles.solutionsRainbow}>Developer Marketing</p>
           <p>Helping web3 orgs grow, engage and retain a devoted developer community.</p>
         </div>
       </div>
-      <div className={oristyles.mainFocusTitle}>
+      <div style={{color: '#cf012d'}} className={styles.mainFocusTitle}>
         <h1>Origins</h1>
         <h1>Main Areas of Focus</h1>
       </div>
-      <div className={oristyles.mainFocus}>
+      <div className={styles.mainFocus}>
         {BksData.map((data, index) => {
           return (
-            <div className={oristyles.focusItem} key={index}>
-              <div className={oristyles.focusHeader}>
+            <div className={styles.focusItem} key={index}>
+              <div className={styles.focusHeader}>
                 {data.image ? <Image height={50} width={50} src={icon[index]} /> : ''}
-                <p>{data.title}</p>
+                <p style={{color: '#cf012d'}}>{data.title}</p>
               </div>
-              <div className={oristyles.focusText}>
+              <div className={styles.focusText}>
                 <p>{data.info}</p>
               </div>
               {/* <img src={data.image} width={40} height={40} /> */}
@@ -126,19 +126,19 @@ function Lionshare() {
           )
         })}
       </div>
-      <div className={oristyles.customWeb3}>
-        <div className={oristyles.containerWeb3}>
+      <div className={styles.customWeb3Ori}>
+        <div className={styles.containerWeb3}>
           <div>
             <h1>Be Proactive, not Reactive</h1>
             <p>We believe the blockchain space has a massive potential to disrupt every facet of our economy. It’s a matter of when and how not if.</p>
           </div>
           <div>
-            <Image className={oristyles.image} height={400} src={mancode}></Image>
+            <Image className={styles.image} height={400} src={mancode}></Image>
           </div>
         </div>
-        <div className={oristyles.containerWeb3}>
+        <div className={styles.containerWeb3}>
           <div>
-            <Image className={oristyles.image} height={400} src={womancode}></Image>
+            <Image className={styles.image} height={400} src={womancode}></Image>
           </div>
           <div>
             <h1>Everything you need</h1>
@@ -146,37 +146,37 @@ function Lionshare() {
           </div>
         </div>
       </div>
-      <div className={oristyles.quotes}>
-        <div className={oristyles.quote} key={quoteData[i]}>
+      <div style={{backgroundColor: '#cf012d'}} className={styles.quotes}>
+        <div className={styles.quote} key={quoteData[i]}>
           <FormatQuoteIcon style={{ fontSize: '6rem' }} />
           <p>{quoteData[i].quote}</p>
           <p>{quoteData[i].person}</p>
         </div>
-        <div className={oristyles.quoteNav}>
+        <div className={styles.quoteNav}>
           <div>
-            <button onClick={() => prevRank()}><ArrowBackIos /></button>
-            <button onClick={() => nextRank()}><ArrowForwardIos /></button>
+            <button style={{color: '#cf012d'}} onClick={() => prevRank()}><ArrowBackIos /></button>
+            <button style={{color: '#cf012d'}} onClick={() => nextRank()}><ArrowForwardIos /></button>
           </div>
           <div>
-            <button><a href="/Team">Meet the Team</a></button>
+            <button style={{color: '#cf012d'}}><a href="/Team">Meet the Team</a></button>
           </div>
         </div>
       </div>
-      <div className={oristyles.safety}>
-        <div className={oristyles.safetyApproach}>
+      <div className={styles.specific}>
+        <div className={styles.specificApproach}>
           <div>
-            <button disabled={true}>Disclaimer</button>
+            <button style={{backgroundColor: '#cf012d'}} disabled={true}>Disclaimer</button>
             <h1>How to really market Web3</h1>
             <p>It's about using purposeful experience design and strategy to leverage data and creating a brand utility that supports your business and marketing efforts.</p>
           </div>
           <div>
-            <Image src={robo} className={oristyles.image} height={300} width={400}></Image>
+            <Image src={robo} className={styles.image} height={300} width={400}></Image>
           </div>
         </div>
-        <div className={oristyles.safetyMarket}>
-          <h1>Media Buy Market is Growing</h1>
-          <div className={oristyles.safetyMarketRow}>
-            <div className={oristyles.safetyMarketContent}>
+        <div className={styles.specificMarket}>
+          <h1 style={{color: '#cf012d'}}>Media Buy Market is Growing</h1>
+          <div className={styles.specificMarketRow}>
+            <div className={styles.specificMarketContent}>
               <div>
                 <p><span style={{ color: '#CF012D' }}>$297.5B+</span> Ad spend in 2021</p>
                 <button><a href="/Contact">Get Started</a></button>
@@ -185,7 +185,7 @@ function Lionshare() {
                 <Image height={150} src={location}></Image>
               </div>
             </div>
-            <div className={oristyles.safetyMarketContent}>
+            <div className={styles.specificMarketContent}>
               <div>
                 <p><span style={{ color: '#CF012D' }}>$297.5B+</span> Ad spend in 2021</p>
                 <button><a href="/Contact">Get Started</a></button>
@@ -196,27 +196,27 @@ function Lionshare() {
             </div>
           </div>
         </div>
-        <div className={oristyles.safetyWhy}>
+        <div className={styles.specificWhy}>
           <div>
             <h1>Web2 to Web3</h1>
             <h2 onClick={() => setToolTip({ audience: !toolTip.audience })}>Understand which Web3 technologies would best suit your business</h2>
             <h2 onClick={() => setToolTip({ algos: !toolTip.algos })}>Understand your main objectives</h2>
             <h2 onClick={() => setToolTip({ scale: !toolTip.scale })}>Build and launch your Web3 project</h2>
             <h2 onClick={() => setToolTip({ scale: !toolTip.scale })}>Test and iterate based off initial tests until we scale to the moon</h2>
-            <div className={oristyles.safetyTooltip}>
+            <div className={styles.specificTooltip}>
             <button><a href="/Contact"> Book a Demo</a></button>
             </div>
           </div>
           <div>
-            <Image className={oristyles.image} height={400} src={arrow3}></Image>
+            <Image className={styles.image} height={400} src={arrow3}></Image>
           </div>
         </div>
-        <div className={oristyles.safetyKeep}>
+        <div className={styles.specificKeepOri}>
           <p style={{ fontSize: '5rem', fontWeight: '700', marginBottom: '0', color: '#CF012D' }}>Let's keep in touch</p>
           <p>We've dedicated ourselves to understanding and building the future in the Web3 space.</p>
           <p>We will keeep you in the loop with all the newest stuff!</p>
-          <div className={oristyles.safetyEmail}>
-            <input type="email" placeholder='Enter your email' /><button>Subscribe</button>
+          <div className={styles.specificEmail}>
+            <input type="email" placeholder='Enter your email' /><button style={{backgroundColor: '#cf012d'}}>Subscribe</button>
           </div>
         </div>
       </div>

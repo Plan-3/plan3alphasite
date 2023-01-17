@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import BksData from '../assets/BlackSwan.json'
-import bkstyles from '../styles/Blackswan.module.css'
+import styles from '../styles/PageStyles.module.css'
 
 /* 
 import components 
@@ -93,10 +93,10 @@ function Blackswan() {
   };
   //console.log(quoteData.length) = 16
   return (
-    <div className={bkstyles.bkmain}>
+    <div className={styles.bkmain}>
       <Nav />
-      <div className={bkstyles.hero}>
-        <div className={bkstyles.heroLogo}><Image src={bkslogo} height={200}></Image></div>
+      <div className={styles.heroBsr}>
+        <div className={styles.heroLogo}><Image src={bkslogo} height={200}></Image></div>
         <p>
           Make it simple. We deliver high quality research and intelligence by leveraging the utility of deep and emerging technologies
         </p>
@@ -106,39 +106,39 @@ function Blackswan() {
         <p>
           commercialization is focused on delivering value and end results.
         </p>
-        <div className={bkstyles.herobtn}>
+        <div className={styles.herobtn}>
           <button><a href="/Contact">Speak To An Expert</a> </button>
           <button><a href="/Team">About Us</a> </button>
         </div>
       </div>
-      <div className={bkstyles.solutions}>
-        <div className={bkstyles.solutionsChild}>
+      <div className={styles.solutions}>
+        <div className={styles.solutionsChild}>
           <Image src={icon10} height={100} width={150}></Image>
-          <p className={bkstyles.solutionsRainbow}>Project Discovery</p>
+          <p className={styles.solutionsRainbow}>Project Discovery</p>
           <p>What is most critical to your business objectives? We will assess your firm to determine which blockchain use cases are most appropriate for it.</p>
         </div>
-        <div className={bkstyles.solutionsChild}>
+        <div className={styles.solutionsChild}>
           <Image src={icon2} height={100} width={150}></Image>
-          <p className={bkstyles.solutionsRainbow}>Strategy and Consulting</p>
+          <p className={styles.solutionsRainbow}>Strategy and Consulting</p>
           <p>Different firms require different intelligence. We help strategize to your unique needs and deliver targeted business intelligence</p>
         </div>
-        <div className={bkstyles.solutionsChild}>
+        <div className={styles.solutionsChild}>
           <Image src={icon1} height={100} width={150}></Image>
-          <p className={bkstyles.solutionsRainbow}>Blockchain Technology Integration</p>
+          <p className={styles.solutionsRainbow}>Blockchain Technology Integration</p>
           <p>Capitalize on the tools and resources that can accelerate your business. Our experts will integrate and develop the systems to help achieve your goals</p>
         </div>
       </div>
       <h1>Blackswan</h1>
       <h1>Main Areas of Focus</h1>
-      <div className={bkstyles.mainFocus}>
+      <div className={styles.mainFocus}>
         {BksData.map((data, index) => {
           return (
-            <div className={bkstyles.focusItem} key={index}>
-              <div className={bkstyles.focusHeader}>
+            <div className={styles.focusItem} key={index}>
+              <div className={styles.focusHeader}>
                 {data.image ? <Image height={75} width={75} src={icon[index]} /> : ''}
                 <p>{data.title}</p>
               </div>
-              <div className={bkstyles.focusText}>
+              <div className={styles.focusText}>
                 <p>{data.info}</p>
               </div>
               {/* <img src={data.image} width={40} height={40} /> */}
@@ -146,19 +146,19 @@ function Blackswan() {
           )
         })}
       </div>
-      <div className={bkstyles.customWeb3}>
-        <div className={bkstyles.containerWeb3}>
+      <div className={styles.customWeb3Bsr}>
+        <div className={styles.containerWeb3}>
           <div>
             <h1>Custom Web3 Solutions</h1>
             <p>Explore custom designed products and services for your business.</p>
           </div>
           <div>
-            <Image className={bkstyles.image} height={200} width={450} src={meeting}></Image>
+            <Image className={styles.image} height={200} width={450} src={meeting}></Image>
           </div>
         </div>
-        <div className={bkstyles.containerWeb3}>
+        <div className={styles.containerWeb3}>
           <div>
-            <Image className={bkstyles.image} height={200} width={450} src={servers}></Image>
+            <Image className={styles.image} height={200} width={450} src={servers}></Image>
           </div>
           <div>
             <h1>Untapped Possibilities?</h1>
@@ -166,64 +166,64 @@ function Blackswan() {
           </div>
         </div>
       </div>
-      <div className={bkstyles.quotes}>
-        <div className={bkstyles.quote}>
+      <div className={styles.quotes}>
+        <div className={styles.quote}>
           <FormatQuoteIcon style={{ fontSize: '6rem' }} />
           <p>{quoteData[i].quote}</p>
           <p>{quoteData[i].person}</p>
         </div>
-        <div className={bkstyles.quoteNav}>
+        <div className={styles.quoteNav}>
           <button onClick={() => prevRank()}><ArrowBackIos /></button>
           <button onClick={() => nextRank()}><ArrowForwardIos /></button>
           <button><a href="/Team">Meet the Team</a> </button>
         </div>
       </div>
-      <div className={bkstyles.safety}>
-        <div className={bkstyles.safetyApproach}>
+      <div className={styles.specific}>
+        <div className={styles.specificApproach}>
           <div>
-            <button disabled={true}>Don't put your users at risk.</button>
+            <button style={{backgroundColor: '#005eff'}} disabled={true}>Don't put your users at risk.</button>
             <h1>A safety first approach</h1>
             <p>Security flaws, inefficiencies, and bugs are very expensive when you deploy a Smart Contract. Monetary and emotional damage not only to you, but your users as well.</p>
           </div>
           <div>
-            <Image src={robo} className={bkstyles.image} height={300} width={400}></Image>
+            <Image src={robo} className={styles.image} height={300} width={400}></Image>
           </div>
         </div>
-        <div className={bkstyles.safetyWhy}>
+        <div className={styles.specificWhy}>
           <div>
             <h1>Why Black Swan?</h1>
             <h2 onClick={() => setToolTip({ raise: !toolTip.raise })}>Plug into an ecosystem, not an agency</h2>
             {toolTip.raise ?
-              <div className={bkstyles.safetyTooltip}>
+              <div className={styles.specificTooltip}>
                 <p>Asset owners of all types can raise decentralized funding, allowing the opportunity to generate passive revenue and access to liquidity.</p>
                 <button><a href="/Contact"> Book a Demo</a></button>
               </div> : ''
             }
             <h2 onClick={() => setToolTip({ invest: !toolTip.invest })}>Utilize the tools that make sense for your business</h2>
             {toolTip.invest ?
-              <div className={bkstyles.safetyTooltip}>
+              <div className={styles.specificTooltip}>
                 <p>Opportunities for investors of all types - previously only reserved for accredited investors, in the form of equity, funds, debt, and real estate.</p>
                 <button><a href="/Contact"> Book a Demo</a></button>
               </div> : ''
             }
             <h2 onClick={() => setToolTip({ ats: !toolTip.ats })}>Strategize and Develop top tier solutions</h2>
             {toolTip.ats ?
-              <div className={bkstyles.safetyTooltip}>
+              <div className={styles.specificTooltip}>
                 <p>Secondary trading for private markets. LIQUIDIAN's ATS delivers liquidity for private assets. Add your security to the premier marketplace for trading digital securities.</p>
                 <button><a href="/Contact"> Book a Demo</a></button>
               </div> : ''
             }
           </div>
           <div>
-            <Image className={bkstyles.image} height={400} width={300} src={liquidprism}></Image>
+            <Image className={styles.image} height={400} width={300} src={liquidprism}></Image>
           </div>
         </div>
-        <div className={bkstyles.safetyKeep}>
+        <div className={styles.specificKeepBsr}>
           <p style={{ fontSize: '5rem', fontWeight: '700', marginBottom: '0' }}>Let's keep in touch</p>
           <p>We've dedicated ourselves to understanding and building the future in the Web3 space.</p>
           <p>We will keeep you in the loop with all the newest stuff!</p>
-          <div className={bkstyles.safetyEmail}>
-            <input type="email" placeholder='Enter your email' /><button>Subscribe</button>
+          <div className={styles.specificEmail}>
+            <input type="email" placeholder='Enter your email' /><button style={{backgroundColor: '#005eff'}}>Subscribe</button>
           </div>
         </div>
       </div>

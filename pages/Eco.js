@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import BksData from '../assets/Eco.json'
-import ecostyles from '../styles/Eco.module.css'
+import styles from '../styles/PageStyles.module.css'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import Grid2 from '@mui/material/Unstable_Grid2/Grid2'
@@ -78,10 +78,10 @@ function Eco() {
   };
   //console.log(quoteData.length) = 16
   return (
-    <div className={ecostyles.bkmain}>
+    <div className={styles.bkmain}>
       <Nav />
-      <div className={ecostyles.hero}>
-        <Image className={ecostyles.image} height={125} width={800} src={ecologo}></Image>
+      <div className={styles.heroEco}>
+        <Image className={styles.image} height={125} width={800} src={ecologo}></Image>
         <p>
           We have a heavy emphasis on ways to leverage blockchain technology to create 
         </p>
@@ -91,41 +91,41 @@ function Eco() {
         <p>
           systems efficiently and inline with all regulatory practices.
         </p>
-        <div className={ecostyles.herobtn}>
+        <div className={styles.herobtn}>
           <button><a href="/Contact">Speak To An Expert</a> </button>
           <button><a href="/Team">About Us</a> </button>
         </div>
       </div>
-      <div className={ecostyles.solutions}>
-        <div className={ecostyles.solutionsChild}>
+      <div style={{borderColor: '#208805'}} className={styles.solutions}>
+        <div className={styles.solutionsChild}>
           <Image src={icon10} height={100} width={150}></Image>
-          <p className={ecostyles.solutionsRainbow}>Avoid ESG blind spots</p>
+          <p className={styles.solutionsRainbow}>Avoid ESG blind spots</p>
           <p>With regulations happening frequently, staying on top of changes becomes difficult.</p>
         </div>
-        <div className={ecostyles.solutionsChild}>
+        <div className={styles.solutionsChild}>
           <Image src={icon2} height={100} width={150}></Image>
-          <p className={ecostyles.solutionsRainbow}>Access New Investors </p>
+          <p className={styles.solutionsRainbow}>Access New Investors </p>
           <p>ETF investors looking to manage their ESG risks. </p>
         </div>
-        <div className={ecostyles.solutionsChild}>
+        <div className={styles.solutionsChild}>
           <Image src={icon1} height={100} width={150}></Image>
-          <p className={ecostyles.solutionsRainbow}>A Better Climate </p>
+          <p className={styles.solutionsRainbow}>A Better Climate </p>
           <p>Global warming is no jokes, reducing crypto emissions is one step closer to a greener world.</p>
         </div>
       </div>
-      <div className={ecostyles.mainFocusTitle}>
+      <div style={{color: '#208805'}} className={styles.mainFocusTitle}>
         <h1>Eco Citizen</h1>
         <h1>Main Areas of Focus</h1>
       </div>
-      <div className={ecostyles.mainFocus}>
+      <div className={styles.mainFocus}>
         {BksData.map((data, index) => {
           return (
-            <div className={ecostyles.focusItem} key={index}>
-              <div className={ecostyles.focusHeader}>
+            <div className={styles.focusItem} key={index}>
+              <div className={styles.focusHeader}>
                 {data.image ? <Image height={50} width={50} src={icon[index]}/> : ''}
-                <p>{data.title}</p>
+                <p style={{color: '#208805'}}>{data.title}</p>
               </div>
-              <div className={ecostyles.focusText}>
+              <div className={styles.focusText}>
                 <p>{data.info}</p>
               </div>
               {/* <img src={data.image} width={40} height={40} /> */}
@@ -133,19 +133,19 @@ function Eco() {
           )
         })}
       </div>
-      <div className={ecostyles.customWeb3}>
-        <div className={ecostyles.containerWeb3}>
+      <div className={styles.customWeb3Eco}>
+        <div className={styles.containerWeb3}>
           <div>
             <h1  style={{color: '#20880f'}}>Time for change</h1>
             <p>Crypto firms will need to consider the new ESG obligations that will apply to their investors and other business partners</p>
           </div>
           <div>
-            <Image className={ecostyles.image} height={250} width={250} src={coffee}></Image>
+            <Image className={styles.image} height={250} width={250} src={coffee}></Image>
           </div>
         </div>
-        <div className={ecostyles.containerWeb3}>
+        <div className={styles.containerWeb3}>
           <div>
-            <Image className={ecostyles.image} height={250} width={250} src={code}></Image>
+            <Image className={styles.image} height={250} width={250} src={code}></Image>
           </div>
           <div>
             <h1  style={{color: '#20880f'}}>Alternative solutions </h1>
@@ -153,25 +153,26 @@ function Eco() {
           </div>
         </div>
       </div>
-      <div className={ecostyles.quotes}>
-        <div className={ecostyles.quote}>
+      <div style={{backgroundColor: '#208805'}} className={styles.quotes}>
+        <div className={styles.quote}>
           <FormatQuoteIcon style={{ fontSize: '6rem' }} />
           <p>{quoteData[i].quote}</p>
+          <p>{quoteData[i].person}</p>
         </div>
-        <div className={ecostyles.quoteNav}>
+        <div className={styles.quoteNav}>
           <div>
-            <button onClick={() => prevRank()}><ArrowBackIos /></button>
-            <button onClick={() => nextRank()}><ArrowForwardIos /></button>
+            <button style={{color: '#208805'}} onClick={() => prevRank()}><ArrowBackIos /></button>
+            <button style={{color: '#208805'}} onClick={() => nextRank()}><ArrowForwardIos /></button>
           </div>
           <div>
-            <button><a href="/Team">Meet the Team</a> </button>
+            <button style={{color: '#208805'}}><a href="/Team">Meet the Team</a> </button>
           </div>
         </div>
       </div>
-      <div className={ecostyles.safety}>
-        <div className={ecostyles.safetyCompliance}>
+      <div className={styles.specific}>
+        <div className={styles.specificCompliance}>
         <div>
-          <h1>Compliance First</h1>
+          <h1 style={{color: '#208805'}}>Compliance First</h1>
           <p>ESG disclosure requirements will become more prominent, the regulatory landscape in this area is dynamic and continually shifting. Stay ready.</p>
           <button><a href="/Contact">Get Started</a></button>
         </div>
@@ -179,20 +180,20 @@ function Eco() {
           <Image height={450} width={450} src={p3}></Image>
         </div>
         </div>
-        <div className={ecostyles.safetyApproach}>
+        <div className={styles.specificApproach}>
           <div>
-            <button disabled={true}>We have an ESG focus</button>
+            <button style={{backgroundColor: '#208805'}} disabled={true}>We have an ESG focus</button>
             <h1>Enviromental Concerns</h1>
             <p>Many see Crypto as “uninvestable” for failing the “E” criteria among investors with strict environmental, social and corporate governance (“ESG”) concerns as part of their investment mandates.</p>
           </div>
           <div>
-            <Image src={robo} className={ecostyles.image} height={300} width={400}></Image>
+            <Image src={robo} className={styles.image} height={300} width={400}></Image>
           </div>
         </div>
-        <div className={ecostyles.safetyMarket}>
-          <h1>A green Crypto</h1>
-          <div className={ecostyles.safetyMarketRow}>
-            <div className={ecostyles.safetyMarketContent}>
+        <div className={styles.specificMarket}>
+          <h1 style={{color: '#208805'}}>A green Crypto</h1>
+          <div className={styles.specificMarketRow}>
+            <div className={styles.specificMarketContent}>
               <div>
                 <p><span style={{ color: '#20880F' }}>56%</span> don't invest in crypto because of environmental concerns.</p>
                 <button><a href="/Contact">Get Started</a></button>
@@ -201,7 +202,7 @@ function Eco() {
                 <Image height={150} width={150} src={piechart}></Image>
               </div>
             </div>
-            <div className={ecostyles.safetyMarketContent}>
+            <div className={styles.specificMarketContent}>
               <div>
                 <p><span style={{ color: '#20880F' }}>Carbon</span>  emissions from crypto mining is the primary concern . </p>
                 <button><a href="/Contact">Get Started</a></button>
@@ -212,41 +213,41 @@ function Eco() {
             </div>
           </div>
         </div>
-        <div className={ecostyles.safetyWhy}>
+        <div className={styles.specificWhy}>
           <div>
             <h1>Why Plan3</h1>
             <h2 onClick={() => setToolTip({ raise: !toolTip.raise })}>RAISE WEB3</h2>
             {toolTip.raise ?
-              <div className={ecostyles.safetyTooltip}>
+              <div className={styles.specificTooltip}>
                 <p>Asset owners of all types can raise decentralized funding, allowing the opportunity to generate passive revenue and access to liquidity.</p>
                 <button><a href="/Contact"> Book a Demo</a></button>
               </div> : ''
             }
             <h2 onClick={() => setToolTip({ invest: !toolTip.invest })}>Invest</h2>
             {toolTip.invest ?
-              <div className={ecostyles.safetyTooltip}>
+              <div className={styles.specificTooltip}>
                 <p>Opportunities for investors of all types - previously only reserved for accredited investors, in the form of equity, funds, debt, and real estate.</p>
                 <button><a href="/Contact"> Book a Demo</a></button>
               </div> : ''
             }
             <h2 onClick={() => setToolTip({ ats: !toolTip.ats })}>ATS</h2>
             {toolTip.ats ?
-              <div className={ecostyles.safetyTooltip}>
+              <div className={styles.specificTooltip}>
                 <p>Secondary trading for private markets. LIQUIDIAN's ATS delivers liquidity for private assets. Add your security to the premier marketplace for trading digital securities.</p>
                 <button><a href="/Contact"> Book a Demo</a></button>
               </div> : ''
             }
           </div>
           <div>
-            <Image className={ecostyles.image} height={400} width={400} src={threecs}></Image>
+            <Image className={styles.image} height={400} width={400} src={threecs}></Image>
           </div>
         </div>
-        <div className={ecostyles.safetyKeep}>
+        <div className={styles.specificKeepEco}>
             <p style={{fontSize: '5rem', fontWeight: '700', marginBottom: '0', color:'#20880F'}}>Let's keep in touch</p>
             <p>We've dedicated ourselves to understanding and building the future in the Web3 space.</p>
             <p>We will keeep you in the loop with all the newest stuff!</p>
-        <div className={ecostyles.safetyEmail}>
-          <input type="email" placeholder='Enter your email' /><button>Subscribe</button>
+        <div className={styles.specificEmail}>
+          <input type="email" placeholder='Enter your email' /><button style={{color: '#208805'}}>Subscribe</button>
         </div>
         </div>
       </div>

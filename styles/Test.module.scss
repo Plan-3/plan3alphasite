@@ -1,0 +1,500 @@
+$bsrcolor: black;
+$blue: #005EFF;
+$oricolor: #cf012d;
+$lsmcolor: #c89d2e;
+$ecocolor: #208805;
+$neutralcolor: #4d4d4d;
+
+
+@mixin backgroundLinearGradient($rotation, $color1, $color2, $color3) {
+  width: 100%;
+  background: linear-gradient($rotation, $color1, $color2, $color3)
+}
+
+@mixin backgroundRadialGradient($color1, $color2) {
+  width: 100%;
+  background: radial-gradient(circle, $color1, $color2)
+}
+
+@mixin flexBox() {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@mixin flexBoxColumn() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin hero($url: ‘’) {
+  background: url($url);
+  background-size: cover;
+  aspect-ratio: 1920/1080;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin marketContent() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  margin: 0 .4rem 1rem .4rem;
+  background-color: #2D2D2D;
+  width: 40%;
+}
+
+@mixin rainbowText() {
+  font-size: 1.4rem;
+  font-weight: 400;
+  background: rgb(168, 241, 254);
+  background: linear-gradient(90deg, rgba(168, 241, 254, 1) 0%, rgba(11, 106, 252, 1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin solutions() {
+  display: flex;
+  background-color: $bsrcolor;
+  box-shadow:
+    3rem 3rem 5px #1d1d1d,
+    -3rem 3rem 5px #1d1d1d;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid;
+  margin: 2rem;
+}
+
+@mixin keepintouch($color, $color2) {
+  background: rgb(170, 170, 170);
+  background: linear-gradient(50deg, $color 0%, $color2 25%, $color2 75%, $color 100%);
+  text-align: center;
+  width: 75%;
+  border: 3px solid white;
+  border-radius: 2rem;
+}
+
+.customWeb3Bsr {
+  background: rgb(200, 157, 46);
+  background: radial-gradient(circle,
+      $blue 0%,
+      rgba(45, 25, 11, 1) 10%,
+      rgba(17, 1, 4, 1) 26%,
+      $blue 30%,
+      rgba(17, 1, 4, 1) 34%,
+      rgba(39, 20, 10, 1) 56%,
+      $blue 60%,
+      rgba(17, 1, 4, 1) 64%,
+      rgba(36, 17, 9, 1) 86%,
+      $blue 90%,
+      rgba(17, 1, 4, 1) 94%);
+}
+.customWeb3Lsm {
+  background: rgb(200, 157, 46);
+  background: radial-gradient(circle,
+      $lsmcolor 0%,
+      rgba(45, 25, 11, 1) 10%,
+      rgba(17, 1, 4, 1) 26%,
+      $lsmcolor 30%,
+      rgba(17, 1, 4, 1) 34%,
+      rgba(39, 20, 10, 1) 56%,
+      $lsmcolor 60%,
+      rgba(17, 1, 4, 1) 64%,
+      rgba(36, 17, 9, 1) 86%,
+      $lsmcolor 90%,
+      rgba(17, 1, 4, 1) 94%);
+}
+.customWeb3Ori {
+  background: rgb(200, 157, 46);
+  background: radial-gradient(circle,
+      $oricolor 0%,
+      rgba(45, 25, 11, 1) 10%,
+      rgba(17, 1, 4, 1) 26%,
+      $oricolor 30%,
+      rgba(17, 1, 4, 1) 34%,
+      rgba(39, 20, 10, 1) 56%,
+      $oricolor 60%,
+      rgba(17, 1, 4, 1) 64%,
+      rgba(36, 17, 9, 1) 86%,
+      $oricolor 90%,
+      rgba(17, 1, 4, 1) 94%);
+}
+.customWeb3Eco {
+  background: rgb(200, 157, 46);
+  background: radial-gradient(circle,
+      $ecocolor 0%,
+      rgba(45, 25, 11, 1) 10%,
+      rgba(17, 1, 4, 1) 26%,
+      $ecocolor 30%,
+      rgba(17, 1, 4, 1) 34%,
+      rgba(39, 20, 10, 1) 56%,
+      $ecocolor 60%,
+      rgba(17, 1, 4, 1) 64%,
+      rgba(36, 17, 9, 1) 86%,
+      $ecocolor 90%,
+      rgba(17, 1, 4, 1) 94%);
+}
+
+.containerWeb3 {
+  @include flexBox();
+}
+
+.focusItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  text-align: left;
+  width: 22%;
+  margin: .5rem;
+}
+
+//h1 custom colors inline style on individual pages 
+.focusItem h1,
+.focusItem p {
+  width: 60%;
+}
+
+.focusItem img {
+  border-radius: 25%;
+}
+
+//custom colors *text inline style on individual pages 
+.focusHeader {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.focusText {
+  font-weight: 300;
+}
+
+.focusText {
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.heroBsr {
+  @include hero('../assets/Images/Heroes/bkhero2.svg')
+}
+
+.heroLsm {
+  @include hero('../assets/Images/Heroes/lsmhero.svg')
+}
+
+.heroOri {
+  @include hero('../assets/Images/Heroes/orihero.svg')
+}
+
+.heroEco {
+  @include hero('../assets/Images/Heroes/ecohero.svg')
+}
+
+.herobtn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.herobtn button {
+  background-color: $neutralcolor;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  margin: 1rem;
+}
+
+.mainFocus {
+  margin: 0;
+  background-color: $bsrcolor;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+//custom colors inline style on individual pages 
+.mainFocusTitle {
+  background-color: $bsrcolor;
+  padding: 2rem;
+}
+
+.quote {
+  color: white;
+  font-size: 3rem;
+  border-bottom: 3px solid white;
+  width: 50%;
+}
+
+//background color individual page inline style
+.quotes {
+  @include flexBoxColumn();
+}
+
+.quote p {
+  margin: 0;
+}
+
+//color text indvidual page inline style
+.quoteNav {
+  @include flexBox();
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 2rem;
+}
+
+.quoteNav button {
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.quoteNav button:hover {
+  transform: scale(1.1);
+}
+
+.specific {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
+}
+
+
+.specificApproach {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+  border: 3px solid;
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 50%;
+  font-weight: 150;
+}
+
+//backgroundColor inline style 
+.specificApproach button {
+  color: white;
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 4rem;
+}
+
+.specificCompliance {
+  margin: auto;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.specificEmail {
+  display: flex;
+  text-align: left;
+  margin: 4rem .7rem;
+}
+
+//color inline style
+.specificEmail input {
+  background-color: white;
+  padding: 1rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  width: 80%;
+}
+
+//background color inline style
+.specificEmail button {
+  color: white;
+  width: 20%;
+  padding: 1rem;
+}
+
+.specificKeepBsr {
+  @include keepintouch(#005EFF, #131313)
+}
+
+.specificKeepLsm {
+  @include keepintouch($lsmcolor, #131313)
+}
+
+.specificKeepOri {
+  @include keepintouch($oricolor, #131313)
+}
+
+.specificKeepEco {
+  @include keepintouch($ecocolor, #131313)
+}
+
+.specificMarket {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+
+
+.specificMarketRow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.specificMarketContent {
+  @include marketContent();
+}
+
+.specificWhy {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.specificWhy h2:hover {
+  cursor: pointer;
+}
+
+.specificTooltip {
+  text-align: right;
+  width: 60%;
+}
+
+.specificTooltip button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #005EFF;
+}
+
+.specificTooltip button:hover {
+  box-shadow: 0px 0px 25px #005eff;
+}
+
+.solutions {
+  @include solutions()
+}
+
+.solutionsChild {
+  width: 30%;
+  text-align: left;
+  font-size: 1.2rem;
+  padding-left: 1em;
+}
+
+.solutionsRainbow {
+  @include rainbowText();
+}
+
+@media screen and (max-width: 810px) {
+  .image {
+    width: 80%;
+  }
+  .specificCompliance{
+    @include flexBoxColumn();
+  }
+  .specificCompliance img{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .containerWeb3 {
+    @include flexBoxColumn();
+    flex-direction: column-reverse;
+  }
+
+  .focusHeader {
+    @include flexBoxColumn;
+    text-align: center;
+  }
+
+  .focusItem {
+    align-items: center;
+    width: 100%;
+  }
+
+  .focusText {
+    @include flexBoxColumn;
+    text-align: center;
+  }
+
+  .hero {
+    @include flexBoxColumn;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+
+  .hero p {
+    line-height: 1rem;
+  }
+
+  .quote {
+    font-size: 1.3rem;
+  }
+
+  .quoteNav {
+    @include flexBoxColumn;
+  }
+
+  .specificApproach {
+    @include flexBoxColumn;
+    width: 100%;
+  }
+
+  .specificMarketRow,
+  .specificMarketContent{
+    @include flexBoxColumn();
+    width: 100%
+  }
+
+  .specificWhy {
+    @include flexBoxColumn;
+    width: 100%;
+  }
+
+  .specificTooltip {
+    width: 100%;
+    text-align: center;
+  }
+
+  .specificKeepBsr,
+  .specificKeepLsm,
+  .specificKeepOri,
+  .specificKeepEco {
+    width: 100%;
+    font-size: smaller;
+    margin-bottom: 10px;
+  }
+
+  .specificEmail {
+    @include flexBoxColumn;
+  }
+
+  .specificEmail input,
+  .specificEmail button {
+    width: 100%;
+    border-radius: 2rem;
+  }
+
+  .solutions {
+    @include flexBoxColumn;
+    margin: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .solutionsChild {
+    text-align: center;
+    width: 100%;
+  }
+}
