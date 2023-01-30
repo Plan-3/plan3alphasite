@@ -7,7 +7,11 @@ import monetize from '../../assets/Images/monetize.svg'
 
 function Bks() {
   return (
-    <div className={styles.minis}>
+    <div className={styles.minisBks}>
+      <div>
+        <h1>Black Swan <span style={{color: '#005eff'}}>Vision</span> </h1>
+        <p> Black Swan Research delivers best-in-class research and intelligence to leverage the utility of deep and emerging technologies. We facilitate informed development of the digital economy </p>
+      </div>
       <div className={styles.minisRight}>
         <div>
           <ul>
@@ -41,10 +45,6 @@ function Bks() {
           </ul>
           <button><a href="/Blackswan">Explore ➢ </a></button>
         </div>
-      </div>
-      <div>
-        <h1>Black Swan <span>Vision</span></h1>
-        <p> Black Swan Research delivers best-in-class research and intelligence to leverage the utility of deep and emerging technologies. We facilitate informed development of the digital economy </p>
       </div>
     </div>
   )

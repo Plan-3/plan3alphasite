@@ -395,7 +395,7 @@ $neutralcolor: #4d4d4d;
 
 @media screen and (max-width: 810px) {
   .image {
-    width: 80%;
+    width: auto;
   }
   .specificCompliance{
     @include flexBoxColumn();

@@ -7,7 +7,11 @@ import monetize from '../../assets/Images/monetize.svg'
 
 function Lsm() {
   return (
-    <div className={styles.minis}>
+    <div className={styles.minisLsm}>
+      <div>
+        <h1>Lionshare Media <span style={{color: '#c89d2e'}}>Vision</span></h1>
+        <p> Lionshare brings product analytics to web3. With a wide net of capabilities, we use behavioral analytics to build unmatched digital experiences that enable you to measure, iterate, and scale your project with a data-driven approach. </p>
+      </div>
       <div className={styles.minisRight}>
         <div>
           <ul>
@@ -43,10 +47,6 @@ function Lsm() {
           <button><a href="/Lionshare">Explore ➢</a> </button>
         </div>
 
-      </div>
-      <div>
-        <h1>Lionshare Media <span>Vision</span></h1>
-        <p> Lionshare brings product analytics to web3. With a wide net of capabilities, we use behavioral analytics to build unmatched digital experiences that enable you to measure, iterate, and scale your project with a data-driven approach. </p>
       </div>
     </div>
   )

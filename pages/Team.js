@@ -51,11 +51,11 @@ function Team() {
             <p>First consultation is on us.</p>
           </div>
           <div className={styles.mediumBox}>
-            <div>
+            <div className={styles.imageOverwrite}>
               <Image height={40} src={gearworld}></Image>
               <Image height={40} src={brainiac}></Image>
               </div>
-              <div>
+              <div className={styles.imageOverwrite}>
               <Image height={40} src={speaker}></Image>
               <Image height={40} src={web}></Image>
             </div>

@@ -18,6 +18,7 @@ import lsmlogo from '../assets/Images/Logos/lsmlogo.png'
 import orilogo from '../assets/Images/Logos/orilogo.png'
 import ecologo from '../assets/Images/Logos/ecologo.png'
 import defi from '../assets/Images/defi.png'
+import robothand from '../assets/Images/robothand.svg'
 import arrows from '../assets/Images/Icons/arrows.svg'
 import web1 from '../assets/Images/Icons/M1.svg'
 import web2 from '../assets/Images/Icons/M2.svg'
@@ -57,7 +58,7 @@ function Home() {
           <p>Campaign Architecture & Management</p>
         </button>
         <button id='lsmbtn' onClick={() => setDivider({ lsm: !divider.lsm })}>
-          <Image width={250} height={100} src={lsmlogo}></Image>
+          <Image width={250} height={100} src={lsmlogo} styles={{width: 'auto'}}></Image>
           <p>Lionshare Media:</p>
           <p>Anaylytics: Media, Data, & Ad Platform</p>
         </button>
@@ -98,7 +99,6 @@ function Home() {
         </div>
       </div>
       <div className={styles.toolsStart}>
-
         <div className={styles.tools}>
           <h3>
             We have the right set of tools
@@ -113,7 +113,7 @@ function Home() {
           </p>
           <button><a href="/Contact">Get Started</a></button>
         </div>
-        <div className={styles.toolsImg}></div>
+        <div><Image src={robothand}></Image></div>
       </div>
       <div className={styles.defi}>
         <div>
@@ -176,7 +176,7 @@ function Home() {
         </div>
       </div>
       <div className={styles.powerP3}>
-        <div style={{ display: 'flex', flexDirection: 'column', width: '50%' }}>
+        <div className={styles.powerBlurIntro}>
           <h1>Powered by Plan3</h1>
           <p>
             We have consultants on every continent, from a diversity of backgrounds, with decades of experience in management,
@@ -186,28 +186,45 @@ function Home() {
         </div>
         <div className={styles.powerBlurContainer}>
           <div className={styles.powerBlur}>
-            <Image height={75} width={250} src={bkslogo}></Image>
+          <div>
+            <Image height={125} width={200} src={bkslogo}></Image>
+          </div>
+          <div>
             <p>Deep Tech: Research, Development, & Architecture</p>
-            <Image height={150} width={150} src={lightbulb}></Image>
+            <Image height={75} src={lightbulb} className={styles.powerBlurIcon}></Image>
             <p><strong>5+ Living Whitepapers Developed</strong></p>
           </div>
+          </div>
           <div className={styles.powerBlur}>
-            <Image height={75} width={250} src={orilogo}></Image>
-            <p>web3 Marketing: Campaign Architecture & Management</p>
-            <Image height={150} width={150} src={blockmessage}></Image>
+          <div>
+            <Image width={200} height={125} src={orilogo}></Image>
+          </div>
+          <div>
+            <p>Web3 Marketing: </p> 
+            <p>Campaign Architecture & Management</p>
+            <Image height={100} src={blockmessage} className={styles.powerBlurIcon}></Image>
             <p><strong>3M+ Sales to date</strong></p>
           </div>
-          <div className={styles.powerBlur}>
-            <Image height={75} width={250} src={lsmlogo}></Image>
-            <p>Analytics: Media, Data, & Ad Platform</p>
-            <Image height={150} width={150} src={percentdown}></Image>
-            <p><strong>$2 Million Saved Through Data Driven Strategies</strong></p>
           </div>
           <div className={styles.powerBlur}>
-            <Image height={75} width={250} src={ecologo}></Image>
+          <div>
+            <Image height={125} width={200} src={lsmlogo}></Image>
+          </div>
+          <div>
+            <p>Analytics: Media, Data, & Ad Platform</p>
+            <Image height={75} src={percentdown} className={styles.powerBlurIcon}></Image>
+            <p><strong>$2 Million Saved Through Data Driven Strategies</strong></p>
+          </div>
+          </div>
+          <div className={styles.powerBlur}>
+          <div>
+            <Image height={125} width={200} src={ecologo}></Image>
+          </div>
+          <div>
             <p>Carbon Offset: ESG Initiatives</p>
-            <Image height={150} width={150} src={co2down}></Image>
+            <Image height={75} src={co2down} className={styles.powerBlurIcon}></Image>
             <p><strong>10% Estimated Valuation increase for Carbon Negative Businesses</strong></p>
+          </div>
           </div>
         </div>
       </div>

@@ -159,7 +159,6 @@
 .iconContainer {
   background: linear-gradient(0deg, rgba(0, 4, 37, 1) 0%, rgba(0, 35, 110, 1) 100%);
   display: flex;
-  width: 100%;
   justify-content: space-around;
   align-items: center;
   margin: .5rem 1rem;
@@ -168,6 +167,10 @@
   border-radius: 1rem;
   /* clip text to the background and then make text transparent 
   so background comes through the text only */
+}
+
+.iconContainer div:nth-child(n){
+  margin: 1rem 2rem;
 }
 
 .iconContainer svg {
@@ -181,7 +184,10 @@
   margin: 0 .5rem;
 }
 
-.minis {
+.minisBks,
+.minisOri,
+.minisEco,
+.minisLsm {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -190,6 +196,22 @@
   text-align: center;
   margin-bottom: 1rem;
   margin: 0 2rem;
+}
+.minisBks{
+  background: rgb(207,1,45);
+  background: linear-gradient(325deg, #005eff 0%, rgba(8,0,2,1) 15%, rgba(0,0,0,1) 85%, #005eff 100%);  
+}
+.minisOri{
+  background: rgb(207,1,45);
+  background: linear-gradient(325deg, rgba(207,1,45,1) 0%, rgba(8,0,2,1) 15%, rgba(0,0,0,1) 85%, rgba(207,1,45,1) 100%);  
+}
+.minisLsm{
+  background: rgb(207,1,45);
+  background: linear-gradient(325deg, #c89d2e 0%, rgba(8,0,2,1) 15%, rgba(0,0,0,1) 85%, #c89d2e 100%);  
+}
+.minisEco{
+  background: rgb(207,1,45);
+  background: linear-gradient(325deg, #208805 0%, rgba(8,0,2,1) 15%, rgba(0,0,0,1) 85%, #208805 100%);  
 }
 
 .minis button {
@@ -204,12 +226,7 @@
 .minisLeft {
   display: flex;
   justify-content: space-evenly;
-  padding: 2rem;
-  background: rgb(81, 126, 156);
-  background: radial-gradient(circle, rgba(81, 126, 156, 0.91) 0%,
-      rgba(32, 73, 135, 0.83) 8%, rgba(31, 72, 134, 0.82) 23%,
-      rgba(26, 66, 130, 0.74) 37%, rgba(24, 63, 128, 0.74) 54%,
-      rgba(23, 61, 127, 0.72) 82%, rgba(9, 47, 116, 0.51) 94%, rgba(0, 2, 30, 1) 100%);
+  padding: 1.4rem;
 }
 
 .numberRound {
@@ -256,15 +273,20 @@ flex\column\width 50%
 .powerBlur {
   display: flex;
   flex-direction: column;
-  background-color: rgba(36, 48, 127, 0.73);
+  background-color: rgba(0, 0, 0, 0.486);
   margin: .5rem .5rem;
   width: 22%;
-  align-items: center;
   justify-content: space-evenly;
   border-radius: .5rem;
   text-align: center;
   backdrop-filter: 100%;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+}
+
+.powerBlurIntro{
+  font-size: 1.2rem;
+  line-height: 2rem;
+  width: 60%;
 }
 
 .rainbowText {
@@ -305,13 +327,8 @@ flex\column\width 50%
   width: 100%;
   margin-bottom: 1rem;
   display: flex;
-  justify-content: space-around;
-}
-
-.toolsImg {
-  background: url('../assets/Images/robothand.svg');
-  background-repeat: no-repeat;
-  aspect-ratio: 1980/1080;
+  justify-content: center;
+  align-items: center;
 }
 
 .tools {
@@ -319,7 +336,7 @@ flex\column\width 50%
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 80vh;
+  width: 50%;
   padding: 10px;
   text-align: left;
   font-size: 1.3rem;
@@ -369,13 +386,13 @@ flex\column\width 50%
 .winning {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
 }
 
 .winning p {
   text-align: right;
-  width: 40%;
+  width: 75%;
 }
 
 .winningContent {
@@ -383,7 +400,7 @@ flex\column\width 50%
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
-  max-width: 50%;
+  max-width: 25%;
 }
 
 @media screen and (max-width: 1400px) {
@@ -483,8 +500,17 @@ flex\column\width 50%
     padding: 0;
   }
 
-  .powerBlur img{
+  .powerBlur img:nth-child(1){
     width: 80%;
+    height: auto;
+  }
+  .powerBlurIcon{
+    width: auto;
+  }
+
+  .powerBlurIntro{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.227);
   }
 
   .toolsStart {
@@ -493,21 +519,22 @@ flex\column\width 50%
     background-repeat: no-repeat;
     aspect-ratio: 300/300; */
     flex-direction: column;
-    height: 100vh;
-  }
-
-  .toolsImg {
-    /* display: none; */
-    aspect-ratio: 35/75;
+    align-items: center;
+    justify-content: center;
   }
 
   .tools {
     text-align: center;
     align-items: center;
+    width: 100%;
   }
 
   .tools h3 {
     font-size: 2rem;
+  }
+
+  .toolsStart img{
+    width: 100%;
   }
 
   .solutions button {
@@ -532,6 +559,7 @@ flex\column\width 50%
 
   .winning p {
     text-align: center;
+    width: 80%;
   }
 
   .winningContent {

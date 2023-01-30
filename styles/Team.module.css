@@ -66,6 +66,7 @@
   border-right: 2px solid white;
 }
 
+
 .smallBox,
 .mediumBox,
 .largeBox {
@@ -218,7 +219,7 @@
 
 @media screen and (max-width: 600px) {
   .gradientTitle{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .hero {
@@ -248,6 +249,10 @@
     border-bottom: 1px solid white;
     border-top: 1px solid white;
     width: 100%;
+  }
+
+  .imageOverwrite img{
+    width: 15%;
   }
 
   .missionTitle h1{

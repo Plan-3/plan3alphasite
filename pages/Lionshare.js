@@ -151,13 +151,9 @@ function Lionshare() {
           <p>{quoteData[i].person}</p>
         </div>
         <div className={styles.quoteNav}>
-          <div>
             <button style={{color: '#c89d2e'}} onClick={() => prevRank()}><ArrowBackIos /></button>
             <button style={{color: '#c89d2e'}} onClick={() => nextRank()}><ArrowForwardIos /></button>
-          </div>
-          <div>
             <button style={{color: '#c89d2e'}}><a href="/Team">Meet the Team</a> </button>
-          </div>
         </div>
       </div>
       <div className={styles.specific}>
