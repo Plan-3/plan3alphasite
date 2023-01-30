@@ -58,7 +58,7 @@ function Home() {
           <p>Campaign Architecture & Management</p>
         </button>
         <button id='lsmbtn' onClick={() => setDivider({ lsm: !divider.lsm })}>
-          <Image width={250} height={100} src={lsmlogo} styles={{width: 'auto'}}></Image>
+          <Image width={250} height={100} src={lsmlogo} style={{width: 'auto'}}></Image>
           <p>Lionshare Media:</p>
           <p>Anaylytics: Media, Data, & Ad Platform</p>
         </button>

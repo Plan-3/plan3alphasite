@@ -79,11 +79,13 @@ function Eco() {
   //console.log(quoteData.length) = 16
   return (
     <div className={styles.bkmain}>
-      <Nav />
+      <div style={{ position: 'sticky', top: 0 }}>
+        <Nav />
+      </div>
       <div className={styles.heroEco}>
         <Image className={styles.image} height={125} width={800} src={ecologo}></Image>
         <p>
-          We have a heavy emphasis on ways to leverage blockchain technology to create 
+          We have a heavy emphasis on ways to leverage blockchain technology to create
         </p>
         <p>
           enterprise solutions. Disrupting existing solutions in virtually all verticals by building
@@ -96,7 +98,7 @@ function Eco() {
           <button><a href="/Team">About Us</a> </button>
         </div>
       </div>
-      <div style={{borderColor: '#208805'}} className={styles.solutions}>
+      <div style={{ borderColor: '#208805' }} className={styles.solutions}>
         <div className={styles.solutionsChild}>
           <Image src={icon10} height={100} width={150}></Image>
           <p className={styles.solutionsRainbow}>Avoid ESG blind spots</p>
@@ -113,7 +115,7 @@ function Eco() {
           <p>Global warming is no jokes, reducing crypto emissions is one step closer to a greener world.</p>
         </div>
       </div>
-      <div style={{color: '#208805'}} className={styles.mainFocusTitle}>
+      <div style={{ color: '#208805' }} className={styles.mainFocusTitle}>
         <h1>Eco Citizen</h1>
         <h1>Main Areas of Focus</h1>
       </div>
@@ -122,8 +124,8 @@ function Eco() {
           return (
             <div className={styles.focusItem} key={index}>
               <div className={styles.focusHeader}>
-                {data.image ? <Image height={50} width={50} src={icon[index]}/> : ''}
-                <p style={{color: '#208805'}}>{data.title}</p>
+                {data.image ? <Image height={50} width={50} src={icon[index]} /> : ''}
+                <p style={{ color: '#208805' }}>{data.title}</p>
               </div>
               <div className={styles.focusText}>
                 <p>{data.info}</p>
@@ -136,7 +138,7 @@ function Eco() {
       <div className={styles.customWeb3Eco}>
         <div className={styles.containerWeb3}>
           <div>
-            <h1  style={{color: '#20880f'}}>Time for change</h1>
+            <h1 style={{ color: '#20880f' }}>Time for change</h1>
             <p>Crypto firms will need to consider the new ESG obligations that will apply to their investors and other business partners</p>
           </div>
           <div>
@@ -148,12 +150,12 @@ function Eco() {
             <Image className={styles.image} height={250} width={250} src={code}></Image>
           </div>
           <div>
-            <h1  style={{color: '#20880f'}}>Alternative solutions </h1>
+            <h1 style={{ color: '#20880f' }}>Alternative solutions </h1>
             <p>It has been well publicized that some types of cryptocurrency, generally referred to as requiring “proof of work”, use a competitive validation method known as “mining” to achieve goals, such as issuing new crypto currency, and uses a huge amount of computer processing power. </p>
           </div>
         </div>
       </div>
-      <div style={{backgroundColor: '#208805'}} className={styles.quotes}>
+      <div style={{ backgroundColor: '#208805' }} className={styles.quotes}>
         <div className={styles.quote}>
           <FormatQuoteIcon style={{ fontSize: '6rem' }} />
           <p>{quoteData[i].quote}</p>
@@ -161,28 +163,28 @@ function Eco() {
         </div>
         <div className={styles.quoteNav}>
           <div>
-            <button style={{color: '#208805'}} onClick={() => prevRank()}><ArrowBackIos /></button>
-            <button style={{color: '#208805'}} onClick={() => nextRank()}><ArrowForwardIos /></button>
+            <button style={{ color: '#208805' }} onClick={() => prevRank()}><ArrowBackIos /></button>
+            <button style={{ color: '#208805' }} onClick={() => nextRank()}><ArrowForwardIos /></button>
           </div>
           <div>
-            <button style={{color: '#208805'}}><a href="/Team">Meet the Team</a> </button>
+            <button style={{ color: '#208805' }}><a href="/Team">Meet the Team</a> </button>
           </div>
         </div>
       </div>
       <div className={styles.specific}>
         <div className={styles.specificCompliance}>
-        <div>
-          <h1 style={{color: '#208805'}}>Compliance First</h1>
-          <p>ESG disclosure requirements will become more prominent, the regulatory landscape in this area is dynamic and continually shifting. Stay ready.</p>
-          <button><a href="/Contact">Get Started</a></button>
-        </div>
-        <div>
-          <Image height={450} width={450} src={p3}></Image>
-        </div>
+          <div>
+            <h1 style={{ color: '#208805' }}>Compliance First</h1>
+            <p>ESG disclosure requirements will become more prominent, the regulatory landscape in this area is dynamic and continually shifting. Stay ready.</p>
+            <button><a href="/Contact">Get Started</a></button>
+          </div>
+          <div>
+            <Image height={450} width={450} src={p3}></Image>
+          </div>
         </div>
         <div className={styles.specificApproach}>
           <div>
-            <button style={{backgroundColor: '#208805'}} disabled={true}>We have an ESG focus</button>
+            <button style={{ backgroundColor: '#208805' }} disabled={true}>We have an ESG focus</button>
             <h1>Enviromental Concerns</h1>
             <p>Many see Crypto as “uninvestable” for failing the “E” criteria among investors with strict environmental, social and corporate governance (“ESG”) concerns as part of their investment mandates.</p>
           </div>
@@ -191,7 +193,7 @@ function Eco() {
           </div>
         </div>
         <div className={styles.specificMarket}>
-          <h1 style={{color: '#208805'}}>A green Crypto</h1>
+          <h1 style={{ color: '#208805' }}>A green Crypto</h1>
           <div className={styles.specificMarketRow}>
             <div className={styles.specificMarketContent}>
               <div>
@@ -243,12 +245,12 @@ function Eco() {
           </div>
         </div>
         <div className={styles.specificKeepEco}>
-            <p style={{fontSize: '5rem', fontWeight: '700', marginBottom: '0', color:'#20880F'}}>Let's keep in touch</p>
-            <p>We've dedicated ourselves to understanding and building the future in the Web3 space.</p>
-            <p>We will keeep you in the loop with all the newest stuff!</p>
-        <div className={styles.specificEmail}>
-          <input type="email" placeholder='Enter your email' /><button style={{color: '#208805'}}>Subscribe</button>
-        </div>
+          <p style={{ fontSize: '5rem', fontWeight: '700', marginBottom: '0', color: '#20880F' }}>Let's keep in touch</p>
+          <p>We've dedicated ourselves to understanding and building the future in the Web3 space.</p>
+          <p>We will keeep you in the loop with all the newest stuff!</p>
+          <div className={styles.specificEmail}>
+            <input type="email" placeholder='Enter your email' /><button style={{ color: '#208805' }}>Subscribe</button>
+          </div>
         </div>
       </div>
       <Footer />

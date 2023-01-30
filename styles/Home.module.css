@@ -46,14 +46,11 @@
 
 .dropdownContent {
   position: absolute;
-  bottom: -160px;
   font-size: 1.1rem;
-  padding: 1.5rem;
-  text-decoration: underline;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: rgba(254, 254, 254, 0.766);
+  background-color: rgba(254, 254, 254, 1);
   color: black;
   border-radius: .2em;
 }
@@ -96,7 +93,13 @@ if needed add back to index main div
   align-items: center;
 }
 */
-
+.linkBks,
+.linkEco,
+.linkLsm,
+.linkOri{
+  padding: 1rem 1rem 0 0;
+  border-bottom: 1px solid black;
+}
 .linkBks:hover {
   color: #4d4d4d;
 }
@@ -254,7 +257,6 @@ if needed add back to index main div
   .miniNav {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
     position: sticky;
     top: 0;
@@ -268,6 +270,7 @@ if needed add back to index main div
   .miniNav ul {
     list-style: none;
     padding: 0;
+    background-color: black;
     margin-bottom: 5px;
     line-height: 1.9rem;
   }

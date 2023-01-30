@@ -26,14 +26,14 @@ function Nav() {
       <div className={styles.miniNav}>
         {menu.menu ? <button onClick={() => setMenu({ nav: !menu.nav, menu: !menu.menu })}><CloseIcon /></button> : <button onClick={() => setMenu({ nav: !menu.nav, menu: !menu.menu })}><MenuIcon /></button>}
         {menu.nav ?
-          <div>
+          <div style={{width: '100%'}}>
             <ul>
               <li><a href="/">Home</a></li>
               <li style={{ display: 'flex' }}>
-                <a style={{ marginRight: '.7em' }} href="/Blackswan">Blackswan</a>
-                <a style={{ marginRight: '.7em' }} href="/Lionshare">Lionshare Media</a>
-                <a style={{ marginRight: '.7em' }} href="/Origins">Origins</a>
-                <a href="/Eco">EcoCitizen</a>
+                <a style={{ marginRight: '.7em', color: '#005eff' }} href="/Blackswan">Blackswan</a>
+                <a style={{ marginRight: '.7em', color: '#c89d2e' }} href="/Lionshare">Lionshare Media</a>
+                <a style={{ marginRight: '.7em', color: '#cf012e' }} href="/Origins">Origins</a>
+                <a href="/Eco" style={{color: '#208805'}}>EcoCitizen</a>
                 {/* <select name="dropdownNav" id="dropdownNav">
             <option value="BlackSwan" default={true}>Blackswan</option>
             <option value="Lionshare">Lionshare Media</option>
@@ -78,11 +78,10 @@ function Nav() {
           Solutions
             {tooltip ? 
               <div className={styles.dropdownContent}>
-                  <a className={styles.linkBks} href="/Blackswan">Blackswan</a>
-                  <a className={styles.linkLsm} href="/Lionshare">Lionshare Media</a>
-                  <a className={styles.linkOri} href="/Origins">Origins</a>
-                  <a className={styles.linkEco} href="/Eco">EcoCitizen</a>
-                  <ArrowCircleUpIcon/>
+              <div className={styles.linkBks}><a  href="/Blackswan">Blackswan</a></div>
+              <div className={styles.linkLsm}><a  href="/Lionshare">Lionshare Media</a></div>
+              <div className={styles.linkOri}><a  href="/Origins">Origins</a></div>
+              <div className={styles.linkEco}><a  href="/Eco">EcoCitizen</a></div>
               </div>
               :
               ''

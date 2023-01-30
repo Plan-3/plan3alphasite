@@ -63,9 +63,9 @@ function Blackswan() {
   useEffect(() => {
     let time = setInterval(() => {
       setI((i) => {
-      let newIndex = i + 1
-      return checkNumber(newIndex)
-    })
+        let newIndex = i + 1
+        return checkNumber(newIndex)
+      })
     }, 8000)
   }, [])
   const checkNumber = (number) => {
@@ -94,9 +94,11 @@ function Blackswan() {
   //console.log(quoteData.length) = 16
   return (
     <div className={styles.bkmain}>
-      <Nav />
+      <div style={{ position: 'sticky', top: 0 }}>
+        <Nav />
+      </div>
       <div className={styles.heroBsr}>
-        <div className={styles.heroLogo}><Image src={bkslogo} height={200}></Image></div>
+        <div className={styles.heroLogo}><Image src={bkslogo} width={200}></Image></div>
         <p>
           Make it simple. We deliver high quality research and intelligence by leveraging the utility of deep and emerging technologies
         </p>
@@ -173,15 +175,19 @@ function Blackswan() {
           <p>{quoteData[i].person}</p>
         </div>
         <div className={styles.quoteNav}>
-          <button onClick={() => prevRank()}><ArrowBackIos /></button>
-          <button onClick={() => nextRank()}><ArrowForwardIos /></button>
-          <button><a href="/Team">Meet the Team</a> </button>
+          <div>
+            <button onClick={() => prevRank()}><ArrowBackIos /></button>
+            <button onClick={() => nextRank()}><ArrowForwardIos /></button>
+          </div>
+          <div>
+            <button><a href="/Team">Meet the Team</a> </button>
+          </div>
         </div>
       </div>
       <div className={styles.specific}>
         <div className={styles.specificApproach}>
           <div>
-            <button style={{backgroundColor: '#005eff'}} disabled={true}>Don't put your users at risk.</button>
+            <button style={{ backgroundColor: '#005eff' }} disabled={true}>Don't put your users at risk.</button>
             <h1>A safety first approach</h1>
             <p>Security flaws, inefficiencies, and bugs are very expensive when you deploy a Smart Contract. Monetary and emotional damage not only to you, but your users as well.</p>
           </div>
@@ -223,7 +229,7 @@ function Blackswan() {
           <p>We've dedicated ourselves to understanding and building the future in the Web3 space.</p>
           <p>We will keeep you in the loop with all the newest stuff!</p>
           <div className={styles.specificEmail}>
-            <input type="email" placeholder='Enter your email' /><button style={{backgroundColor: '#005eff'}}>Subscribe</button>
+            <input type="email" placeholder='Enter your email' /><button style={{ backgroundColor: '#005eff' }}>Subscribe</button>
           </div>
         </div>
       </div>

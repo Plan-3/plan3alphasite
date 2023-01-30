@@ -76,9 +76,11 @@ function Lionshare() {
   //console.log(quoteData.length) = 16
   return (
     <div className={styles.bkmain}>
-      <Nav />
+      <div style={{ position: 'sticky', top: 0 }}>
+        <Nav />
+      </div>
       <div className={styles.heroLsm}>
-        <div className={styles.heroLogo}><Image src={lsmlogo} height={400} className={styles.image}></Image></div>
+        <div className={styles.heroLogo}><Image src={lsmlogo} height={250} className={styles.image}></Image></div>
         <p>
           Explore the deep treasure of data efficiency with the right expertise
         </p>
@@ -87,7 +89,7 @@ function Lionshare() {
           <button><a href="/Team">About Us</a> </button>
         </div>
       </div>
-      <div style={{borderColor: '#c89d2e'}} className={styles.solutions}>
+      <div style={{ borderColor: '#c89d2e' }} className={styles.solutions}>
         <div className={styles.solutionsChild}>
           <Image src={icon10} height={100} width={150}></Image>
           <p className={styles.solutionsRainbow}>Proprietary Tools</p>
@@ -104,7 +106,7 @@ function Lionshare() {
           <p>Historic data and models give us an unbeatable edge.</p>
         </div>
       </div>
-      <div style={{color: '#c89d2e'}} className={styles.mainFocusTitle}>
+      <div style={{ color: '#c89d2e' }} className={styles.mainFocusTitle}>
         <h1>Lionshare Media</h1>
         <h1>Main Areas of Focus</h1>
       </div>
@@ -114,7 +116,7 @@ function Lionshare() {
             <div className={styles.focusItem} key={index}>
               <div className={styles.focusHeader}>
                 {data.image ? <Image height={75} width={75} src={icon[index]} /> : ''}
-                <p style={{color: '#c89d2e'}}>{data.title}</p>
+                <p style={{ color: '#c89d2e' }}>{data.title}</p>
               </div>
               <div className={styles.focusText}>
                 <p>{data.info}</p>
@@ -144,22 +146,26 @@ function Lionshare() {
           </div>
         </div>
       </div>
-      <div style={{backgroundColor: '#c89d2e'}} className={styles.quotes}>
+      <div style={{ backgroundColor: '#c89d2e' }} className={styles.quotes}>
         <div className={styles.quote}>
           <FormatQuoteIcon style={{ fontSize: '6rem' }} />
           <p>{quoteData[i].quote}</p>
           <p>{quoteData[i].person}</p>
         </div>
         <div className={styles.quoteNav}>
-            <button style={{color: '#c89d2e'}} onClick={() => prevRank()}><ArrowBackIos /></button>
-            <button style={{color: '#c89d2e'}} onClick={() => nextRank()}><ArrowForwardIos /></button>
-            <button style={{color: '#c89d2e'}}><a href="/Team">Meet the Team</a> </button>
+          <div>
+            <button style={{ color: '#c89d2e' }} onClick={() => prevRank()}><ArrowBackIos /></button>
+            <button style={{ color: '#c89d2e' }} onClick={() => nextRank()}><ArrowForwardIos /></button>
+          </div>
+          <div>
+            <button style={{ color: '#c89d2e' }}><a href="/Team">Meet the Team</a> </button>
+          </div>
         </div>
       </div>
       <div className={styles.specific}>
         <div className={styles.specificApproach}>
           <div>
-            <button style={{backgroundColor: '#c89d2e'}} disabled={true}>NO MORE GUESSWORK</button>
+            <button style={{ backgroundColor: '#c89d2e' }} disabled={true}>NO MORE GUESSWORK</button>
             <h1>Web3 Predictive Audiences</h1>
             <p>Using groundbreaking prediction analysis from analytics we have collected, brands have the upper-hand in audience targeting with prospects most likely to engage. It's media buying re-imagined..</p>
           </div>
@@ -197,11 +203,11 @@ function Lionshare() {
           </div>
         </div>
         <div className={styles.specificKeepLsm}>
-          <p style={{ fontSize: '5rem', fontWeight: '700', marginBottom: '0', color: '#C89D2E'}}>Let's keep in touch</p>
+          <p style={{ fontSize: '5rem', fontWeight: '700', marginBottom: '0', color: '#C89D2E' }}>Let's keep in touch</p>
           <p>We've dedicated ourselves to understanding and building the future in the Web3 space.</p>
           <p>We will keeep you in the loop with all the newest stuff!</p>
           <div className={styles.specificEmail}>
-            <input type="email" placeholder='Enter your email' /><button style={{color: '#c89d2e'}}>Subscribe</button>
+            <input type="email" placeholder='Enter your email' /><button style={{ color: '#c89d2e' }}>Subscribe</button>
           </div>
         </div>
       </div>

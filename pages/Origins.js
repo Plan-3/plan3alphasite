@@ -47,9 +47,9 @@ function Lionshare() {
   useEffect(() => {
     let time = setInterval(() => {
       setI((i) => {
-      let newIndex = i + 1
-      return checkNumber(newIndex)
-    })
+        let newIndex = i + 1
+        return checkNumber(newIndex)
+      })
     }, 8000)
   }, [])
   const checkNumber = (number) => {
@@ -78,7 +78,9 @@ function Lionshare() {
   //console.log(quoteData.length) = 16
   return (
     <div className={styles.bkmain}>
-      <Nav />
+      <div style={{ position: 'sticky', top: 0 }}>
+        <Nav />
+      </div>
       <div className={styles.heroOri}>
         <Image className={styles.heroLogo} height={125} width={800} src={orilogo}></Image>
         <p>
@@ -89,7 +91,7 @@ function Lionshare() {
           <button><a href="/Team">About Us</a> </button>
         </div>
       </div>
-      <div style={{color: '#cf012d'}} className={styles.solutions}>
+      <div style={{ color: '#cf012d' }} className={styles.solutions}>
         <div className={styles.solutionsChild}>
           <Image src={icon10} height={100} width={150}></Image>
           <p className={styles.solutionsRainbow}>Market Penetration </p>
@@ -106,7 +108,7 @@ function Lionshare() {
           <p>Helping web3 orgs grow, engage and retain a devoted developer community.</p>
         </div>
       </div>
-      <div style={{color: '#cf012d'}} className={styles.mainFocusTitle}>
+      <div style={{ color: '#cf012d' }} className={styles.mainFocusTitle}>
         <h1>Origins</h1>
         <h1>Main Areas of Focus</h1>
       </div>
@@ -116,7 +118,7 @@ function Lionshare() {
             <div className={styles.focusItem} key={index}>
               <div className={styles.focusHeader}>
                 {data.image ? <Image height={50} width={50} src={icon[index]} /> : ''}
-                <p style={{color: '#cf012d'}}>{data.title}</p>
+                <p style={{ color: '#cf012d' }}>{data.title}</p>
               </div>
               <div className={styles.focusText}>
                 <p>{data.info}</p>
@@ -146,26 +148,26 @@ function Lionshare() {
           </div>
         </div>
       </div>
-      <div style={{backgroundColor: '#cf012d'}} className={styles.quotes}>
+      <div style={{ backgroundColor: '#cf012d' }} className={styles.quotes}>
         <div className={styles.quote} key={quoteData[i]}>
-          <FormatQuoteIcon style={{ fontSize: '6rem' }} />
+          <FormatQuoteIcon style={{ fontSize: '4rem' }} />
           <p>{quoteData[i].quote}</p>
           <p>{quoteData[i].person}</p>
         </div>
         <div className={styles.quoteNav}>
           <div>
-            <button style={{color: '#cf012d'}} onClick={() => prevRank()}><ArrowBackIos /></button>
-            <button style={{color: '#cf012d'}} onClick={() => nextRank()}><ArrowForwardIos /></button>
+            <button style={{ color: '#cf012d' }} onClick={() => prevRank()}><ArrowBackIos /></button>
+            <button style={{ color: '#cf012d' }} onClick={() => nextRank()}><ArrowForwardIos /></button>
           </div>
           <div>
-            <button style={{color: '#cf012d'}}><a href="/Team">Meet the Team</a></button>
+            <button style={{ color: '#cf012d' }}><a href="/Team">Meet the Team</a></button>
           </div>
         </div>
       </div>
       <div className={styles.specific}>
         <div className={styles.specificApproach}>
           <div>
-            <button style={{backgroundColor: '#cf012d'}} disabled={true}>Disclaimer</button>
+            <button style={{ backgroundColor: '#cf012d' }} disabled={true}>Disclaimer</button>
             <h1>How to really market Web3</h1>
             <p>It's about using purposeful experience design and strategy to leverage data and creating a brand utility that supports your business and marketing efforts.</p>
           </div>
@@ -174,7 +176,7 @@ function Lionshare() {
           </div>
         </div>
         <div className={styles.specificMarket}>
-          <h1 style={{color: '#cf012d'}}>Media Buy Market is Growing</h1>
+          <h1 style={{ color: '#cf012d' }}>Media Buy Market is Growing</h1>
           <div className={styles.specificMarketRow}>
             <div className={styles.specificMarketContent}>
               <div>
@@ -204,7 +206,7 @@ function Lionshare() {
             <h2 onClick={() => setToolTip({ scale: !toolTip.scale })}>Build and launch your Web3 project</h2>
             <h2 onClick={() => setToolTip({ scale: !toolTip.scale })}>Test and iterate based off initial tests until we scale to the moon</h2>
             <div className={styles.specificTooltip}>
-            <button><a href="/Contact"> Book a Demo</a></button>
+              <button><a href="/Contact"> Book a Demo</a></button>
             </div>
           </div>
           <div>
@@ -216,7 +218,7 @@ function Lionshare() {
           <p>We've dedicated ourselves to understanding and building the future in the Web3 space.</p>
           <p>We will keeep you in the loop with all the newest stuff!</p>
           <div className={styles.specificEmail}>
-            <input type="email" placeholder='Enter your email' /><button style={{backgroundColor: '#cf012d'}}>Subscribe</button>
+            <input type="email" placeholder='Enter your email' /><button style={{ backgroundColor: '#cf012d' }}>Subscribe</button>
           </div>
         </div>
       </div>

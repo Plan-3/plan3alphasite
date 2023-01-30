@@ -1,21 +1,21 @@
 .customWeb3Bsr {
   background: rgb(200, 157, 46);
-  background: radial-gradient(circle, #005EFF 0%, rgb(45, 25, 11) 10%, rgb(17, 1, 4) 26%, #005EFF 30%, rgb(17, 1, 4) 34%, rgb(39, 20, 10) 56%, #005EFF 60%, rgb(17, 1, 4) 64%, rgb(36, 17, 9) 86%, #005EFF 90%, rgb(17, 1, 4) 94%);
+  background: radial-gradient(circle, #005EFF 0%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 26%, #005EFF 30%, rgb(0, 0, 0) 34%, rgb(0, 0, 0) 56%, #005EFF 60%, rgb(0, 0, 0) 64%, rgb(0, 0, 0) 86%, #005EFF 90%, rgb(0, 0, 0) 94%);
 }
 
 .customWeb3Lsm {
   background: rgb(200, 157, 46);
-  background: radial-gradient(circle, #c89d2e 0%, rgb(45, 25, 11) 10%, rgb(17, 1, 4) 26%, #c89d2e 30%, rgb(17, 1, 4) 34%, rgb(39, 20, 10) 56%, #c89d2e 60%, rgb(17, 1, 4) 64%, rgb(36, 17, 9) 86%, #c89d2e 90%, rgb(17, 1, 4) 94%);
+  background: radial-gradient(circle, #c89d2e 0%, rgb(0, 0, 0) 10%, rgb(6, 6, 6) 26%, #c89d2e 30%, rgb(6, 6, 6) 34%, rgb(6, 6, 6) 56%, #c89d2e 60%, rgb(5, 5, 5) 64%, rgb(0, 0, 0) 86%, #c89d2e 90%, rgb(2, 2, 2) 94%);
 }
 
 .customWeb3Ori {
   background: rgb(200, 157, 46);
-  background: radial-gradient(circle, #cf012d 0%, rgb(45, 25, 11) 10%, rgb(17, 1, 4) 26%, #cf012d 30%, rgb(17, 1, 4) 34%, rgb(39, 20, 10) 56%, #cf012d 60%, rgb(17, 1, 4) 64%, rgb(36, 17, 9) 86%, #cf012d 90%, rgb(17, 1, 4) 94%);
+  background: radial-gradient(circle, #cf012d 0%, rgb(5, 5, 5) 10%, rgb(0, 0, 0) 26%, #cf012d 30%, rgb(1, 1, 1) 34%, rgb(6, 6, 6) 56%, #cf012d 60%, rgb(11, 11, 11) 64%, rgb(36, 17, 9) 86%, #cf012d 90%, rgb(17, 1, 4) 94%);
 }
 
 .customWeb3Eco {
   background: rgb(200, 157, 46);
-  background: radial-gradient(circle, #208805 0%, rgb(45, 25, 11) 10%, rgb(17, 1, 4) 26%, #208805 30%, rgb(17, 1, 4) 34%, rgb(39, 20, 10) 56%, #208805 60%, rgb(17, 1, 4) 64%, rgb(36, 17, 9) 86%, #208805 90%, rgb(17, 1, 4) 94%);
+  background: radial-gradient(circle, #208805 0%, rgb(45, 25, 11) 10%, rgb(17, 1, 4) 26%, #208805 30%, rgb(17, 1, 4) 34%, rgb(39, 20, 10) 56%, #208805 60%, rgb(17, 1, 4) 64%, rgb(0, 0, 0) 86%, #208805 90%, rgb(0, 0, 0) 94%);
 }
 
 .containerWeb3 {
@@ -151,7 +151,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 80%;
   margin: 2rem;
@@ -463,4 +463,4 @@
   }
 }
 
-/*# sourceMappingURL=Pagestyles.module.css.map */
+/*# sourceMappingURL=PageStyles.module.css.map */
