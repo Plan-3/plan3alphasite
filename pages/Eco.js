@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
-import BksData from '../assets/Eco.json'
+import EcoData from '../assets/Eco.json'
 import styles from '../styles/PageStyles.module.css'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
-import Grid2 from '@mui/material/Unstable_Grid2/Grid2'
 import icon1 from '../assets/Images/Icons/1.svg'
 import icon2 from '../assets/Images/Icons/2.svg'
 import icon3 from '../assets/Images/Icons/3.svg'
@@ -85,42 +84,35 @@ function Eco() {
       <div className={styles.heroEco}>
         <Image className={styles.image} height={125} width={800} src={ecologo}></Image>
         <p>
-          We have a heavy emphasis on ways to leverage blockchain technology to create
+          Bringing emerging technologies to energy and eco-based markets
         </p>
-        <p>
-          enterprise solutions. Disrupting existing solutions in virtually all verticals by building
-        </p>
-        <p>
-          systems efficiently and inline with all regulatory practices.
-        </p>
-        <div className={styles.herobtn}>
+        {/* <div className={styles.herobtn}>
           <button><a href="/Contact">Speak To An Expert</a> </button>
           <button><a href="/Team">About Us</a> </button>
-        </div>
+        </div> */}
       </div>
       <div style={{ borderColor: '#208805' }} className={styles.solutions}>
         <div className={styles.solutionsChild}>
-          <Image src={icon10} height={100} width={150}></Image>
+          {/* <Image src={icon10} height={100} width={150}></Image> */}
           <p className={styles.solutionsRainbow}>Avoid ESG blind spots</p>
           <p>With regulations happening frequently, staying on top of changes becomes difficult.</p>
         </div>
         <div className={styles.solutionsChild}>
-          <Image src={icon2} height={100} width={150}></Image>
-          <p className={styles.solutionsRainbow}>Access New Investors </p>
-          <p>ETF investors looking to manage their ESG risks. </p>
+          {/* <Image src={icon2} height={100} width={150}></Image> */}
+          <p className={styles.solutionsRainbow}>Transparent Technology </p>
+          <p>Transparency in the energy and eco-blockchain market promotes accountability, increases trust among stakeholders, and helps ensure that sustainable energy practices and eco-friendly products are being effectively implemented and monitored.</p>
         </div>
         <div className={styles.solutionsChild}>
-          <Image src={icon1} height={100} width={150}></Image>
-          <p className={styles.solutionsRainbow}>A Better Climate </p>
-          <p>Global warming is no jokes, reducing crypto emissions is one step closer to a greener world.</p>
+          {/* <Image src={icon1} height={100} width={150}></Image> */}
+          <p className={styles.solutionsRainbow}>A Better Tomorrow</p>
+          <p>Reducing emissions is one step closer to a greener world.</p>
         </div>
       </div>
       <div style={{ color: '#208805' }} className={styles.mainFocusTitle}>
-        <h1>Eco Citizen</h1>
-        <h1>Main Areas of Focus</h1>
+        <h1 style={{textDecoration: 'underline #208805'}}>Main Areas of Focus</h1>
       </div>
       <div className={styles.mainFocus}>
-        {BksData.map((data, index) => {
+        {EcoData.map((data, index) => {
           return (
             <div className={styles.focusItem} key={index}>
               <div className={styles.focusHeader}>
@@ -139,7 +131,7 @@ function Eco() {
         <div className={styles.containerWeb3}>
           <div>
             <h1 style={{ color: '#20880f' }}>Time for change</h1>
-            <p>Crypto firms will need to consider the new ESG obligations that will apply to their investors and other business partners</p>
+            <p>Businesses will need to consider the new ESG obligations that will apply to their investors and other business partners</p>
           </div>
           <div>
             <Image className={styles.image} height={250} width={250} src={coffee}></Image>
@@ -151,7 +143,7 @@ function Eco() {
           </div>
           <div>
             <h1 style={{ color: '#20880f' }}>Alternative solutions </h1>
-            <p>It has been well publicized that some types of cryptocurrency, generally referred to as requiring “proof of work”, use a competitive validation method known as “mining” to achieve goals, such as issuing new crypto currency, and uses a huge amount of computer processing power. </p>
+            <p>By utilizing renewable energy sources, distributed validation processes, and more efficient algorithms, we are able to make a positive impact on the environment while still achieving our goals.</p>
           </div>
         </div>
       </div>
@@ -178,11 +170,11 @@ function Eco() {
             <p>ESG disclosure requirements will become more prominent, the regulatory landscape in this area is dynamic and continually shifting. Stay ready.</p>
             <button><a href="/Contact">Get Started</a></button>
           </div>
-          <div>
+          {/* <div>
             <Image height={450} width={450} src={p3}></Image>
-          </div>
+          </div> */}
         </div>
-        <div className={styles.specificApproach}>
+        {/* <div className={styles.specificApproach}>
           <div>
             <button style={{ backgroundColor: '#208805' }} disabled={true}>We have an ESG focus</button>
             <h1>Enviromental Concerns</h1>
@@ -191,7 +183,7 @@ function Eco() {
           <div>
             <Image src={robo} className={styles.image} height={300} width={400}></Image>
           </div>
-        </div>
+        </div> */}
         <div className={styles.specificMarket}>
           <h1 style={{ color: '#208805' }}>A green Crypto</h1>
           <div className={styles.specificMarketRow}>
@@ -217,15 +209,15 @@ function Eco() {
         </div>
         <div className={styles.specificWhy}>
           <div>
-            <h1>Why Plan3</h1>
-            <h2 onClick={() => setToolTip({ raise: !toolTip.raise })}>RAISE WEB3</h2>
+            <h1>Why EcoCitizen</h1>
+            <h2 onClick={() => setToolTip({ raise: !toolTip.raise })}>Accessibility, Liquidity, Transparency, Efficiency</h2>
             {toolTip.raise ?
               <div className={styles.specificTooltip}>
-                <p>Asset owners of all types can raise decentralized funding, allowing the opportunity to generate passive revenue and access to liquidity.</p>
+                <p>We provide a unique and effective way for companies to increase their sustainability and reduce their carbon footprint while also providing a new source of revenue.</p>
                 <button><a href="/Contact"> Book a Demo</a></button>
               </div> : ''
             }
-            <h2 onClick={() => setToolTip({ invest: !toolTip.invest })}>Invest</h2>
+            {/* <h2 onClick={() => setToolTip({ invest: !toolTip.invest })}>Invest</h2>
             {toolTip.invest ?
               <div className={styles.specificTooltip}>
                 <p>Opportunities for investors of all types - previously only reserved for accredited investors, in the form of equity, funds, debt, and real estate.</p>
@@ -238,7 +230,7 @@ function Eco() {
                 <p>Secondary trading for private markets. LIQUIDIAN's ATS delivers liquidity for private assets. Add your security to the premier marketplace for trading digital securities.</p>
                 <button><a href="/Contact"> Book a Demo</a></button>
               </div> : ''
-            }
+            } */}
           </div>
           <div>
             <Image className={styles.image} height={400} width={400} src={threecs}></Image>

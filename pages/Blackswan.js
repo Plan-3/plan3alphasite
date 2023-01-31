@@ -28,8 +28,8 @@ import icon11 from '../assets/Images/Icons/11.svg'
 import icon12 from '../assets/Images/Icons/12.svg'
 import robo from '../assets/Images/robothand.svg'
 import bkslogo from '../assets/Images/Logos/swanlogo.png'
-import meeting from '../assets/Images/BKSImages/web3meeting.svg'
-import servers from '../assets/Images/BKSImages/securityserver.svg'
+import meeting from '../assets/Images/block1.svg'
+import servers from '../assets/Images/block2.svg'
 import liquidprism from '../assets/Images/BKSImages/liquidprism.svg'
 
 /*
@@ -130,14 +130,13 @@ function Blackswan() {
           <p>Capitalize on the tools and resources that can accelerate your business. Our experts will integrate and develop the systems to help achieve your goals</p>
         </div>
       </div>
-      <h1>Blackswan</h1>
-      <h1>Main Areas of Focus</h1>
+      <h1 style={{textDecoration: 'underline white'}}>Main Areas of Focus</h1>
       <div className={styles.mainFocus}>
         {BksData.map((data, index) => {
           return (
             <div className={styles.focusItem} key={index}>
               <div className={styles.focusHeader}>
-                {data.image ? <Image height={75} width={75} src={icon[index]} /> : ''}
+                {/* {data.image ? <Image height={75} width={75} src={icon[index]} /> : ''} */}
                 <p>{data.title}</p>
               </div>
               <div className={styles.focusText}>

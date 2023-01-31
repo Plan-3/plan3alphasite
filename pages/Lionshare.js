@@ -20,7 +20,7 @@ import icon9 from '../assets/Images/Icons/9.svg'
 import icon10 from '../assets/Images/Icons/10.svg'
 import robo from '../assets/Images/robothand.svg'
 import lsmlogo from '../assets/Images/Logos/lsmlogo.png'
-import quoteData from '../assets/Quotes.json'
+import quoteData from '../assets/LsmQuotes.json'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import ArrowBackIos from '@mui/icons-material/ArrowBackIos'
 import ArrowForwardIos from '@mui/icons-material/ArrowForwardIos'
@@ -82,7 +82,7 @@ function Lionshare() {
       <div className={styles.heroLsm}>
         <div className={styles.heroLogo}><Image src={lsmlogo} height={250} className={styles.image}></Image></div>
         <p>
-          Explore the deep treasure of data efficiency with the right expertise
+          Unlock the full potential of your data with insightful and actionable analytics
         </p>
         <div className={styles.herobtn}>
           <button><a href="/Contact">Speak To An Expert</a> </button>
@@ -92,30 +92,29 @@ function Lionshare() {
       <div style={{ borderColor: '#c89d2e' }} className={styles.solutions}>
         <div className={styles.solutionsChild}>
           <Image src={icon10} height={100} width={150}></Image>
-          <p className={styles.solutionsRainbow}>Proprietary Tools</p>
-          <p>A long range of assets that enable us to get the most out of every situation.</p>
+          <p className={styles.solutionsRainbow}>Data</p>
+          <p>Data is a treasure trove, our tools help you use it fast and effectively</p>
         </div>
         <div className={styles.solutionsChild}>
           <Image src={icon2} height={100} width={150}></Image>
-          <p className={styles.solutionsRainbow}>Revealing The Unknown</p>
-          <p>Unlock hidden stories by tracing activity using proprietary analytics tools.</p>
+          <p className={styles.solutionsRainbow}>Targeted Ads</p>
+          <p>Optimize your returns, understand your customers</p>
         </div>
         <div className={styles.solutionsChild}>
           <Image src={icon1} height={100} width={150}></Image>
-          <p className={styles.solutionsRainbow}>We have comprehensive expertise and experience with data </p>
-          <p>Historic data and models give us an unbeatable edge.</p>
+          <p className={styles.solutionsRainbow}>On-Chain Analytics</p>
+          <p>Unlock hidden stories by tracing activity using proprietary analytics tools</p>
         </div>
       </div>
       <div style={{ color: '#c89d2e' }} className={styles.mainFocusTitle}>
-        <h1>Lionshare Media</h1>
-        <h1>Main Areas of Focus</h1>
+        <h1 style={{textDecoration: 'underline #c89d2e'}}>Main Areas of Focus</h1>
       </div>
       <div className={styles.mainFocus}>
         {BksData.map((data, index) => {
           return (
             <div className={styles.focusItem} key={index}>
               <div className={styles.focusHeader}>
-                {data.image ? <Image height={75} width={75} src={icon[index]} /> : ''}
+                {/* {data.image ? <Image height={75} width={75} src={icon[index]} /> : ''} */}
                 <p style={{ color: '#c89d2e' }}>{data.title}</p>
               </div>
               <div className={styles.focusText}>
@@ -129,8 +128,8 @@ function Lionshare() {
       <div className={styles.customWeb3Lsm}>
         <div className={styles.containerWeb3}>
           <div>
-            <h1>Data is the way to go</h1>
-            <p>Cut your research time and get right to the most promising.</p>
+            <h1>Tap into the Power of Your Data.</h1>
+            <p>Cut research time. Get right to the most lucrative information.</p>
           </div>
           <div>
             <Image className={styles.image} src={tech} height={300}></Image>
@@ -142,7 +141,7 @@ function Lionshare() {
           </div>
           <div>
             <h1>Skip the guesswork</h1>
-            <p>Our trends indicator will help you identify market trends early and alert you to exit the conditions turn around.</p>
+            <p>This will give you the benefit of identifying the trends early, ensuring you are not left behind.</p>
           </div>
         </div>
       </div>
@@ -183,10 +182,10 @@ function Lionshare() {
                 <button><a href="/Contact"> Book a Demo</a></button>
               </div> : ''
             }
-            <h2 onClick={() => setToolTip({ algos: !toolTip.algos })}>Customized and proprietary algorithms</h2>
+            <h2 onClick={() => setToolTip({ algos: !toolTip.algos })}>Scale profitably with customized and proprietary algorithms</h2>
             {toolTip.algos ?
               <div className={styles.specificTooltip}>
-                <p>Built exclusively for each brand and based on a brand's unique KPIs. </p>
+                <p>Build models by incorporating your brand's existing first party data and over our unique data signals. </p>
                 <button><a href="/Contact"> Book a Demo</a></button>
               </div> : ''
             }

@@ -65,7 +65,7 @@ function Home() {
         <button id='ecobtn' onClick={() => setDivider({ eco: !divider.eco })}>
           <Image width={250} height={100} src={ecologo}></Image>
           <p>Carbon Offset:</p>
-          <p>ESG Initiatives</p>
+          <p>Eco & energy solutions</p>
         </button>
       </div>
       {(divider.bks) ?
@@ -122,7 +122,7 @@ function Home() {
         <div className={styles.defiContent}>
           <div>
             <h3>Give your Web3 project an unfair advantage</h3>
-            <p>We build quality products, hire quality people, and have a quality process to guarantee you win.</p>
+            <p>Work with the best team to build quality solutions and campaigns.</p>
             <button><a href="/Contact">Get Started</a></button>
           </div>
           <div>
@@ -136,7 +136,7 @@ function Home() {
             </div>
             <div className={styles.defiStat}>
               <p className={styles.numberRound}>3</p>
-              <p>Working with a committed team that gets shit done</p>
+              <p>Working with a committed team that gets sh*t done</p>
             </div>
           </div>
         </div>
@@ -148,19 +148,19 @@ function Home() {
         <div className={styles.divisionsContainer}>
           <div className={styles.webDivisions}>
             <Image src={web1} height={100} width={100}></Image>
-            <h3>Web1</h3>
+            <h3>1.0</h3>
             <p>Static info publications, subscription, and linking via url</p>
           </div>
           <Image className={styles.arrows} src={arrows} width={130} height={130}></Image>
           <div className={styles.webDivisions}>
             <Image src={web2} height={100} width={100}></Image>
-            <h3>Web2</h3>
+            <h3>2.0</h3>
             <p>Social exhanges among users on social media platform</p>
           </div>
           <Image className={styles.arrows} src={arrows} width={130} height={130}></Image>
           <div className={styles.webDivisions}>
             <Image src={web3} height={100} width={100}></Image>
-            <h3>Web3</h3>
+            <h3>3.0</h3>
             <p>Decentralized data transactions between digital wallets on blockchain</p>
           </div>
         </div>
@@ -179,9 +179,11 @@ function Home() {
         <div className={styles.powerBlurIntro}>
           <h1>Powered by Plan3</h1>
           <p>
-            We have consultants on every continent, from a diversity of backgrounds, with decades of experience in management,
-            technology, finance, marketing and governance. We have one thing in common:
-            we’ve dedicated ourselves to working in, understanding and building the future of the web3 space.
+          We have consultants from diverse backgrounds, with decades of experience in 
+          management, 
+          technology, finance, marketing and governance. We have one thing in common: 
+          we’ve dedicated ourselves to working in, understanding, and building the future 
+          of the web3 space.
           </p>
         </div>
         <div className={styles.powerBlurContainer}>
@@ -191,7 +193,7 @@ function Home() {
           </div>
           <div>
             <p>Deep Tech: Research, Development, & Architecture</p>
-            <Image height={75} src={lightbulb} className={styles.powerBlurIcon}></Image>
+            {/* <Image height={75} src={lightbulb} className={styles.powerBlurIcon}></Image> */}
             <p><strong>5+ Living Whitepapers Developed</strong></p>
           </div>
           </div>
@@ -202,7 +204,7 @@ function Home() {
           <div>
             <p>Web3 Marketing: </p> 
             <p>Campaign Architecture & Management</p>
-            <Image height={100} src={blockmessage} className={styles.powerBlurIcon}></Image>
+            {/* <Image height={100} src={blockmessage} className={styles.powerBlurIcon}></Image> */}
             <p><strong>3M+ Sales to date</strong></p>
           </div>
           </div>
@@ -212,7 +214,7 @@ function Home() {
           </div>
           <div>
             <p>Analytics: Media, Data, & Ad Platform</p>
-            <Image height={75} src={percentdown} className={styles.powerBlurIcon}></Image>
+            {/* <Image height={75} src={percentdown} className={styles.powerBlurIcon}></Image> */}
             <p><strong>$2 Million Saved Through Data Driven Strategies</strong></p>
           </div>
           </div>
@@ -222,8 +224,8 @@ function Home() {
           </div>
           <div>
             <p>Carbon Offset: ESG Initiatives</p>
-            <Image height={75} src={co2down} className={styles.powerBlurIcon}></Image>
-            <p><strong>10% Estimated Valuation increase for Carbon Negative Businesses</strong></p>
+            {/* <Image height={75} src={co2down} className={styles.powerBlurIcon}></Image> */}
+            <p><strong>Eco + Energy + Citizen: Most value based economic engine that exists.</strong></p>
           </div>
           </div>
         </div>
@@ -238,7 +240,7 @@ function Home() {
           <h1>The New Standard in</h1>
           <h1 className={styles.rainbowText}> Limitless</h1>
           <p>A Profit Driven Think-Tank & Execution Team:</p>
-          <p>Web3 'bridge' business integration</p>
+          <p>Integrating and Bridging Businesses to Web3</p>
           <ul>
             <li><CheckIcon /> 2+ proprietary token standards</li>
             <li><CheckIcon />$500k+ total trading volume</li>

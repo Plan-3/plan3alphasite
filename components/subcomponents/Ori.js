@@ -9,7 +9,7 @@ function Ori() {
     <div className={styles.minisOri}>
       <div>
         <h1>Origins <span style={{color: '#cf012d'}}>Vision</span></h1>
-        <p> Origins architects and executes strategy for growth marketing campaigns. Leveraging our extensive matrix of internal and key strategic partners, we implement marketing strategies and carry out highly scalable, precise projects with strategic workflows through a targeted network of influencers, creators, and investors.</p>
+        <p> Origins architects and executes growth marketing strategies by leveraging internal and key strategic partners to achieve scalability via influencers, creators, and investors.</p>
       </div>
       <div className={styles.minisRight}>
         <div>

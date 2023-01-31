@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
-import BksData from '../assets/Origins.json'
+import OriData from '../assets/Origins.json'
 import styles from '../styles/PageStyles.module.css'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
@@ -84,7 +84,7 @@ function Lionshare() {
       <div className={styles.heroOri}>
         <Image className={styles.heroLogo} height={125} width={800} src={orilogo}></Image>
         <p>
-          We focus on identifying the right target audience and go-to-market strategy to boost your business and cultivate meaningful relationships with consumers.
+        The web3 infrastructure and marketing solution
         </p>
         <div className={styles.herobtn}>
           <button><a href="/Contact">Speak To An Expert</a> </button>
@@ -94,30 +94,29 @@ function Lionshare() {
       <div style={{ color: '#cf012d' }} className={styles.solutions}>
         <div className={styles.solutionsChild}>
           <Image src={icon10} height={100} width={150}></Image>
-          <p className={styles.solutionsRainbow}>Market Penetration </p>
-          <p>Supercharging growth through targeted community building and campaigns. </p>
+          <p className={styles.solutionsRainbow}>Campaign Management</p>
+          <p>Maximize your growth potential with our wealth of marketing expertise and technology.</p>
         </div>
         <div className={styles.solutionsChild}>
           <Image src={icon2} height={100} width={150}></Image>
-          <p className={styles.solutionsRainbow}>Community & Relevance</p>
-          <p>Unlock hidden stories by tracing activity using proprietary analytics tools.</p>
+          <p className={styles.solutionsRainbow}>Community Management</p>
+          <p>Build and maintain a strong customer base across multiple channels.</p>
         </div>
         <div className={styles.solutionsChild}>
           <Image src={icon1} height={100} width={150}></Image>
-          <p className={styles.solutionsRainbow}>Developer Marketing</p>
-          <p>Helping web3 orgs grow, engage and retain a devoted developer community.</p>
+          <p className={styles.solutionsRainbow}>Strategy & Growth</p>
+          <p>Identify and capitalize on opportunities for growth with a focus on customer acquisition, retention, and loyalty.</p>
         </div>
       </div>
       <div style={{ color: '#cf012d' }} className={styles.mainFocusTitle}>
-        <h1>Origins</h1>
-        <h1>Main Areas of Focus</h1>
+        <h1 style={{textDecoration: 'underline #cf012d'}}>Origins Services</h1>
       </div>
       <div className={styles.mainFocus}>
-        {BksData.map((data, index) => {
+        {OriData.map((data, index) => {
           return (
             <div className={styles.focusItem} key={index}>
               <div className={styles.focusHeader}>
-                {data.image ? <Image height={50} width={50} src={icon[index]} /> : ''}
+                {/* {data.image ? <Image height={50} width={50} src={icon[index]} /> : ''} */}
                 <p style={{ color: '#cf012d' }}>{data.title}</p>
               </div>
               <div className={styles.focusText}>
@@ -132,7 +131,7 @@ function Lionshare() {
         <div className={styles.containerWeb3}>
           <div>
             <h1>Be Proactive, not Reactive</h1>
-            <p>We believe the blockchain space has a massive potential to disrupt every facet of our economy. It’s a matter of when and how not if.</p>
+            <p>We believe there is massive potential to disrupt every facet of our economy. Start today with multiple revenue streams.</p>
           </div>
           <div>
             <Image className={styles.image} height={400} src={mancode}></Image>
@@ -144,7 +143,7 @@ function Lionshare() {
           </div>
           <div>
             <h1>Everything you need</h1>
-            <p>We are a full-cycle digital agency that works with Blockchain, Web3, Metaverse and high tech projects </p>
+            <p>We are a full-cycle digital marketing team to bring your vision to reality with a data driven approach.</p>
           </div>
         </div>
       </div>

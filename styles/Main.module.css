@@ -243,9 +243,9 @@
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  background: url('../assets/Images/Heroes/planetary.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background: url('../assets/Images/Heroes/planetary.svg'); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
   aspect-ratio: 75/35;
   width: 100%;
 }

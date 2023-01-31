@@ -15,7 +15,7 @@
 
 .customWeb3Eco {
   background: rgb(200, 157, 46);
-  background: radial-gradient(circle, #208805 0%, rgb(45, 25, 11) 10%, rgb(17, 1, 4) 26%, #208805 30%, rgb(17, 1, 4) 34%, rgb(39, 20, 10) 56%, #208805 60%, rgb(17, 1, 4) 64%, rgb(0, 0, 0) 86%, #208805 90%, rgb(0, 0, 0) 94%);
+  background: radial-gradient(circle, #208805 0%, rgb(4, 4, 4) 10%, rgb(6, 6, 6) 26%, #208805 30%, rgb(2, 2, 2) 34%, rgb(1, 0, 0) 56%, #208805 60%, rgb(5, 4, 4) 64%, rgb(0, 0, 0) 86%, #208805 90%, rgb(0, 0, 0) 94%);
 }
 
 .containerWeb3 {
@@ -28,10 +28,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: flex-start;
   text-align: left;
   width: 22%;
   margin: 0.5rem;
+  border-top: 1px solid white;
 }
 
 .focusItem h1,
@@ -130,7 +131,7 @@
 
 .quote {
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   border-bottom: 3px solid white;
   width: 50%;
 }

@@ -1,8 +1,12 @@
 [
   {
-    "title": "AI | Machine Learing | Data Science",
-    "info": "Building models based on sample data and past data.",
+    "title": "Artificial Intelligence",
+    "info": "Building models based on sample data and decision making",
     "image": "https://drive.google.com/file/d/1bvicGmRYeMcVCB1O2YS13E6RNWzVp5b7/view?usp=share_link"
+  },
+  {
+    "title": "Data Science",
+    "info": "Extract meaningful insights from your data treasure trove"
   },
   {
     "title": "Web3 Tracking",
@@ -10,13 +14,8 @@
     "image": "../assets/Images/S1.svg"
   },
   {
-    "title": "Algorithmic",
-    "info": "Automated trading uses alforithms to buy and sell your cryptocurrencies at certain times.",
-    "image": "../assets/Images/S1.svg"
-  },
-  {
     "title": "Bot Development",
-    "info": "Bots that free your time, build efficiencies, and generates an ROI.",
+    "info": "Automated trading uses algorithms to buy and sell closely monitored assets",
     "image": "../assets/Images/S1.svg"
   },
   {
@@ -45,7 +44,7 @@
     "image": "../assets/Images/S1.svg"
   },
   {
-    "title": "AsPlatform",
+    "title": "Ad Platform",
     "info": "Monetize your platforms traffic.",
     "image": "../assets/Images/S1.svg"
   },
