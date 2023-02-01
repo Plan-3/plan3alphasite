@@ -201,21 +201,21 @@ function Blackswan() {
             {toolTip.raise ?
               <div className={styles.specificTooltip}>
                 <p>Asset owners of all types can raise decentralized funding, allowing the opportunity to generate passive revenue and access to liquidity.</p>
-                <button><a href="/Contact"> Book a Demo</a></button>
+                <button><a href="/Contact"> Get in Touch</a></button>
               </div> : ''
             }
             <h2 onClick={() => setToolTip({ invest: !toolTip.invest })}>Utilize the tools that make sense for your business</h2>
             {toolTip.invest ?
               <div className={styles.specificTooltip}>
                 <p>Opportunities for investors of all types - previously only reserved for accredited investors, in the form of equity, funds, debt, and real estate.</p>
-                <button><a href="/Contact"> Book a Demo</a></button>
+                <button><a href="/Contact"> Get in Touch</a></button>
               </div> : ''
             }
             <h2 onClick={() => setToolTip({ ats: !toolTip.ats })}>Strategize and Develop top tier solutions</h2>
             {toolTip.ats ?
               <div className={styles.specificTooltip}>
                 <p>Secondary trading for private markets. LIQUIDIAN's ATS delivers liquidity for private assets. Add your security to the premier marketplace for trading digital securities.</p>
-                <button><a href="/Contact"> Book a Demo</a></button>
+                <button><a href="/Contact"> Get in Touch</a></button>
               </div> : ''
             }
           </div>

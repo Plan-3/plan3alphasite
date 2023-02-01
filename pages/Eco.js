@@ -214,7 +214,7 @@ function Eco() {
             {toolTip.raise ?
               <div className={styles.specificTooltip}>
                 <p>We provide a unique and effective way for companies to increase their sustainability and reduce their carbon footprint while also providing a new source of revenue.</p>
-                <button><a href="/Contact"> Book a Demo</a></button>
+                <button><a href="/Contact"> Get in Touch</a></button>
               </div> : ''
             }
             {/* <h2 onClick={() => setToolTip({ invest: !toolTip.invest })}>Invest</h2>

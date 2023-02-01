@@ -1,5 +1,6 @@
 .bkmain{
   margin: 0 8rem;
+  background-color: black;
 }
 
 .customWeb3Bsr {
@@ -74,7 +75,7 @@
 }
 
 .heroLsm {
-  background: url("../assets/Images/Heroes/lsmhero.svg");
+  background: url("../assets/Images/Heroes/lsmhero.png");
   background-size: cover;
   aspect-ratio: 1920/1080;
   display: flex;

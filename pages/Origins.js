@@ -205,7 +205,7 @@ function Lionshare() {
             <h2 onClick={() => setToolTip({ scale: !toolTip.scale })}>Build and launch your Web3 project</h2>
             <h2 onClick={() => setToolTip({ scale: !toolTip.scale })}>Test and iterate based off initial tests until we scale to the moon</h2>
             <div className={styles.specificTooltip}>
-              <button><a href="/Contact"> Book a Demo</a></button>
+              <button><a href="/Contact"> Get in Touch</a></button>
             </div>
           </div>
           <div>

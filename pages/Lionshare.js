@@ -91,17 +91,17 @@ function Lionshare() {
       </div>
       <div style={{ borderColor: '#c89d2e' }} className={styles.solutions}>
         <div className={styles.solutionsChild}>
-          <Image src={icon10} height={100} width={150}></Image>
+          <Image src={icon10} height={100}></Image>
           <p className={styles.solutionsRainbow}>Data</p>
           <p>Data is a treasure trove, our tools help you use it fast and effectively</p>
         </div>
         <div className={styles.solutionsChild}>
-          <Image src={icon2} height={100} width={150}></Image>
+          <Image src={icon2} height={100}></Image>
           <p className={styles.solutionsRainbow}>Targeted Ads</p>
           <p>Optimize your returns, understand your customers</p>
         </div>
         <div className={styles.solutionsChild}>
-          <Image src={icon1} height={100} width={150}></Image>
+          <Image src={icon1} height={100}></Image>
           <p className={styles.solutionsRainbow}>On-Chain Analytics</p>
           <p>Unlock hidden stories by tracing activity using proprietary analytics tools</p>
         </div>
@@ -179,21 +179,21 @@ function Lionshare() {
             {toolTip.audience ?
               <div className={styles.specificTooltip}>
                 <p>With models by incorporating your brand's existing first party data and over our unique data signals..</p>
-                <button><a href="/Contact"> Book a Demo</a></button>
+                <button><a href="/Contact"> Get in Touch</a></button>
               </div> : ''
             }
             <h2 onClick={() => setToolTip({ algos: !toolTip.algos })}>Scale profitably with customized and proprietary algorithms</h2>
             {toolTip.algos ?
               <div className={styles.specificTooltip}>
                 <p>Build models by incorporating your brand's existing first party data and over our unique data signals. </p>
-                <button><a href="/Contact"> Book a Demo</a></button>
+                <button><a href="/Contact"> Get in Touch</a></button>
               </div> : ''
             }
             <h2 onClick={() => setToolTip({ scale: !toolTip.scale })}>Scale profitably</h2>
             {toolTip.scale ?
               <div className={styles.specificTooltip}>
                 <p>Secondary trading for private markets. LIQUIDIAN's ATS delivers liquidity for private assets. Add your security to the premier marketplace for trading digital securities.</p>
-                <button><a href="/Contact"> Book a Demo</a></button>
+                <button><a href="/Contact"> Get in Touch</a></button>
               </div> : ''
             }
           </div>
