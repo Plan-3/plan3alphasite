@@ -29,6 +29,7 @@ import percentdown from '../assets/Images/Icons/percentdown.png'
 import co2down from '../assets/Images/Icons/co2down.png'
 import sometext from '../assets/Images/sometext.png'
 import piechart from '../assets/Images/piechart.png'
+import { style } from '@mui/system'
 
 function Home() {
   const [divider, setDivider] = useState({ bks: false, ori: false, lsm: false, eco: false })
@@ -148,19 +149,19 @@ function Home() {
         <div className={styles.divisionsContainer}>
           <div className={styles.webDivisions}>
             <Image src={web1} height={100} width={100}></Image>
-            <h3>1.0</h3>
+            <h3>Web 1.0</h3>
             <p>Static info publications, subscription, and linking via url</p>
           </div>
           <Image className={styles.arrows} src={arrows} width={130} height={130}></Image>
           <div className={styles.webDivisions}>
             <Image src={web2} height={100} width={100}></Image>
-            <h3>2.0</h3>
+            <h3>Web 2.0</h3>
             <p>Social exhanges among users on social media platform</p>
           </div>
           <Image className={styles.arrows} src={arrows} width={130} height={130}></Image>
           <div className={styles.webDivisions}>
             <Image src={web3} height={100} width={100}></Image>
-            <h3>3.0</h3>
+            <h3>Web 3.0</h3>
             <p>Decentralized data transactions between digital wallets on blockchain</p>
           </div>
         </div>
@@ -172,7 +173,7 @@ function Home() {
         <div className={styles.winningContent}>
           <h2 className={styles.rainbowText}>Four companies, an array of experience</h2>
           <p>These disciplines combine to build strategies for and operationalize high impact growth initiatives focused on maximizing your companies profit.</p>
-          <button>View All</button>
+          <button><a href="/Contact">Get Started</a></button>
         </div>
       </div>
       <div className={styles.powerP3}>
@@ -199,7 +200,7 @@ function Home() {
           </div>
           <div className={styles.powerBlur}>
           <div>
-            <Image width={200} height={125} src={orilogo}></Image>
+            <Image width={200} height={125} src={orilogo} className={styles.powerBlurImage}></Image>
           </div>
           <div>
             <p>Web3 Marketing: </p> 
@@ -210,7 +211,7 @@ function Home() {
           </div>
           <div className={styles.powerBlur}>
           <div>
-            <Image height={125} width={200} src={lsmlogo}></Image>
+            <Image height={125} width={200} src={lsmlogo} className={styles.powerBlurImage}></Image>
           </div>
           <div>
             <p>Analytics: Media, Data, & Ad Platform</p>
@@ -220,7 +221,7 @@ function Home() {
           </div>
           <div className={styles.powerBlur}>
           <div>
-            <Image height={125} width={200} src={ecologo}></Image>
+            <Image height={125} width={200} src={ecologo} className={styles.powerBlurImage}></Image>
           </div>
           <div>
             <p>Carbon Offset: ESG Initiatives</p>

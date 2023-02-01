@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react'
+import Image from 'next/image'
+import Plan3logo from '../assets/Images/Logos/plan3logo.png'
 import styles from '../styles/Home.module.css'
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp'
 import CloseIcon from '@mui/icons-material/Close'
@@ -52,7 +54,7 @@ function Nav() {
       </div>
       <nav className={styles.nav}>
         <div>
-
+          <Image src={Plan3logo} width={150}></Image>
         </div>
         {/* {(scrolled > 100) ? '' : <Image href={plan3footer} height={100} width={250}></Image>} */}
         <div>
@@ -87,7 +89,7 @@ function Nav() {
               ''
             }
             </li>
-            <li><a href="/Ecosystem">EcoSystem</a></li>
+            <li> <a href="/Ecosystem">EcoSystem</a></li>
             <li><a href="/Team">Team</a></li>
           </ul>
         </div>

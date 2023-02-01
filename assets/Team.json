@@ -1,15 +1,15 @@
 [
   {
     "name": "John W.",
-    "job": "Director"
+    "job": "Managing Director"
   },
   {
     "name": "Asa A.",
-    "job": "Director"
+    "job": "Managing Director"
   },
   {
     "name": "Darren H.",
-    "job": "Marketing Director"
+    "job": "Marketing and Business Development"
   },
   {
     "name": "Ronan B.",
@@ -33,14 +33,14 @@
   },
   {
     "name": "Mitchell S.",
-    "job": "ata Science & Python Developer"
+    "job": "Data Science & Python Developer"
   },
   {
     "name": "Michael M.",
-    "job": "Jr. Research Analyst"
+    "job": "Jr. Software Developer"
   },
   {
     "name": "Chance ",
-    "job": "Graphic Designer & Marketer"
+    "job": "Digital Marketing Specialist"
   }
 ]

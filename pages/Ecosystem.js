@@ -69,7 +69,7 @@ function Ecosystem() {
               :
               <div onClick={() => setActivePillar({ bkPillar: !activePillar.bkPillar })} className={styles.pillar}>
                 <button>+</button>
-                <Image src={bkslogo} height={150} width={150}></Image>
+                <Image src={bkslogo} width={350} height={150}></Image>
               </div>
             }
             {(activePillar.oriPillar) ?
@@ -103,7 +103,7 @@ function Ecosystem() {
               :
               <div onClick={() => setActivePillar({ oriPillar: !activePillar.oriPillar })} className={styles.pillar}>
                 <button >+</button>
-                <Image src={orilogo} ></Image>
+                <Image src={orilogo} height={150}></Image>
               </div>
             }
             {(activePillar.lionPillar) ?
@@ -147,7 +147,7 @@ function Ecosystem() {
             {(activePillar.ecoPillar) ?
               <div onClick={() => setActivePillar({ ecoPillar: !activePillar.ecoPillar })} className={styles.pillarContent}>
                 <div>
-                  <Image src={ecologo} height={150}></Image>
+                  <h1>EcoCitizen</h1>
                 </div>
                 <div className={styles.underlineGradient}>
 
@@ -179,7 +179,7 @@ function Ecosystem() {
               :
               <div onClick={() => setActivePillar({ ecoPillar: !activePillar.ecoPillar })} className={styles.pillar}>
                 <button >+</button>
-                <Image src={ecologo}></Image>
+                <Image src={ecologo} height={150}></Image>
               </div>
             }
 

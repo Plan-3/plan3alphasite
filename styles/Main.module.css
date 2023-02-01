@@ -1,4 +1,4 @@
-.blur{
+.blur {
   backdrop-filter: blur(10px);
   padding: 0 1rem;
   border-radius: 1rem;
@@ -10,11 +10,13 @@
   align-items: center;
   overflow: hidden;
 }
-.boardMobile{
+
+.boardMobile {
   display: none;
 }
 
-.board button, .boardMobile button {
+.board button,
+.boardMobile button {
   background-color: transparent;
   border: none;
   color: white;
@@ -105,7 +107,7 @@
   font-size: 1.3rem;
 }
 
-.footerImg{
+.footerImg {
   background: url('../assets/Images/maub.svg');
   background-size: cover;
   width: 100%;
@@ -169,7 +171,7 @@
   so background comes through the text only */
 }
 
-.iconContainer div:nth-child(n){
+.iconContainer div:nth-child(n) {
   margin: 1rem 2rem;
 }
 
@@ -197,21 +199,25 @@
   margin-bottom: 1rem;
   margin: 0 2rem;
 }
-.minisBks{
-  background: rgb(207,1,45);
-  background: linear-gradient(325deg, #005eff 0%, rgba(8,0,2,1) 15%, rgba(0,0,0,1) 85%, #005eff 100%);  
+
+.minisBks {
+  background: rgb(207, 1, 45);
+  background: linear-gradient(325deg, #005eff 0%, rgba(8, 0, 2, 1) 15%, rgba(0, 0, 0, 1) 85%, #005eff 100%);
 }
-.minisOri{
-  background: rgb(207,1,45);
-  background: linear-gradient(325deg, rgba(207,1,45,1) 0%, rgba(8,0,2,1) 15%, rgba(0,0,0,1) 85%, rgba(207,1,45,1) 100%);  
+
+.minisOri {
+  background: rgb(207, 1, 45);
+  background: linear-gradient(325deg, rgba(207, 1, 45, 1) 0%, rgba(8, 0, 2, 1) 15%, rgba(0, 0, 0, 1) 85%, rgba(207, 1, 45, 1) 100%);
 }
-.minisLsm{
-  background: rgb(207,1,45);
-  background: linear-gradient(325deg, #c89d2e 0%, rgba(8,0,2,1) 15%, rgba(0,0,0,1) 85%, #c89d2e 100%);  
+
+.minisLsm {
+  background: rgb(207, 1, 45);
+  background: linear-gradient(325deg, #c89d2e 0%, rgba(8, 0, 2, 1) 15%, rgba(0, 0, 0, 1) 85%, #c89d2e 100%);
 }
-.minisEco{
-  background: rgb(207,1,45);
-  background: linear-gradient(325deg, #208805 0%, rgba(8,0,2,1) 15%, rgba(0,0,0,1) 85%, #208805 100%);  
+
+.minisEco {
+  background: rgb(207, 1, 45);
+  background: linear-gradient(325deg, #208805 0%, rgba(8, 0, 2, 1) 15%, rgba(0, 0, 0, 1) 85%, #208805 100%);
 }
 
 .minis button {
@@ -256,7 +262,8 @@ div underneath powerP3
 flex\column\width 50%
 */
 
-.powerP3 h1, .powerP3 p{
+.powerP3 h1,
+.powerP3 p {
   justify-content: center;
   align-items: center;
 
@@ -283,7 +290,11 @@ flex\column\width 50%
   backdrop-filter: blur(5px);
 }
 
-.powerBlurIntro{
+.powerBlurImage {
+  width: auto;
+}
+
+.powerBlurIntro {
   font-size: 1.2rem;
   line-height: 2rem;
   width: 60%;
@@ -404,10 +415,11 @@ flex\column\width 50%
 }
 
 @media screen and (max-width: 1400px) {
-  .powerBlurContainer{
+  .powerBlurContainer {
     flex-direction: column;
   }
-  .powerBlur{
+
+  .powerBlur {
     width: 100%;
   }
 }
@@ -416,9 +428,11 @@ flex\column\width 50%
   .arrows {
     transform: rotate(90deg)
   }
-  .board{
+
+  .board {
     display: none;
   }
+
   .boardMobile {
     display: flex;
     justify-content: space-between;
@@ -426,7 +440,7 @@ flex\column\width 50%
     overflow: hidden;
   }
 
-  .eachBoard{
+  .eachBoard {
     width: 100%;
   }
 
@@ -435,7 +449,7 @@ flex\column\width 50%
     text-align: center;
   }
 
-  .defi img{
+  .defi img {
     display: none;
   }
 
@@ -447,6 +461,10 @@ flex\column\width 50%
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .footerImg {
+    margin-bottom: 1.5rem;
   }
 
   .hero h1 {
@@ -474,7 +492,7 @@ flex\column\width 50%
     width: 100%;
   }
 
-  .blur{
+  .blur {
     backdrop-filter: none;
   }
 
@@ -486,29 +504,31 @@ flex\column\width 50%
     width: 100%;
   }
 
-  .minisLeft, .minisRight{
+  .minisLeft,
+  .minisRight {
     flex-direction: column;
   }
 
-  .powerBlurContainer{
+  .powerBlurContainer {
     flex-direction: row;
     padding: 0;
   }
-  
-  .powerBlur{
+
+  .powerBlur {
     width: 44%;
     padding: 0;
   }
 
-  .powerBlur img:nth-child(1){
+  .powerBlur img:nth-child(1) {
     width: 80%;
     height: auto;
   }
-  .powerBlurIcon{
+
+  .powerBlurIcon {
     width: auto;
   }
 
-  .powerBlurIntro{
+  .powerBlurIntro {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.227);
   }
@@ -533,7 +553,7 @@ flex\column\width 50%
     font-size: 2rem;
   }
 
-  .toolsStart img{
+  .toolsStart img {
     width: 100%;
   }
 
@@ -544,7 +564,7 @@ flex\column\width 50%
     width: 100%;
   }
 
-  .rainbowText{
+  .rainbowText {
     text-align: center;
   }
 
@@ -553,7 +573,7 @@ flex\column\width 50%
     margin-bottom: 1rem;
   }
 
-  .winning img{
+  .winning img {
     display: none;
   }
 

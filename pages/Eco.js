@@ -116,7 +116,7 @@ function Eco() {
           return (
             <div className={styles.focusItem} key={index}>
               <div className={styles.focusHeader}>
-                {data.image ? <Image height={50} width={50} src={icon[index]} /> : ''}
+                {/* {data.image ? <Image height={50} width={50} src={icon[index]} /> : ''} */}
                 <p style={{ color: '#208805' }}>{data.title}</p>
               </div>
               <div className={styles.focusText}>
@@ -149,7 +149,7 @@ function Eco() {
       </div>
       <div style={{ backgroundColor: '#208805' }} className={styles.quotes}>
         <div className={styles.quote}>
-          <FormatQuoteIcon style={{ fontSize: '6rem' }} />
+          <FormatQuoteIcon style={{ fontSize: '3rem' }} />
           <p>{quoteData[i].quote}</p>
           <p>{quoteData[i].person}</p>
         </div>

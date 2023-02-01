@@ -68,7 +68,7 @@ function Team() {
             <h1>The New Standard in <span className={styles.gradientTitle}>Limitless</span></h1>
             <p>A Profit Driven Think-Tank & Execution Team: Web3 'Bridge' Business Integration</p>
             <div>
-              <Image height={100} src={bks}></Image>
+              <Image height={100} src={bks} style={{width: '80%'}}></Image>
               <Image height={100} src={ori}></Image>
               <Image height={100} src={lsm}></Image>
               <Image height={100} src={eco}></Image>
@@ -100,19 +100,19 @@ function Team() {
         <div className={styles.missionTitle}>
           <h1 className={styles.gradientTitle}>Mission</h1>
         </div>
-        <div className={styles.items}>
-          <div className={styles.item}>
+        <div className={styles.items} style={{justifyContent: 'center'}}>
+          {/* <div className={styles.item}>
             <Image src={m1}></Image>
             <p>Embrace, change, and accelerate innovation; foster the evolution of web3 and embrace the key value-add components for: Blockchain tech ecosystems, media and analytics, campaign architecture. </p>
-          </div>
+          </div> */}
           <div className={styles.itemBordered}>
             <Image src={m2}></Image>
-            <p>Empower technology, individuals, teams and strategic partners to provide viable solutions to amplify business intelligence. </p>
+            <p>Develop and leverage deep, emerging technologies to implement commercial applications for the digital economy in the pursuit of fundamental value and positive progress.</p>
           </div>
-          <div className={styles.item}>
+          {/* <div className={styles.item}>
             <Image src={m3}></Image>
             <p>'Absorb knowledge' - Leverage internal and key-strategic partner expertise to develop highly scalable, precise projects, and execute strategic workflows.</p>
-          </div>
+          </div> */}
         </div>
         <div className={styles.missionTitle}>
           <h1 className={styles.gradientTitle}>Vision</h1>
@@ -120,72 +120,82 @@ function Team() {
         <div className={styles.items}>
           <div className={styles.item}>
             <Image src={v1}></Image>
-            <p>PlanB is a profit driven think-tank. We constantly adapt, perform, and deliver results. </p>
+            <p>
+            Plan3 is an applied profit-driven think tank and autonomous execution team 
+            that operates within “Pasteur’s Quadrant” Pasteur’s Quadrant is research that 
+            seeks fundamental understanding and has immediate use for society.  
+            </p>
           </div>
           <div className={styles.itemBordered}>
             <Image src={v2}></Image>
-            <p>Utilizing our 'triangulated perspectives,' we architect value-focused Web3 projects by hyper-leveraging business intelligence and research. </p>
+            <p>
+            We harness deep tech, marketing, analytics, and (eco)energy advances to solve 
+            real-world problems and create new opportunities. We deploy an array of perspectives 
+            to engineer the best vision, strategy, tactics, and implementation for our projects.
+            </p>
           </div>
           <div className={styles.item}>
             <Image src={v3}></Image>
-            <p>We are highly focused on analysis, cutting edge technology, KPIs, data science, AI, and Machine Learning, to interpret and anticipate global market outcomes.</p>
+            <p>
+            Our managed projects syndicate internal resources in collaboration 
+            with our network of strategic ecosystems, delivering precise results 
+            to bridge the gap into new paradigms. Plan3 applied research connects 
+            discoveries to a practical and highly-strategic end; commercialization is focused 
+            on delivering end results.
+            </p>
           </div>
         </div>
       </div>
       <div className={styles.soul}>
-        <h1 className={styles.gradientTitle}>THE "SOUL" OF PLAN_3</h1>
+        <h1 className={styles.gradientTitle}>Core Values</h1>
         <p>“Process should not stifle creativity. It can’t end up being a barrier to innovation or be the barrier to the fluid movement of ideas.”</p>
         <div className={styles.soulIcons}>
           <div className={styles.soulIconsCard}>
             <Image src={s1}></Image>
-            <p>Radical Ownership</p>
+            <p>People First</p>
           </div>
           <div className={styles.soulIconsCard}>
             <Image src={s2}></Image>
-            <p>Know the Why</p>
-          </div>
-          <div className={styles.soulIconsCard}>
-            <Image src={s3}></Image>
-            <p>Mastery | Simplification</p>
-          </div>
-          <div className={styles.soulIconsCard}>
-            <Image src={s4}></Image>
             <p>Solution-Based Mindset</p>
           </div>
           <div className={styles.soulIconsCard}>
+            <Image src={s3}></Image>
+            <p>Amplified Lifelong Learning</p>
+          </div>
+          <div className={styles.soulIconsCard}>
+            <Image src={s4}></Image>
+            <p>Do the Next Right Thing</p>
+          </div>
+          <div className={styles.soulIconsCard}>
             <Image src={s5}></Image>
-            <p>Ruthless Efficiency</p>
+            <p>Radical Ownership | Quiet Confidence</p>
           </div>
         </div>
         <div className={styles.soulIcons}>
           <div className={styles.soulIconsCard}>
             <Image src={s6}></Image>
-            <p>Profit Growth</p>
+            <p>Earned, Not Given</p>
           </div>
           <div className={styles.soulIconsCard}>
             <Image src={s7}></Image>
-            <p>Honor | Integrity</p>
+            <p>Mastery | Simplification</p>
           </div>
           <div className={styles.soulIconsCard}>
             <Image src={s8}></Image>
-            <p>Passionate Creativity</p>
+            <p>Creativity | Intellectual Curiosity</p>
           </div>
           <div className={styles.soulIconsCard}>
             <Image src={s9}></Image>
-            <p>Transparency Loyalty</p>
+            <p>Know the Why | Inject Knowledge</p>
           </div>
           <div className={styles.soulIconsCard}>
             <Image src={s10}></Image>
-            <p>Balance | Charity</p>
+            <p>Transparency | Loyalty</p>
           </div>
         </div>
       </div>
       <div className={styles.ourVision}>
-        <div className={styles.ourVisionHeader}>
-          <h1 className={styles.gradientTitle}>Our Vision</h1>
-          <p>Embrace, change, and accelerate innovation; foster the evolution of web3 and embrace the key value-add components for: Blockchain tech ecosystems, media and analytics, ESG, campaign architecture. </p>
-          <button><a href="/Contact">Get Started</a></button>
-        </div>
+        
         <div className={styles.ourVisionBoxes}>
           <div className={styles.ourVisionBox}>
             <h1>INDEPENDENTLY, AS ONE</h1>
