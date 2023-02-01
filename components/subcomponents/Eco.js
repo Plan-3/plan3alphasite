@@ -9,7 +9,7 @@ function Eco() {
   return (
     <div className={styles.minisEco}>
       <div>
-        <h1>The 3C Eco Citizen <span style={{color: '#208805'}}>Vision</span></h1>
+        <h2>The 3C Eco Citizen <span style={{color: '#208805'}}>Vision</span></h2>
         <p>EcoCitizen brings transparency, fungibility, and liquidity to the primitive carbon markets. We efficiently and effectively bridge credits on-chain and leverage critical aspects of blockchain technology to revolutionize the carbon credit ecosystem. </p>
       </div>
       <div className={styles.minisRight}>

@@ -91,17 +91,17 @@ function Lionshare() {
       </div>
       <div style={{ borderColor: '#c89d2e' }} className={styles.solutions}>
         <div className={styles.solutionsChild}>
-          <Image src={icon10} height={100}></Image>
+          {/* <Image src={icon10} height={100}></Image> */}
           <p className={styles.solutionsRainbow}>Data</p>
           <p>Data is a treasure trove, our tools help you use it fast and effectively</p>
         </div>
         <div className={styles.solutionsChild}>
-          <Image src={icon2} height={100}></Image>
+          {/* <Image src={icon2} height={100}></Image> */}
           <p className={styles.solutionsRainbow}>Targeted Ads</p>
           <p>Optimize your returns, understand your customers</p>
         </div>
         <div className={styles.solutionsChild}>
-          <Image src={icon1} height={100}></Image>
+          {/* <Image src={icon1} height={100}></Image> */}
           <p className={styles.solutionsRainbow}>On-Chain Analytics</p>
           <p>Unlock hidden stories by tracing activity using proprietary analytics tools</p>
         </div>

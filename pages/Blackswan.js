@@ -115,17 +115,17 @@ function Blackswan() {
       </div>
       <div className={styles.solutions}>
         <div className={styles.solutionsChild}>
-          <Image src={icon10} height={100} width={150}></Image>
+          {/* <Image src={icon10} height={100} width={150}></Image> */}
           <p className={styles.solutionsRainbow}>Project Discovery</p>
           <p>What is most critical to your business objectives? We will assess your firm to determine which blockchain use cases are most appropriate for it.</p>
         </div>
         <div className={styles.solutionsChild}>
-          <Image src={icon2} height={100} width={150}></Image>
+          {/* <Image src={icon2} height={100} width={150}></Image> */}
           <p className={styles.solutionsRainbow}>Strategy and Consulting</p>
           <p>Different firms require different intelligence. We help strategize to your unique needs and deliver targeted business intelligence</p>
         </div>
         <div className={styles.solutionsChild}>
-          <Image src={icon1} height={100} width={150}></Image>
+          {/* <Image src={icon1} height={100} width={150}></Image> */}
           <p className={styles.solutionsRainbow}>Blockchain Technology Integration</p>
           <p>Capitalize on the tools and resources that can accelerate your business. Our experts will integrate and develop the systems to help achieve your goals</p>
         </div>

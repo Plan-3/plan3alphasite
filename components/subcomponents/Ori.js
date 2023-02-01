@@ -8,7 +8,7 @@ function Ori() {
   return (
     <div className={styles.minisOri}>
       <div>
-        <h1>Origins <span style={{color: '#cf012d'}}>Vision</span></h1>
+        <h2>Origins <span style={{color: '#cf012d'}}>Vision</span></h2>
         <p> Origins architects and executes growth marketing strategies by leveraging internal and key strategic partners to achieve scalability via influencers, creators, and investors.</p>
       </div>
       <div className={styles.minisRight}>

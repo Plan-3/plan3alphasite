@@ -188,11 +188,11 @@ $neutralcolor: #4d4d4d;
 }
 
 .heroLsm {
-  @include hero('../assets/Images/Heroes/lsmhero.svg')
+  @include hero('../assets/Images/Heroes/lsmhero.png')
 }
 
 .heroOri {
-  @include hero('../assets/Images/Heroes/orihero.svg')
+  @include hero('../assets/Images/Heroes/orihero.png')
 }
 
 .heroEco {
@@ -384,7 +384,6 @@ $neutralcolor: #4d4d4d;
 }
 
 .solutionsChild {
-  width: 30%;
   text-align: left;
   font-size: 1.2rem;
   padding-left: 1em;
@@ -422,6 +421,7 @@ $neutralcolor: #4d4d4d;
   .containerWeb3 {
     @include flexBoxColumn();
     flex-direction: column-reverse;
+    width: 90%
   }
 
   .focusHeader {

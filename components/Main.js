@@ -13,6 +13,7 @@ import WebIcon from '@mui/icons-material/Web'
 import SecurityIcon from '@mui/icons-material/Security'
 import CheckIcon from '@mui/icons-material/Check';
 //importing created images
+import pl3 from '../assets/Images/Logos/plan3logo.png'
 import bkslogo from '../assets/Images/Logos/swanlogo.png'
 import lsmlogo from '../assets/Images/Logos/lsmlogo.png'
 import orilogo from '../assets/Images/Logos/orilogo.png'
@@ -32,21 +33,21 @@ import piechart from '../assets/Images/piechart.png'
 import { style } from '@mui/system'
 
 function Home() {
-  const [divider, setDivider] = useState({ bks: false, ori: false, lsm: false, eco: false })
+  const [divider, setDivider] = useState({ bks: true, ori: false, lsm: false, eco: false })
 
   return (
     <div className={styles.main}>
       <div className={styles.hero}>
-        <h1>
-          SCALE YOUR <span className={styles.heroSpan}> COMPANY </span> WITH DATA</h1>
-        <h1>  DRIVEN DECISIONS AND CREATIVITY TOGETHER FOR </h1>
-        <h1>  <span className={styles.heroSpan}>UNMATCHED DESIGN AND DIGITAL EXPERIENCES </span>
+        <Image src={pl3} height={50}></Image>
+        <h1>  Deep Tech + Emerging Technologies </h1>
+        <h1>  For the digital Economy
         </h1>
         <p>
-          Brand Intelligence & Solutions For the Web3 Economy
+          Research+Dev | Marketing+Media
         </p>
         <button><a href="/Contact">Book a Demo</a></button>
       </div>
+      <h3>Our 4 Pillars</h3>
       <div className={styles.solutions}>
         <button id='bksbtn' onClick={() => setDivider({ bks: !divider.bks })}>
           <Image width={250} height={100} src={bkslogo}></Image>

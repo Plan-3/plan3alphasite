@@ -9,7 +9,7 @@ function Lsm() {
   return (
     <div className={styles.minisLsm}>
       <div>
-        <h1>Lionshare Media <span style={{color: '#c89d2e'}}>Vision</span></h1>
+        <h2>Lionshare Media <span style={{color: '#c89d2e'}}>Vision</span></h2>
         <p> Lionshare brings product analytics to web3. With a wide net of capabilities, we use behavioral analytics to build unmatched digital experiences that enable you to measure, iterate, and scale your project with a data-driven approach. </p>
       </div>
       <div className={styles.minisRight}>

@@ -93,17 +93,17 @@ function Lionshare() {
       </div>
       <div style={{ color: '#cf012d' }} className={styles.solutions}>
         <div className={styles.solutionsChild}>
-          <Image src={icon10} height={100} width={150}></Image>
+          {/* <Image src={icon10} height={100} width={150}></Image> */}
           <p className={styles.solutionsRainbow}>Campaign Management</p>
           <p>Maximize your growth potential with our wealth of marketing expertise and technology.</p>
         </div>
         <div className={styles.solutionsChild}>
-          <Image src={icon2} height={100} width={150}></Image>
+          {/* <Image src={icon2} height={100} width={150}></Image> */}
           <p className={styles.solutionsRainbow}>Community Management</p>
           <p>Build and maintain a strong customer base across multiple channels.</p>
         </div>
         <div className={styles.solutionsChild}>
-          <Image src={icon1} height={100} width={150}></Image>
+          {/* <Image src={icon1} height={100} width={150}></Image> */}
           <p className={styles.solutionsRainbow}>Strategy & Growth</p>
           <p>Identify and capitalize on opportunities for growth with a focus on customer acquisition, retention, and loyalty.</p>
         </div>

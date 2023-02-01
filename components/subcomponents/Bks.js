@@ -9,7 +9,7 @@ function Bks() {
   return (
     <div className={styles.minisBks}>
       <div>
-        <h1>Black Swan <span style={{color: '#005eff'}}>Vision</span> </h1>
+        <h2>Black Swan <span style={{color: '#005eff'}}>Vision</span> </h2>
         <p> Black Swan Research delivers best-in-class research and intelligence to leverage the utility of deep and emerging technologies. We facilitate informed development of the digital economy </p>
       </div>
       <div className={styles.minisRight}>
