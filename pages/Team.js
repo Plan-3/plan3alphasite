@@ -4,7 +4,7 @@ import styles from '../styles/Team.module.css'
 import team from '../assets/Team.json'
 import Nav from '../components/Nav'
 
-import eco from '../assets/Images/Logos/ecologo.png'
+import eco from '../assets/Images/Logos/ecologo.svg'
 import bks from '../assets/Images/Logos/swanlogo.png'
 import ori from '../assets/Images/Logos/orilogo.png'
 import lsm from '../assets/Images/Logos/lsmlogo.png'

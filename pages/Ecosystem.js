@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 import bkslogo from '../assets/Images/Logos/swanlogo.png'
 import lsmlogo from '../assets/Images/Logos/lsmlogo.png'
 import orilogo from '../assets/Images/Logos/orilogo.png'
-import ecologo from '../assets/Images/Logos/ecologo.png'
+import ecologo from '../assets/Images/Logos/ecologo.svg'
 import adslogo from '../assets/Images/ecosystem/adslogo.png'
 import botlogo from '../assets/Images/ecosystem/botlogo.png'
 import citilogo from '../assets/Images/ecosystem/citilogo.png'
@@ -147,7 +147,7 @@ function Ecosystem() {
             {(activePillar.ecoPillar) ?
               <div onClick={() => setActivePillar({ ecoPillar: !activePillar.ecoPillar })} className={styles.pillarContent}>
                 <div>
-                  <h1>EcoCitizen</h1>
+                  <Image src={ecologo} height={150}></Image>
                 </div>
                 <div className={styles.underlineGradient}>
 
